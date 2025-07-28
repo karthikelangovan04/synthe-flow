@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Database, Shield, Zap } from "lucide-react";
+import { ArrowRight, Database, Shield, Zap, Layers } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-data-platform.jpg";
 
 export const Hero = () => {
@@ -36,10 +37,13 @@ export const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="data" size="lg" className="group">
-            Start Generating Data
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link to="/schema-designer">
+            <Button variant="data" size="lg" className="group">
+              <Layers className="w-4 h-4 mr-2" />
+              Design Your Schema
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
           <Button variant="data-outline" size="lg">
             View Documentation
           </Button>
