@@ -14,7 +14,192 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      column_metadata: {
+        Row: {
+          created_at: string
+          data_type: string
+          default_value: string | null
+          id: string
+          is_nullable: boolean | null
+          is_primary_key: boolean | null
+          is_unique: boolean | null
+          max_length: number | null
+          name: string
+          pattern: string | null
+          position: number | null
+          sample_values: string[] | null
+          table_id: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          data_type: string
+          default_value?: string | null
+          id?: string
+          is_nullable?: boolean | null
+          is_primary_key?: boolean | null
+          is_unique?: boolean | null
+          max_length?: number | null
+          name: string
+          pattern?: string | null
+          position?: number | null
+          sample_values?: string[] | null
+          table_id: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          data_type?: string
+          default_value?: string | null
+          id?: string
+          is_nullable?: boolean | null
+          is_primary_key?: boolean | null
+          is_unique?: boolean | null
+          max_length?: number | null
+          name?: string
+          pattern?: string | null
+          position?: number | null
+          sample_values?: string[] | null
+          table_id?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "column_metadata_table_id_fkey"
+            columns: ["table_id"]
+            isOneToOne: false
+            referencedRelation: "table_metadata"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      projects: {
+        Row: {
+          created_at: string
+          description: string | null
+          id: string
+          name: string
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          name: string
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          name?: string
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      relationships: {
+        Row: {
+          created_at: string
+          id: string
+          relationship_type: string | null
+          source_column_id: string
+          source_table_id: string
+          target_column_id: string
+          target_table_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          relationship_type?: string | null
+          source_column_id: string
+          source_table_id: string
+          target_column_id: string
+          target_table_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          relationship_type?: string | null
+          source_column_id?: string
+          source_table_id?: string
+          target_column_id?: string
+          target_table_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "relationships_source_column_id_fkey"
+            columns: ["source_column_id"]
+            isOneToOne: false
+            referencedRelation: "column_metadata"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "relationships_source_table_id_fkey"
+            columns: ["source_table_id"]
+            isOneToOne: false
+            referencedRelation: "table_metadata"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "relationships_target_column_id_fkey"
+            columns: ["target_column_id"]
+            isOneToOne: false
+            referencedRelation: "column_metadata"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "relationships_target_table_id_fkey"
+            columns: ["target_table_id"]
+            isOneToOne: false
+            referencedRelation: "table_metadata"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      table_metadata: {
+        Row: {
+          created_at: string
+          description: string | null
+          id: string
+          name: string
+          position_x: number | null
+          position_y: number | null
+          project_id: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          name: string
+          position_x?: number | null
+          position_y?: number | null
+          project_id: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          name?: string
+          position_x?: number | null
+          position_y?: number | null
+          project_id?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "table_metadata_project_id_fkey"
+            columns: ["project_id"]
+            isOneToOne: false
+            referencedRelation: "projects"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
