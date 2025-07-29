@@ -17,9 +17,9 @@ const Auth = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Redirect authenticated users to main page
+    // Redirect authenticated users to schema designer
     if (user) {
-      navigate('/');
+      navigate('/schema-designer');
     }
   }, [user, navigate]);
 
@@ -40,7 +40,7 @@ const Auth = () => {
         title: "Welcome back!",
         description: "You have been signed in successfully.",
       });
-      navigate('/');
+      navigate('/schema-designer');
     }
 
     setIsLoading(false);
