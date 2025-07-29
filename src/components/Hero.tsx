@@ -37,10 +37,10 @@ export const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Link to="/schema-designer">
+          <Link to="/auth">
             <Button variant="data" size="lg" className="group">
               <Layers className="w-4 h-4 mr-2" />
-              Design Your Schema
+              Get Started
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
