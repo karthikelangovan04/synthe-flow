@@ -99,17 +99,6 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
     },
   });
 
-  // Debounced update function
-  const debouncedUpdate = useCallback(() => {
-    let timeoutId: NodeJS.Timeout;
-    return (name: string, description: string) => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        updateTableMutation.mutate({ name, description });
-      }, 500);
-    };
-  }, [updateTableMutation])();
-
   // Update local state when table data changes
   useEffect(() => {
     if (table) {
@@ -117,6 +106,19 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
       setTableDescription(table.description || '');
     }
   }, [table]);
+
+  // Debounced update effect
+  useEffect(() => {
+    if (!table) return;
+    
+    const timeoutId = setTimeout(() => {
+      if (tableName !== table.name || tableDescription !== (table.description || '')) {
+        updateTableMutation.mutate({ name: tableName, description: tableDescription });
+      }
+    }, 500);
+
+    return () => clearTimeout(timeoutId);
+  }, [tableName, tableDescription, table, updateTableMutation]);
 
   const createColumnMutation = useMutation({
     mutationFn: async (columnData: typeof newColumn) => {
@@ -227,10 +229,7 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
             <label className="text-sm font-medium">Table Name</label>
             <Input
               value={tableName}
-              onChange={(e) => {
-                setTableName(e.target.value);
-                debouncedUpdate(e.target.value, tableDescription);
-              }}
+              onChange={(e) => setTableName(e.target.value)}
               className="mt-1"
             />
           </div>
@@ -239,10 +238,7 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
             <label className="text-sm font-medium">Description</label>
             <Textarea
               value={tableDescription}
-              onChange={(e) => {
-                setTableDescription(e.target.value);
-                debouncedUpdate(tableName, e.target.value);
-              }}
+              onChange={(e) => setTableDescription(e.target.value)}
               className="mt-1 min-h-[60px]"
               placeholder="Table description..."
             />

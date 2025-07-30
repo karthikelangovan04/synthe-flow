@@ -1,12 +1,24 @@
 import { useState } from 'react';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Plus, Table, Database, Key, Link2 } from 'lucide-react';
+import { Plus, Table, Database, Key, Trash2 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 import { Input } from '@/components/ui/input';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/components/ui/alert-dialog';
 
 interface TableData {
   id: string;
@@ -43,6 +55,7 @@ export function SchemaCanvas({
   const [isCreatingTable, setIsCreatingTable] = useState(false);
   const [showNewTableDialog, setShowNewTableDialog] = useState(false);
   const { toast } = useToast();
+  const queryClient = useQueryClient();
 
   const handleCreateTable = async () => {
     if (!projectId || !newTableName.trim()) {
@@ -86,6 +99,42 @@ export function SchemaCanvas({
       setIsCreatingTable(false);
     }
   };
+
+  const deleteTableMutation = useMutation({
+    mutationFn: async (tableId: string) => {
+      // First delete all column metadata for this table
+      const { error: columnsError } = await supabase
+        .from('column_metadata')
+        .delete()
+        .eq('table_id', tableId);
+      
+      if (columnsError) throw columnsError;
+
+      // Then delete all relationships involving this table
+      const { error: relationshipsError } = await supabase
+        .from('relationships')
+        .delete()
+        .or(`source_table_id.eq.${tableId},target_table_id.eq.${tableId}`);
+      
+      if (relationshipsError) throw relationshipsError;
+
+      // Finally delete the table itself
+      const { error: tableError } = await supabase
+        .from('table_metadata')
+        .delete()
+        .eq('id', tableId);
+      
+      if (tableError) throw tableError;
+    },
+    onSuccess: () => {
+      toast({ title: "Success", description: "Table deleted successfully" });
+      queryClient.invalidateQueries({ queryKey: ['tables'] });
+      onTableCreated();
+    },
+    onError: () => {
+      toast({ title: "Error", description: "Failed to delete table", variant: "destructive" });
+    },
+  });
 
   const getDataTypeIcon = (dataType: string) => {
     if (dataType.includes('text') || dataType.includes('varchar')) return '📝';
@@ -178,10 +227,41 @@ export function SchemaCanvas({
                 onClick={() => onTableSelect(table.id)}
               >
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-sm flex items-center gap-2">
-                    <Table className="h-4 w-4" />
-                    {table.name}
-                  </CardTitle>
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="text-sm flex items-center gap-2">
+                      <Table className="h-4 w-4" />
+                      {table.name}
+                    </CardTitle>
+                    <AlertDialog>
+                      <AlertDialogTrigger asChild>
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="h-6 w-6 p-0 text-destructive hover:text-destructive"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <Trash2 className="h-3 w-3" />
+                        </Button>
+                      </AlertDialogTrigger>
+                      <AlertDialogContent>
+                        <AlertDialogHeader>
+                          <AlertDialogTitle>Delete Table</AlertDialogTitle>
+                          <AlertDialogDescription>
+                            Are you sure you want to delete the table "{table.name}"? This will also delete all its columns and relationships. This action cannot be undone.
+                          </AlertDialogDescription>
+                        </AlertDialogHeader>
+                        <AlertDialogFooter>
+                          <AlertDialogCancel>Cancel</AlertDialogCancel>
+                          <AlertDialogAction
+                            onClick={() => deleteTableMutation.mutate(table.id)}
+                            className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                          >
+                            Delete
+                          </AlertDialogAction>
+                        </AlertDialogFooter>
+                      </AlertDialogContent>
+                    </AlertDialog>
+                  </div>
                   {table.description && (
                     <p className="text-xs text-muted-foreground">{table.description}</p>
                   )}
