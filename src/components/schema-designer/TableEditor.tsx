@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -53,6 +53,8 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
     is_unique: false,
   });
   const [showNewColumn, setShowNewColumn] = useState(false);
+  const [tableName, setTableName] = useState('');
+  const [tableDescription, setTableDescription] = useState('');
   const { toast } = useToast();
   const queryClient = useQueryClient();
 
@@ -96,6 +98,25 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
       toast({ title: "Error", description: "Failed to update table", variant: "destructive" });
     },
   });
+
+  // Debounced update function
+  const debouncedUpdate = useCallback(() => {
+    let timeoutId: NodeJS.Timeout;
+    return (name: string, description: string) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        updateTableMutation.mutate({ name, description });
+      }, 500);
+    };
+  }, [updateTableMutation])();
+
+  // Update local state when table data changes
+  useEffect(() => {
+    if (table) {
+      setTableName(table.name);
+      setTableDescription(table.description || '');
+    }
+  }, [table]);
 
   const createColumnMutation = useMutation({
     mutationFn: async (columnData: typeof newColumn) => {
@@ -205,12 +226,10 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
           <div>
             <label className="text-sm font-medium">Table Name</label>
             <Input
-              value={table.name}
+              value={tableName}
               onChange={(e) => {
-                updateTableMutation.mutate({
-                  name: e.target.value,
-                  description: table.description || '',
-                });
+                setTableName(e.target.value);
+                debouncedUpdate(e.target.value, tableDescription);
               }}
               className="mt-1"
             />
@@ -219,12 +238,10 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
           <div>
             <label className="text-sm font-medium">Description</label>
             <Textarea
-              value={table.description || ''}
+              value={tableDescription}
               onChange={(e) => {
-                updateTableMutation.mutate({
-                  name: table.name,
-                  description: e.target.value,
-                });
+                setTableDescription(e.target.value);
+                debouncedUpdate(tableName, e.target.value);
               }}
               className="mt-1 min-h-[60px]"
               placeholder="Table description..."

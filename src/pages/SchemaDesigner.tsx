@@ -80,7 +80,7 @@ export default function SchemaDesigner() {
       </header>
 
       <ResizablePanelGroup direction="horizontal" className="flex-1">
-        <ResizablePanel defaultSize={300} minSize={250} maxSize={400}>
+        <ResizablePanel defaultSize={25} minSize={20} maxSize={40}>
           <ProjectList
             projects={projects || []}
             selectedProjectId={selectedProjectId}
@@ -93,7 +93,7 @@ export default function SchemaDesigner() {
 
         <ResizableHandle withHandle />
 
-        <ResizablePanel defaultSize={500} minSize={400}>
+        <ResizablePanel defaultSize={50} minSize={40}>
           <SchemaCanvas
             tables={tables || []}
             selectedTableId={selectedTableId}
@@ -105,7 +105,7 @@ export default function SchemaDesigner() {
 
         <ResizableHandle withHandle />
 
-        <ResizablePanel defaultSize={350} minSize={300} maxSize={500}>
+        <ResizablePanel defaultSize={25} minSize={20} maxSize={40}>
           <TableEditor
             tableId={selectedTableId}
             onTableUpdated={handleTableCreated}
