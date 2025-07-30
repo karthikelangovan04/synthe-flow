@@ -6,10 +6,13 @@ import { ProjectList } from '@/components/schema-designer/ProjectList';
 import { SchemaCanvas } from '@/components/schema-designer/SchemaCanvas';
 import { TableEditor } from '@/components/schema-designer/TableEditor';
 import { SchemaImport } from '@/components/schema-designer/SchemaImport';
+import { RelationshipCanvas } from '@/components/schema-designer/RelationshipCanvas';
+import { SyntheticDataPanel } from '@/components/schema-designer/SyntheticDataPanel';
 import { Button } from '@/components/ui/button';
-import { Plus, Upload, Home } from 'lucide-react';
+import { Plus, Upload, Home, Link, Database } from 'lucide-react';
 import { ResizablePanelGroup, ResizablePanel, ResizableHandle } from '@/components/ui/resizable';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
 
 export default function SchemaDesigner() {
@@ -56,6 +59,32 @@ export default function SchemaDesigner() {
       
       console.log('Fetched tables:', data);
       return data;
+    },
+    enabled: !!selectedProjectId,
+  });
+
+  const { data: relationships, refetch: refetchRelationships } = useQuery({
+    queryKey: ['relationships', selectedProjectId],
+    queryFn: async () => {
+      if (!selectedProjectId) return [];
+      
+      const { data, error } = await supabase
+        .from('relationships')
+        .select(`
+          *,
+          source_table:table_metadata!relationships_source_table_id_fkey(name),
+          source_column:column_metadata!relationships_source_column_id_fkey(name),
+          target_table:table_metadata!relationships_target_table_id_fkey(name),
+          target_column:column_metadata!relationships_target_column_id_fkey(name)
+        `)
+        .eq('source_table_id', selectedProjectId);
+      
+      if (error) {
+        console.error('Error fetching relationships:', error);
+        throw error;
+      }
+      
+      return data || [];
     },
     enabled: !!selectedProjectId,
   });
@@ -244,13 +273,39 @@ export default function SchemaDesigner() {
         <ResizableHandle withHandle />
 
         <ResizablePanel defaultSize={50} minSize={40}>
-          <SchemaCanvas
-            tables={tables || []}
-            selectedTableId={selectedTableId}
-            onTableSelect={handleTableSelect}
-            onTableCreated={handleTableCreated}
-            projectId={selectedProjectId}
-          />
+          <Tabs defaultValue="schema" className="h-full">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="schema">Schema</TabsTrigger>
+              <TabsTrigger value="relationships">Relationships</TabsTrigger>
+              <TabsTrigger value="synthetic">Synthetic Data</TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="schema" className="h-full">
+              <SchemaCanvas
+                tables={tables || []}
+                selectedTableId={selectedTableId}
+                onTableSelect={handleTableSelect}
+                onTableCreated={handleTableCreated}
+                projectId={selectedProjectId}
+              />
+            </TabsContent>
+            
+            <TabsContent value="relationships" className="h-full">
+              <RelationshipCanvas
+                tables={tables || []}
+                projectId={selectedProjectId}
+                onRelationshipCreated={refetchRelationships}
+              />
+            </TabsContent>
+            
+            <TabsContent value="synthetic" className="h-full">
+              <SyntheticDataPanel
+                tables={tables || []}
+                relationships={relationships || []}
+                projectId={selectedProjectId}
+              />
+            </TabsContent>
+          </Tabs>
         </ResizablePanel>
 
         <ResizableHandle withHandle />
