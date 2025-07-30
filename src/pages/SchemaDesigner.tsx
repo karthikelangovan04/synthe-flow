@@ -1,17 +1,19 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { ProjectList } from '@/components/schema-designer/ProjectList';
 import { SchemaCanvas } from '@/components/schema-designer/SchemaCanvas';
 import { TableEditor } from '@/components/schema-designer/TableEditor';
 import { SchemaImport } from '@/components/schema-designer/SchemaImport';
 import { Button } from '@/components/ui/button';
-import { Plus, Upload } from 'lucide-react';
+import { Plus, Upload, Home } from 'lucide-react';
 import { ResizablePanelGroup, ResizablePanel, ResizableHandle } from '@/components/ui/resizable';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { useToast } from '@/hooks/use-toast';
 
 export default function SchemaDesigner() {
+  const navigate = useNavigate();
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(null);
   const [selectedTableId, setSelectedTableId] = useState<string | null>(null);
   const [showNewProject, setShowNewProject] = useState(false);
@@ -186,9 +188,20 @@ export default function SchemaDesigner() {
     <div className="h-screen flex flex-col">
       <header className="border-b bg-background px-6 py-4">
         <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-bold">Schema Designer</h1>
-            <p className="text-muted-foreground">Design and manage your database schemas</p>
+          <div className="flex items-center gap-4">
+            <Button 
+              variant="outline" 
+              size="sm"
+              onClick={() => navigate('/')}
+              className="flex items-center gap-2"
+            >
+              <Home className="h-4 w-4" />
+              Home
+            </Button>
+            <div>
+              <h1 className="text-2xl font-bold">Schema Designer</h1>
+              <p className="text-muted-foreground">Design and manage your database schemas</p>
+            </div>
           </div>
           <div className="flex gap-2">
             <Dialog open={showImportDialog} onOpenChange={setShowImportDialog}>
