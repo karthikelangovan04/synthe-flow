@@ -33,6 +33,7 @@ interface TableData {
     is_nullable: boolean;
     is_primary_key: boolean;
     is_unique: boolean;
+    enhanced_description?: string | null;
   }>;
 }
 
@@ -267,32 +268,39 @@ export function SchemaCanvas({
                   )}
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2">
-                    {table.column_metadata?.slice(0, 5).map((column) => (
+                  <div className="space-y-2 max-h-[300px] overflow-y-auto">
+                    {table.column_metadata?.slice(0, 10).map((column) => (
                       <div
                         key={column.id}
-                        className="flex items-center justify-between text-xs"
+                        className="flex flex-col gap-1 p-2 border rounded text-xs hover:bg-muted/50"
                       >
-                        <div className="flex items-center gap-2 flex-1 min-w-0">
-                          <span className="text-sm">{getDataTypeIcon(column.data_type)}</span>
-                          <span className="truncate font-medium">{column.name}</span>
-                          {column.is_primary_key && (
-                            <Key className="h-3 w-3 text-yellow-500" />
-                          )}
-                          {column.is_unique && (
-                            <Badge variant="outline" className="text-xs px-1 py-0">
-                              U
-                            </Badge>
-                          )}
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2 flex-1 min-w-0">
+                            <span className="text-sm">{getDataTypeIcon(column.data_type)}</span>
+                            <span className="truncate font-medium">{column.name}</span>
+                            {column.is_primary_key && (
+                              <Key className="h-3 w-3 text-yellow-500" />
+                            )}
+                            {column.is_unique && (
+                              <Badge variant="outline" className="text-xs px-1 py-0">
+                                U
+                              </Badge>
+                            )}
+                          </div>
+                          <span className="text-muted-foreground text-xs">
+                            {column.data_type}
+                          </span>
                         </div>
-                        <span className="text-muted-foreground text-xs">
-                          {column.data_type}
-                        </span>
+                        {column.enhanced_description && (
+                          <p className="text-xs text-muted-foreground line-clamp-2">
+                            {column.enhanced_description}
+                          </p>
+                        )}
                       </div>
                     ))}
-                    {table.column_metadata && table.column_metadata.length > 5 && (
+                    {table.column_metadata && table.column_metadata.length > 10 && (
                       <p className="text-xs text-muted-foreground text-center pt-1">
-                        +{table.column_metadata.length - 5} more columns
+                        +{table.column_metadata.length - 10} more columns
                       </p>
                     )}
                     {(!table.column_metadata || table.column_metadata.length === 0) && (

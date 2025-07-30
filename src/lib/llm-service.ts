@@ -51,37 +51,38 @@ class LLMService {
     }
   }
 
-  private async callOpenAI(messages: LLMMessage[]): Promise<string> {
+  private async callOpenAI(messages: LLMMessage[], context?: { projectId: string; tableId: string; columnId?: string }): Promise<string> {
     try {
-      const apiKey = await this.getOpenAIKey();
+      // Use Supabase Edge Function instead of direct OpenAI call
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+      const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
       
-      if (!apiKey) {
-        // Fallback to mock implementation if no API key
-        return this.callMockLLM(messages);
-      }
-
-      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      const response = await fetch(`${supabaseUrl}/functions/v1/llm-assistant`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
+          'Authorization': `Bearer ${supabaseAnonKey}`,
+          'apikey': supabaseAnonKey,
         },
         body: JSON.stringify({
-          model: 'gpt-4',
           messages: messages,
-          temperature: 0.7,
-          max_tokens: 1000,
+          context: context
         }),
       });
 
       if (!response.ok) {
-        throw new Error(`OpenAI API error: ${response.status}`);
+        throw new Error(`Edge Function error: ${response.status}`);
       }
 
       const data = await response.json();
-      return data.choices[0]?.message?.content || 'No response from AI';
+      
+      if (!data.success) {
+        throw new Error(data.error || 'Edge Function failed');
+      }
+
+      return data.response;
     } catch (error) {
-      console.error('OpenAI API call failed:', error);
+      console.error('Edge Function call failed:', error);
       // Fallback to mock implementation
       return this.callMockLLM(messages);
     }
@@ -153,7 +154,7 @@ class LLMService {
     return `This table serves as a core entity in the system, managing essential business data and relationships. It supports key business processes and maintains data integrity through proper constraints and relationships. The table is designed to scale with business growth while maintaining performance and data quality standards.`;
   }
 
-  async generateBusinessRules(context: BusinessRuleContext): Promise<GeneratedBusinessRules> {
+  async generateBusinessRules(context: BusinessRuleContext, projectId?: string, tableId?: string, columnId?: string): Promise<GeneratedBusinessRules> {
     const systemPrompt = `You are an expert database architect and business analyst. Your task is to generate comprehensive business rules and descriptions for database tables and columns.
 
 Context:
@@ -180,7 +181,8 @@ Be specific, practical, and consider real-world business scenarios.`;
       { role: 'user', content: userPrompt }
     ];
 
-    const response = await this.callOpenAI(messages);
+    const edgeFunctionContext = projectId && tableId ? { projectId, tableId, columnId } : undefined;
+    const response = await this.callOpenAI(messages, edgeFunctionContext);
 
     return {
       businessRules: response,

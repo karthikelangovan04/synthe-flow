@@ -8,10 +8,12 @@ import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { supabase } from '@/integrations/supabase/client';
 import { Plus, Edit, Trash2, Save, X, Key, Database, MessageSquare, Sparkles } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { BusinessRulesChat } from './BusinessRulesChat';
+import { ColumnAIAssistant } from './ColumnAIAssistant';
 import { GeneratedBusinessRules } from '@/lib/llm-service';
 
 interface Column {
@@ -36,6 +38,7 @@ interface TableData {
   id: string;
   name: string;
   description: string | null;
+  project_id: string;
   business_rules?: string | null;
   enhanced_description?: string | null;
   domain_context?: string | null;
@@ -65,6 +68,7 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
   const [showNewColumn, setShowNewColumn] = useState(false);
   const [tableName, setTableName] = useState('');
   const [tableDescription, setTableDescription] = useState('');
+  const [selectedColumnForAI, setSelectedColumnForAI] = useState<Column | null>(null);
   const { toast } = useToast();
   const queryClient = useQueryClient();
 
@@ -311,7 +315,7 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
           <div className="flex-1 overflow-auto">
             <div className="p-4">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="font-medium">Columns</h3>
+                <h3 className="font-medium">Columns ({table?.column_metadata?.length || 0})</h3>
                 <Button size="sm" onClick={() => setShowNewColumn(true)}>
                   <Plus className="h-4 w-4 mr-2" />
                   Add Column
@@ -404,11 +408,11 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
                 </Card>
               )}
 
-              <div className="space-y-2">
+              <div className="space-y-3 max-h-[500px] overflow-y-auto">
                 {table.column_metadata?.map((column) => (
-                  <Card key={column.id}>
-                    <CardContent className="p-3">
-                      <div className="flex items-center justify-between">
+                  <Card key={column.id} className="hover:shadow-sm transition-shadow">
+                    <CardContent className="p-4">
+                      <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center gap-2 flex-1">
                           <div className="flex items-center gap-1">
                             {column.is_primary_key && <Key className="h-3 w-3 text-yellow-500" />}
@@ -440,6 +444,14 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
                         </div>
                         
                         <div className="flex gap-1">
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            onClick={() => setSelectedColumnForAI(column)}
+                            title="AI Assistant"
+                          >
+                            <Sparkles className="h-3 w-3" />
+                          </Button>
                           <Button
                             size="sm"
                             variant="ghost"
@@ -475,7 +487,7 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
         </TabsContent>
 
         <TabsContent value="business-rules" className="flex-1 p-4">
-          <div className="space-y-4">
+          <div className="space-y-4 max-h-[600px] overflow-y-auto">
             <div>
               <h3 className="text-lg font-semibold mb-2">Business Rules</h3>
               <p className="text-sm text-muted-foreground mb-4">
@@ -503,7 +515,7 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
 
             <div className="space-y-3">
               {table.column_metadata?.map((column) => (
-                <Card key={column.id}>
+                <Card key={column.id} className="hover:shadow-sm transition-shadow">
                   <CardHeader>
                     <CardTitle className="text-sm">{column.name}</CardTitle>
                   </CardHeader>
@@ -546,15 +558,47 @@ export function TableEditor({ tableId, onTableUpdated }: TableEditorProps) {
         </TabsContent>
 
         <TabsContent value="ai-assistant" className="flex-1 p-4">
-          <BusinessRulesChat
-            projectId={table.project_id || ''}
-            tableId={table.id}
-            columnId={null}
-            tableName={table.name}
-            onBusinessRulesGenerated={handleBusinessRulesGenerated}
-          />
+          {table && (
+            <BusinessRulesChat
+              projectId={table.project_id || ''}
+              tableId={table.id}
+              columnId={null}
+              tableName={table.name}
+              onBusinessRulesGenerated={handleBusinessRulesGenerated}
+            />
+          )}
         </TabsContent>
       </Tabs>
+
+      {/* Column AI Assistant Modal */}
+      {selectedColumnForAI && table && (
+        <Dialog open={!!selectedColumnForAI} onOpenChange={() => setSelectedColumnForAI(null)}>
+          <DialogContent className="max-w-4xl max-h-[80vh] overflow-hidden">
+            <DialogHeader>
+              <DialogTitle>AI Assistant - {selectedColumnForAI.name}</DialogTitle>
+            </DialogHeader>
+            <div className="h-[70vh]">
+              <ColumnAIAssistant
+                projectId={table.project_id}
+                tableId={table.id}
+                columnId={selectedColumnForAI.id}
+                tableName={table.name}
+                columnName={selectedColumnForAI.name}
+                dataType={selectedColumnForAI.data_type}
+                isNullable={selectedColumnForAI.is_nullable}
+                isPrimaryKey={selectedColumnForAI.is_primary_key}
+                isUnique={selectedColumnForAI.is_unique}
+                existingDescription={selectedColumnForAI.enhanced_description}
+                onClose={() => setSelectedColumnForAI(null)}
+                onColumnUpdated={() => {
+                  onTableUpdated();
+                  setSelectedColumnForAI(null);
+                }}
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
     </div>
   );
 }

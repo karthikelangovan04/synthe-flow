@@ -30,6 +30,10 @@ export type Database = {
           sample_values: string[] | null
           table_id: string
           updated_at: string
+          business_rules: string | null
+          enhanced_description: string | null
+          data_generation_rules: string | null
+          validation_rules: string | null
         }
         Insert: {
           created_at?: string
@@ -46,6 +50,10 @@ export type Database = {
           sample_values?: string[] | null
           table_id: string
           updated_at?: string
+          business_rules?: string | null
+          enhanced_description?: string | null
+          data_generation_rules?: string | null
+          validation_rules?: string | null
         }
         Update: {
           created_at?: string
@@ -62,6 +70,10 @@ export type Database = {
           sample_values?: string[] | null
           table_id?: string
           updated_at?: string
+          business_rules?: string | null
+          enhanced_description?: string | null
+          data_generation_rules?: string | null
+          validation_rules?: string | null
         }
         Relationships: [
           {

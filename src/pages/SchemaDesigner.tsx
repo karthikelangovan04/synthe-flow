@@ -9,12 +9,14 @@ import { Button } from '@/components/ui/button';
 import { Plus, Upload } from 'lucide-react';
 import { ResizablePanelGroup, ResizablePanel, ResizableHandle } from '@/components/ui/resizable';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { useToast } from '@/hooks/use-toast';
 
 export default function SchemaDesigner() {
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(null);
   const [selectedTableId, setSelectedTableId] = useState<string | null>(null);
   const [showNewProject, setShowNewProject] = useState(false);
   const [showImportDialog, setShowImportDialog] = useState(false);
+  const { toast } = useToast();
 
   const { data: projects, refetch: refetchProjects } = useQuery({
     queryKey: ['projects'],
@@ -34,6 +36,8 @@ export default function SchemaDesigner() {
     queryFn: async () => {
       if (!selectedProjectId) return [];
       
+      console.log('Fetching tables for project:', selectedProjectId);
+      
       const { data, error } = await supabase
         .from('table_metadata')
         .select(`
@@ -43,7 +47,12 @@ export default function SchemaDesigner() {
         .eq('project_id', selectedProjectId)
         .order('name');
       
-      if (error) throw error;
+      if (error) {
+        console.error('Error fetching tables:', error);
+        throw error;
+      }
+      
+      console.log('Fetched tables:', data);
       return data;
     },
     enabled: !!selectedProjectId,
@@ -67,11 +76,110 @@ export default function SchemaDesigner() {
     refetchTables();
   };
 
-  const handleSchemaImported = (tables: any[]) => {
-    // Handle the imported schema - this would create tables in the database
-    console.log('Imported schema:', tables);
-    setShowImportDialog(false);
-    refetchTables();
+  const handleSchemaImported = async (tables: any[]) => {
+    if (!selectedProjectId) {
+      toast({ title: 'Error', description: 'No project selected', variant: 'destructive' });
+      return;
+    }
+    
+    try {
+      let importedCount = 0;
+      let skippedCount = 0;
+      
+      for (const table of tables) {
+        // Check if table already exists
+        const { data: existingTable } = await supabase
+          .from('table_metadata')
+          .select('id, name')
+          .eq('project_id', selectedProjectId)
+          .eq('name', table.name)
+          .single();
+        
+        let tableId: string;
+        
+        if (existingTable) {
+          // Table already exists, use existing table ID
+          tableId = existingTable.id;
+          skippedCount++;
+          console.log(`Table "${table.name}" already exists, skipping table creation`);
+        } else {
+          // Insert new table
+          const { data: tableData, error: tableError } = await supabase
+            .from('table_metadata')
+            .insert({
+              name: table.name,
+              description: table.description || '',
+              project_id: selectedProjectId,
+            })
+            .select('id')
+            .single();
+          
+          if (tableError) {
+            console.error('Error inserting table:', tableError);
+            throw new Error(`Failed to create table "${table.name}": ${tableError.message}`);
+          }
+          
+          tableId = tableData.id;
+          importedCount++;
+        }
+        
+        // Insert columns (check for existing columns first)
+        for (const [idx, column] of (table.columns || []).entries()) {
+          // Check if column already exists
+          const { data: existingColumn } = await supabase
+            .from('column_metadata')
+            .select('id')
+            .eq('table_id', tableId)
+            .eq('name', column.name)
+            .single();
+          
+          if (!existingColumn) {
+            // Insert new column
+            const { error: colError } = await supabase
+              .from('column_metadata')
+              .insert({
+                name: column.name,
+                data_type: column.dataType,
+                is_nullable: column.isNullable ?? true,
+                is_primary_key: column.isPrimaryKey ?? false,
+                is_unique: column.isUnique ?? false,
+                table_id: tableId,
+                position: idx,
+                pattern: null,
+                max_length: null,
+                default_value: null,
+                sample_values: null,
+              });
+            
+            if (colError) {
+              console.error('Error inserting column:', colError);
+              throw new Error(`Failed to create column "${column.name}" in table "${table.name}": ${colError.message}`);
+            }
+          }
+        }
+      }
+      
+      let message = `Successfully imported ${importedCount} new table(s)`;
+      if (skippedCount > 0) {
+        message += `, skipped ${skippedCount} existing table(s)`;
+      }
+      
+      toast({ title: 'Success', description: message });
+      setShowImportDialog(false);
+      
+      // Wait a moment then refetch to ensure data is available
+      setTimeout(() => {
+        console.log('Refetching tables after import...');
+        refetchTables();
+      }, 500);
+    } catch (error: any) {
+      console.error('Import error:', error);
+      toast({ 
+        title: 'Error', 
+        description: error.message || 'Failed to import schema', 
+        variant: 'destructive' 
+      });
+    }
   };
 
   return (
