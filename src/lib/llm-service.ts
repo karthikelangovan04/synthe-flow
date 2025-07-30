@@ -32,6 +32,7 @@ class LLMService {
       }
 
       // If not in env, try to get from Supabase secrets table
+      // Note: This will fail due to RLS policies in production, but that's expected
       const { data, error } = await supabase
         .from('api_secrets')
         .select('key_value')
@@ -39,7 +40,7 @@ class LLMService {
         .single();
 
       if (error) {
-        console.warn('Could not fetch API key from Supabase:', error);
+        console.warn('Could not fetch API key from Supabase (expected due to RLS):', error.message);
         return null;
       }
 
@@ -51,14 +52,14 @@ class LLMService {
   }
 
   private async callOpenAI(messages: LLMMessage[]): Promise<string> {
-    const apiKey = await this.getOpenAIKey();
-    
-    if (!apiKey) {
-      // Fallback to mock implementation if no API key
-      return this.callMockLLM(messages);
-    }
-
     try {
+      const apiKey = await this.getOpenAIKey();
+      
+      if (!apiKey) {
+        // Fallback to mock implementation if no API key
+        return this.callMockLLM(messages);
+      }
+
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -225,17 +226,25 @@ Be specific, practical, and consider real-world business scenarios.`;
     conversationType: string,
     messages: LLMMessage[]
   ): Promise<void> {
-    const { error } = await supabase
-      .from('llm_conversations')
-      .insert({
-        project_id: projectId,
-        table_id: tableId,
-        column_id: columnId,
-        conversation_type: conversationType,
-        messages: messages
-      });
+    try {
+      const { error } = await supabase
+        .from('llm_conversations')
+        .insert({
+          project_id: projectId,
+          table_id: tableId,
+          column_id: columnId,
+          conversation_type: conversationType,
+          messages: messages as any // Type assertion to handle JSON serialization
+        });
 
-    if (error) throw error;
+      if (error) {
+        console.warn('Failed to save conversation:', error);
+        // Don't throw error to prevent app crashes
+      }
+    } catch (error) {
+      console.warn('Error saving conversation:', error);
+      // Don't throw error to prevent app crashes
+    }
   }
 
   async getConversationHistory(
@@ -243,18 +252,26 @@ Be specific, practical, and consider real-world business scenarios.`;
     tableId?: string,
     columnId?: string
   ): Promise<LLMMessage[]> {
-    const { data, error } = await supabase
-      .from('llm_conversations')
-      .select('messages')
-      .eq('project_id', projectId)
-      .eq('table_id', tableId || null)
-      .eq('column_id', columnId || null)
-      .order('created_at', { ascending: false })
-      .limit(1)
-      .single();
+    try {
+      const { data, error } = await supabase
+        .from('llm_conversations')
+        .select('messages')
+        .eq('project_id', projectId)
+        .eq('table_id', tableId || null)
+        .eq('column_id', columnId || null)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .single();
 
-    if (error) return [];
-    return data?.messages || [];
+      if (error) {
+        console.warn('Failed to get conversation history:', error);
+        return [];
+      }
+      return (data?.messages as unknown as LLMMessage[]) || [];
+    } catch (error) {
+      console.warn('Error getting conversation history:', error);
+      return [];
+    }
   }
 }
 

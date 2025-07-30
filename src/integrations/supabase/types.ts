@@ -230,6 +230,85 @@ export type Database = {
           },
         ]
       }
+      api_secrets: {
+        Row: {
+          id: string
+          key_name: string
+          key_value: string
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          key_name: string
+          key_value: string
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          key_name?: string
+          key_value?: string
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      llm_conversations: {
+        Row: {
+          id: string
+          project_id: string
+          table_id: string | null
+          column_id: string | null
+          conversation_type: string
+          messages: Json
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          project_id: string
+          table_id?: string | null
+          column_id?: string | null
+          conversation_type: string
+          messages: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          project_id?: string
+          table_id?: string | null
+          column_id?: string | null
+          conversation_type?: string
+          messages?: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "llm_conversations_project_id_fkey"
+            columns: ["project_id"]
+            isOneToOne: false
+            referencedRelation: "projects"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "llm_conversations_table_id_fkey"
+            columns: ["table_id"]
+            isOneToOne: false
+            referencedRelation: "table_metadata"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "llm_conversations_column_id_fkey"
+            columns: ["column_id"]
+            isOneToOne: false
+            referencedRelation: "column_metadata"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
