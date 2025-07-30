@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { supabase } from '@/integrations/supabase/client';
 import { Plus, FolderOpen, Calendar } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useAuth } from '@/hooks/useAuth';
 
 interface Project {
   id: string;
@@ -36,6 +37,7 @@ export function ProjectList({
   const [newProjectDescription, setNewProjectDescription] = useState('');
   const [isCreating, setIsCreating] = useState(false);
   const { toast } = useToast();
+  const { user } = useAuth();
 
   const handleCreateProject = async () => {
     if (!newProjectName.trim()) {
@@ -54,6 +56,7 @@ export function ProjectList({
         .insert({
           name: newProjectName.trim(),
           description: newProjectDescription.trim() || null,
+          user_id: user?.id,
         });
 
       if (error) throw error;
