@@ -82,14 +82,14 @@ export function SyntheticDataPanel({
       const schemaData = {
         tables: tables.map(table => ({
           name: table.name,
-          description: table.description,
+          description: table.description || '',
           columns: table.column_metadata.map(col => ({
             name: col.name,
             data_type: col.data_type,
-            is_nullable: col.is_nullable,
-            is_primary_key: col.is_primary_key,
-            is_unique: col.is_unique,
-            enhanced_description: col.enhanced_description,
+            is_nullable: col.is_nullable ?? true,
+            is_primary_key: col.is_primary_key ?? false,
+            is_unique: col.is_unique ?? false,
+            enhanced_description: col.enhanced_description || '',
           })),
         })),
         relationships: relationships.map(rel => ({
@@ -106,8 +106,11 @@ export function SyntheticDataPanel({
         },
       };
 
+      // Debug: Log the data being sent
+      console.log('Sending schema data to backend:', schemaData);
+      
       // Call SDV service
-      const response = await fetch('http://localhost:8001/api/sdv/generate', {
+      const response = await fetch('http://localhost:8002/api/sdv/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

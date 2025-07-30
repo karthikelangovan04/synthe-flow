@@ -37,9 +37,17 @@ interface SchemaColumn {
   validationRules?: string;
 }
 
+interface SchemaRelationship {
+  source_table: string;
+  source_column: string;
+  target_table: string;
+  target_column: string;
+  relationship_type: string;
+}
+
 interface SchemaImportProps {
   projectId: string;
-  onSchemaImported: (tables: SchemaTable[]) => void;
+  onSchemaImported: (tables: SchemaTable[], relationships: SchemaRelationship[]) => void;
 }
 
 export function SchemaImport({ projectId, onSchemaImported }: SchemaImportProps) {
@@ -52,13 +60,16 @@ export function SchemaImport({ projectId, onSchemaImported }: SchemaImportProps)
   const [selectedTable, setSelectedTable] = useState<SchemaTable | null>(null);
   const { toast } = useToast();
 
-  const parseJsonSchema = (jsonString: string): SchemaTable[] => {
+  const parseJsonSchema = (jsonString: string): { tables: SchemaTable[], relationships: SchemaRelationship[] } => {
     try {
       const data = JSON.parse(jsonString);
       
+      let tables: SchemaTable[] = [];
+      let relationships: SchemaRelationship[] = [];
+      
       // Handle different JSON formats
       if (Array.isArray(data)) {
-        return data.map(table => ({
+        tables = data.map(table => ({
           name: table.name || table.table_name || '',
           description: table.description || '',
           columns: (table.columns || []).map((col: any) => ({
@@ -71,7 +82,7 @@ export function SchemaImport({ projectId, onSchemaImported }: SchemaImportProps)
           }))
         }));
       } else if (data.tables) {
-        return data.tables.map((table: any) => ({
+        tables = data.tables.map((table: any) => ({
           name: table.name || '',
           description: table.description || '',
           columns: (table.columns || []).map((col: any) => ({
@@ -83,9 +94,20 @@ export function SchemaImport({ projectId, onSchemaImported }: SchemaImportProps)
             description: col.description || ''
           }))
         }));
+        
+        // Parse relationships if they exist
+        if (data.relationships && Array.isArray(data.relationships)) {
+          relationships = data.relationships.map((rel: any) => ({
+            source_table: rel.source_table || '',
+            source_column: rel.source_column || '',
+            target_table: rel.target_table || '',
+            target_column: rel.target_column || '',
+            relationship_type: rel.relationship_type || 'one-to-many'
+          }));
+        }
       }
       
-      throw new Error('Invalid JSON format');
+      return { tables, relationships };
     } catch (error) {
       throw new Error('Failed to parse JSON schema');
     }
@@ -143,15 +165,19 @@ export function SchemaImport({ projectId, onSchemaImported }: SchemaImportProps)
     
     try {
       let tables: SchemaTable[] = [];
+      let relationships: SchemaRelationship[] = [];
       
       switch (importMethod) {
         case 'json':
           if (!jsonInput.trim()) throw new Error('Please enter JSON schema');
-          tables = parseJsonSchema(jsonInput);
+          const jsonResult = parseJsonSchema(jsonInput);
+          tables = jsonResult.tables;
+          relationships = jsonResult.relationships;
           break;
         case 'csv':
           if (!csvInput.trim()) throw new Error('Please enter CSV schema');
           tables = parseCsvSchema(csvInput);
+          relationships = []; // CSV doesn't support relationships
           break;
         default:
           throw new Error('Invalid import method');
@@ -162,9 +188,10 @@ export function SchemaImport({ projectId, onSchemaImported }: SchemaImportProps)
       setParsedTables(tables);
       setSelectedTable(tables[0]);
       
+      const relationshipText = relationships.length > 0 ? ` and ${relationships.length} relationship(s)` : '';
       toast({
         title: "Success",
-        description: `Successfully parsed ${tables.length} table(s)`
+        description: `Successfully parsed ${tables.length} table(s)${relationshipText}`
       });
       
     } catch (error) {
@@ -229,7 +256,18 @@ export function SchemaImport({ projectId, onSchemaImported }: SchemaImportProps)
   const handleFinalImport = () => {
     if (parsedTables.length === 0) return;
     
-    onSchemaImported(parsedTables);
+    // Get relationships from the parsed JSON if available
+    let relationships: SchemaRelationship[] = [];
+    try {
+      if (jsonInput.trim()) {
+        const jsonResult = parseJsonSchema(jsonInput);
+        relationships = jsonResult.relationships;
+      }
+    } catch (error) {
+      console.warn('Could not parse relationships from JSON:', error);
+    }
+    
+    onSchemaImported(parsedTables, relationships);
     toast({
       title: "Success",
       description: "Schema imported successfully!"

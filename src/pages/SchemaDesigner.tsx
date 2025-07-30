@@ -68,6 +68,24 @@ export default function SchemaDesigner() {
     queryFn: async () => {
       if (!selectedProjectId) return [];
       
+      // First get all tables for this project
+      const { data: projectTables, error: tablesError } = await supabase
+        .from('table_metadata')
+        .select('id')
+        .eq('project_id', selectedProjectId);
+      
+      if (tablesError) {
+        console.error('Error fetching project tables:', tablesError);
+        throw tablesError;
+      }
+      
+      if (!projectTables || projectTables.length === 0) {
+        return [];
+      }
+      
+      const tableIds = projectTables.map(t => t.id);
+      
+      // Then get relationships for these tables
       const { data, error } = await supabase
         .from('relationships')
         .select(`
@@ -77,14 +95,32 @@ export default function SchemaDesigner() {
           target_table:table_metadata!relationships_target_table_id_fkey(name),
           target_column:column_metadata!relationships_target_column_id_fkey(name)
         `)
-        .eq('source_table_id', selectedProjectId);
+        .in('source_table_id', tableIds)
+        .in('target_table_id', tableIds);
       
       if (error) {
         console.error('Error fetching relationships:', error);
         throw error;
       }
       
-      return data || [];
+      console.log('Fetched relationships:', data);
+      
+      // Map the relationships to match the expected interface
+      const mappedRelationships = (data || []).map(rel => ({
+        id: rel.id,
+        source_table_id: rel.source_table_id,
+        source_column_id: rel.source_column_id,
+        target_table_id: rel.target_table_id,
+        target_column_id: rel.target_column_id,
+        relationship_type: rel.relationship_type,
+        source_table_name: rel.source_table?.name || '',
+        source_column_name: rel.source_column?.name || '',
+        target_table_name: rel.target_table?.name || '',
+        target_column_name: rel.target_column?.name || '',
+      }));
+      
+      console.log('Mapped relationships:', mappedRelationships);
+      return mappedRelationships;
     },
     enabled: !!selectedProjectId,
   });
@@ -107,7 +143,7 @@ export default function SchemaDesigner() {
     refetchTables();
   };
 
-  const handleSchemaImported = async (tables: any[]) => {
+  const handleSchemaImported = async (tables: any[], relationships: any[] = []) => {
     if (!selectedProjectId) {
       toast({ title: 'Error', description: 'No project selected', variant: 'destructive' });
       return;
@@ -190,9 +226,95 @@ export default function SchemaDesigner() {
         }
       }
       
+      // Handle relationships import
+      let relationshipCount = 0;
+      if (relationships.length > 0) {
+        console.log('Importing relationships:', relationships);
+        
+        for (const relationship of relationships) {
+          try {
+            // Get table IDs
+            const { data: sourceTable } = await supabase
+              .from('table_metadata')
+              .select('id')
+              .eq('project_id', selectedProjectId)
+              .eq('name', relationship.source_table)
+              .single();
+            
+            const { data: targetTable } = await supabase
+              .from('table_metadata')
+              .select('id')
+              .eq('project_id', selectedProjectId)
+              .eq('name', relationship.target_table)
+              .single();
+            
+            if (!sourceTable || !targetTable) {
+              console.warn(`Skipping relationship: tables not found for ${relationship.source_table} -> ${relationship.target_table}`);
+              continue;
+            }
+            
+            // Get column IDs
+            const { data: sourceColumn } = await supabase
+              .from('column_metadata')
+              .select('id')
+              .eq('table_id', sourceTable.id)
+              .eq('name', relationship.source_column)
+              .single();
+            
+            const { data: targetColumn } = await supabase
+              .from('column_metadata')
+              .select('id')
+              .eq('table_id', targetTable.id)
+              .eq('name', relationship.target_column)
+              .single();
+            
+            if (!sourceColumn || !targetColumn) {
+              console.warn(`Skipping relationship: columns not found for ${relationship.source_table}.${relationship.source_column} -> ${relationship.target_table}.${relationship.target_column}`);
+              continue;
+            }
+            
+            // Check if relationship already exists
+            const { data: existingRelationship } = await supabase
+              .from('relationships')
+              .select('id')
+              .eq('source_table_id', sourceTable.id)
+              .eq('source_column_id', sourceColumn.id)
+              .eq('target_table_id', targetTable.id)
+              .eq('target_column_id', targetColumn.id)
+              .single();
+            
+            if (!existingRelationship) {
+              // Insert new relationship
+              const { error: relError } = await supabase
+                .from('relationships')
+                .insert({
+                  source_table_id: sourceTable.id,
+                  source_column_id: sourceColumn.id,
+                  target_table_id: targetTable.id,
+                  target_column_id: targetColumn.id,
+                  relationship_type: relationship.relationship_type || 'one-to-many'
+                });
+              
+              if (relError) {
+                console.error('Error inserting relationship:', relError);
+                throw new Error(`Failed to create relationship: ${relError.message}`);
+              }
+              
+              relationshipCount++;
+            }
+          } catch (error) {
+            console.error('Error processing relationship:', error);
+            // Continue with other relationships
+          }
+        }
+      }
+      
       let message = `Successfully imported ${importedCount} new table(s)`;
       if (skippedCount > 0) {
         message += `, skipped ${skippedCount} existing table(s)`;
+      }
+      if (relationshipCount > 0) {
+        message += `, imported ${relationshipCount} relationship(s)`;
       }
       
       toast({ title: 'Success', description: message });
@@ -200,8 +322,9 @@ export default function SchemaDesigner() {
       
       // Wait a moment then refetch to ensure data is available
       setTimeout(() => {
-        console.log('Refetching tables after import...');
+        console.log('Refetching tables and relationships after import...');
         refetchTables();
+        refetchRelationships();
       }, 500);
     } catch (error: any) {
       console.error('Import error:', error);
