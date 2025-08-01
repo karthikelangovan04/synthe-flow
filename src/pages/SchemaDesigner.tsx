@@ -63,9 +63,11 @@ export default function SchemaDesigner() {
     enabled: !!selectedProjectId,
   });
 
-  const { data: relationships, refetch: refetchRelationships } = useQuery({
+  const { data: relationships, refetch: refetchRelationships, isLoading: relationshipsLoading, error: relationshipsError } = useQuery({
     queryKey: ['relationships', selectedProjectId],
     queryFn: async () => {
+      console.log('=== Relationships Query Function Called ===');
+      console.log('Selected Project ID:', selectedProjectId);
       if (!selectedProjectId) return [];
       
       // First get all tables for this project
@@ -103,6 +105,10 @@ export default function SchemaDesigner() {
         throw error;
       }
       
+      console.log('=== DEBUG: Relationships Query ===');
+      console.log('Project ID:', selectedProjectId);
+      console.log('Table IDs:', tableIds);
+      console.log('Raw relationships data:', data);
       console.log('Fetched relationships:', data);
       
       // Map the relationships to match the expected interface
@@ -120,6 +126,7 @@ export default function SchemaDesigner() {
       }));
       
       console.log('Mapped relationships:', mappedRelationships);
+      console.log('Mapped relationships count:', mappedRelationships.length);
       return mappedRelationships;
     },
     enabled: !!selectedProjectId,
@@ -148,6 +155,9 @@ export default function SchemaDesigner() {
       toast({ title: 'Error', description: 'No project selected', variant: 'destructive' });
       return;
     }
+    
+    console.log('Importing schema with tables:', tables);
+    console.log('Importing schema with relationships:', relationships);
     
     try {
       let importedCount = 0;
@@ -230,6 +240,20 @@ export default function SchemaDesigner() {
       let relationshipCount = 0;
       if (relationships.length > 0) {
         console.log('Importing relationships:', relationships);
+        
+        // Clear existing relationships first
+        const { error: deleteError } = await supabase
+          .from('relationships')
+          .delete()
+          .in('source_table_id', (await supabase
+            .from('table_metadata')
+            .select('id')
+            .eq('project_id', selectedProjectId)
+          ).data?.map(t => t.id) || []);
+        
+        if (deleteError) {
+          console.error('Error clearing existing relationships:', deleteError);
+        }
         
         for (const relationship of relationships) {
           try {
@@ -422,11 +446,21 @@ export default function SchemaDesigner() {
             </TabsContent>
             
             <TabsContent value="synthetic" className="h-full">
-              <SyntheticDataPanel
-                tables={tables || []}
-                relationships={relationships || []}
-                projectId={selectedProjectId}
-              />
+              {(() => {
+                console.log('=== DEBUG: SyntheticDataPanel Props ===');
+                console.log('Tables being passed:', tables);
+                console.log('Relationships being passed:', relationships);
+                console.log('Project ID being passed:', selectedProjectId);
+                console.log('Relationships loading:', relationshipsLoading);
+                console.log('Relationships error:', relationshipsError);
+                return (
+                  <SyntheticDataPanel
+                    tables={tables || []}
+                    relationships={relationships || []}
+                    projectId={selectedProjectId}
+                  />
+                );
+              })()}
             </TabsContent>
           </Tabs>
         </ResizablePanel>
