@@ -1,0 +1,21 @@
+skill_id,name,category,level
+1,Python,Programming,Technical
+2,JavaScript,Programming,Technical
+3,Java,Programming,Technical
+4,SQL,Database,Technical
+5,AWS,Cloud,Technical
+6,Docker,DevOps,Technical
+7,Kubernetes,DevOps,Technical
+8,React,Frontend,Technical
+9,Node.js,Backend,Technical
+10,Machine Learning,AI/ML,Technical
+11,Project Management,Management,Soft
+12,Leadership,Management,Soft
+13,Communication,Soft Skills,Soft
+14,Problem Solving,Analytical,Soft
+15,Data Analysis,Analytical,Technical
+16,Sales,Business,Soft
+17,Marketing,Business,Soft
+18,Customer Service,Business,Soft
+19,Financial Analysis,Finance,Technical
+20,Legal Compliance,Legal,Technical

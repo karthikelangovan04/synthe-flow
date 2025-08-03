@@ -1,0 +1,419 @@
+{
+  "table_name": "positions",
+  "record_count": 50,
+  "columns": [
+    "position_id",
+    "title",
+    "department_id",
+    "level",
+    "min_salary",
+    "max_salary"
+  ],
+  "data": [
+    {
+      "position_id": 7070,
+      "title": "sample_0",
+      "department_id": 4781,
+      "level": "sample_0",
+      "min_salary": 7367,
+      "max_salary": 3020
+    },
+    {
+      "position_id": 4202,
+      "title": "sample_1",
+      "department_id": 9052,
+      "level": "sample_1",
+      "min_salary": 8677,
+      "max_salary": 1983
+    },
+    {
+      "position_id": 717,
+      "title": "sample_2",
+      "department_id": 9703,
+      "level": "sample_2",
+      "min_salary": 7798,
+      "max_salary": 9010
+    },
+    {
+      "position_id": 3447,
+      "title": "sample_3",
+      "department_id": 6049,
+      "level": "sample_3",
+      "min_salary": 5135,
+      "max_salary": 566
+    },
+    {
+      "position_id": 137,
+      "title": "sample_4",
+      "department_id": 3544,
+      "level": "sample_4",
+      "min_salary": 4019,
+      "max_salary": 9560
+    },
+    {
+      "position_id": 8785,
+      "title": "sample_5",
+      "department_id": 5601,
+      "level": "sample_5",
+      "min_salary": 4469,
+      "max_salary": 1521
+    },
+    {
+      "position_id": 5000,
+      "title": "sample_6",
+      "department_id": 9575,
+      "level": "sample_6",
+      "min_salary": 1830,
+      "max_salary": 4407
+    },
+    {
+      "position_id": 1248,
+      "title": "sample_7",
+      "department_id": 9614,
+      "level": "sample_7",
+      "min_salary": 9261,
+      "max_salary": 9597
+    },
+    {
+      "position_id": 8884,
+      "title": "sample_8",
+      "department_id": 7398,
+      "level": "sample_8",
+      "min_salary": 9483,
+      "max_salary": 5675
+    },
+    {
+      "position_id": 4526,
+      "title": "sample_9",
+      "department_id": 4580,
+      "level": "sample_9",
+      "min_salary": 2908,
+      "max_salary": 3137
+    },
+    {
+      "position_id": 5667,
+      "title": "sample_10",
+      "department_id": 74,
+      "level": "sample_10",
+      "min_salary": 3673,
+      "max_salary": 4190
+    },
+    {
+      "position_id": 3327,
+      "title": "sample_11",
+      "department_id": 7199,
+      "level": "sample_11",
+      "min_salary": 3559,
+      "max_salary": 9735
+    },
+    {
+      "position_id": 3390,
+      "title": "sample_12",
+      "department_id": 9490,
+      "level": "sample_12",
+      "min_salary": 1850,
+      "max_salary": 5522
+    },
+    {
+      "position_id": 6576,
+      "title": "sample_13",
+      "department_id": 1952,
+      "level": "sample_13",
+      "min_salary": 6287,
+      "max_salary": 8283
+    },
+    {
+      "position_id": 6746,
+      "title": "sample_14",
+      "department_id": 8118,
+      "level": "sample_14",
+      "min_salary": 5942,
+      "max_salary": 7980
+    },
+    {
+      "position_id": 7555,
+      "title": "sample_15",
+      "department_id": 6463,
+      "level": "sample_15",
+      "min_salary": 5769,
+      "max_salary": 782
+    },
+    {
+      "position_id": 5786,
+      "title": "sample_16",
+      "department_id": 9671,
+      "level": "sample_16",
+      "min_salary": 4753,
+      "max_salary": 3652
+    },
+    {
+      "position_id": 1068,
+      "title": "sample_17",
+      "department_id": 2008,
+      "level": "sample_17",
+      "min_salary": 8002,
+      "max_salary": 6038
+    },
+    {
+      "position_id": 8192,
+      "title": "sample_18",
+      "department_id": 2058,
+      "level": "sample_18",
+      "min_salary": 1743,
+      "max_salary": 9211
+    },
+    {
+      "position_id": 5910,
+      "title": "sample_19",
+      "department_id": 6916,
+      "level": "sample_19",
+      "min_salary": 3342,
+      "max_salary": 9262
+    },
+    {
+      "position_id": 6504,
+      "title": "sample_20",
+      "department_id": 3574,
+      "level": "sample_20",
+      "min_salary": 5367,
+      "max_salary": 1589
+    },
+    {
+      "position_id": 1771,
+      "title": "sample_21",
+      "department_id": 8495,
+      "level": "sample_21",
+      "min_salary": 4084,
+      "max_salary": 4925
+    },
+    {
+      "position_id": 2093,
+      "title": "sample_22",
+      "department_id": 6967,
+      "level": "sample_22",
+      "min_salary": 3241,
+      "max_salary": 9553
+    },
+    {
+      "position_id": 9518,
+      "title": "sample_23",
+      "department_id": 5852,
+      "level": "sample_23",
+      "min_salary": 819,
+      "max_salary": 8437
+    },
+    {
+      "position_id": 4790,
+      "title": "sample_24",
+      "department_id": 6924,
+      "level": "sample_24",
+      "min_salary": 6526,
+      "max_salary": 6547
+    },
+    {
+      "position_id": 4052,
+      "title": "sample_25",
+      "department_id": 4839,
+      "level": "sample_25",
+      "min_salary": 2151,
+      "max_salary": 4908
+    },
+    {
+      "position_id": 5567,
+      "title": "sample_26",
+      "department_id": 2062,
+      "level": "sample_26",
+      "min_salary": 279,
+      "max_salary": 5469
+    },
+    {
+      "position_id": 2549,
+      "title": "sample_27",
+      "department_id": 2824,
+      "level": "sample_27",
+      "min_salary": 1412,
+      "max_salary": 1124
+    },
+    {
+      "position_id": 5961,
+      "title": "sample_28",
+      "department_id": 8179,
+      "level": "sample_28",
+      "min_salary": 8149,
+      "max_salary": 7920
+    },
+    {
+      "position_id": 3902,
+      "title": "sample_29",
+      "department_id": 8015,
+      "level": "sample_29",
+      "min_salary": 1001,
+      "max_salary": 8654
+    },
+    {
+      "position_id": 9957,
+      "title": "sample_30",
+      "department_id": 7333,
+      "level": "sample_30",
+      "min_salary": 7746,
+      "max_salary": 929
+    },
+    {
+      "position_id": 6373,
+      "title": "sample_31",
+      "department_id": 9389,
+      "level": "sample_31",
+      "min_salary": 8359,
+      "max_salary": 1684
+    },
+    {
+      "position_id": 2434,
+      "title": "sample_32",
+      "department_id": 3399,
+      "level": "sample_32",
+      "min_salary": 8844,
+      "max_salary": 9361
+    },
+    {
+      "position_id": 7673,
+      "title": "sample_33",
+      "department_id": 3758,
+      "level": "sample_33",
+      "min_salary": 5359,
+      "max_salary": 7235
+    },
+    {
+      "position_id": 6311,
+      "title": "sample_34",
+      "department_id": 3155,
+      "level": "sample_34",
+      "min_salary": 7911,
+      "max_salary": 3571
+    },
+    {
+      "position_id": 8034,
+      "title": "sample_35",
+      "department_id": 5607,
+      "level": "sample_35",
+      "min_salary": 8397,
+      "max_salary": 9526
+    },
+    {
+      "position_id": 7578,
+      "title": "sample_36",
+      "department_id": 4383,
+      "level": "sample_36",
+      "min_salary": 5076,
+      "max_salary": 4134
+    },
+    {
+      "position_id": 1560,
+      "title": "sample_37",
+      "department_id": 3864,
+      "level": "sample_37",
+      "min_salary": 9035,
+      "max_salary": 482
+    },
+    {
+      "position_id": 8406,
+      "title": "sample_38",
+      "department_id": 6837,
+      "level": "sample_38",
+      "min_salary": 4634,
+      "max_salary": 3747
+    },
+    {
+      "position_id": 5092,
+      "title": "sample_39",
+      "department_id": 3618,
+      "level": "sample_39",
+      "min_salary": 4982,
+      "max_salary": 6895
+    },
+    {
+      "position_id": 2013,
+      "title": "sample_40",
+      "department_id": 8501,
+      "level": "sample_40",
+      "min_salary": 1163,
+      "max_salary": 7012
+    },
+    {
+      "position_id": 553,
+      "title": "sample_41",
+      "department_id": 6898,
+      "level": "sample_41",
+      "min_salary": 89,
+      "max_salary": 6820
+    },
+    {
+      "position_id": 8845,
+      "title": "sample_42",
+      "department_id": 4627,
+      "level": "sample_42",
+      "min_salary": 907,
+      "max_salary": 7529
+    },
+    {
+      "position_id": 2454,
+      "title": "sample_43",
+      "department_id": 586,
+      "level": "sample_43",
+      "min_salary": 1338,
+      "max_salary": 2413
+    },
+    {
+      "position_id": 5417,
+      "title": "sample_44",
+      "department_id": 3089,
+      "level": "sample_44",
+      "min_salary": 9488,
+      "max_salary": 7278
+    },
+    {
+      "position_id": 3954,
+      "title": "sample_45",
+      "department_id": 4401,
+      "level": "sample_45",
+      "min_salary": 4254,
+      "max_salary": 3145
+    },
+    {
+      "position_id": 823,
+      "title": "sample_46",
+      "department_id": 7447,
+      "level": "sample_46",
+      "min_salary": 1391,
+      "max_salary": 428
+    },
+    {
+      "position_id": 773,
+      "title": "sample_47",
+      "department_id": 94,
+      "level": "sample_47",
+      "min_salary": 9671,
+      "max_salary": 5128
+    },
+    {
+      "position_id": 5010,
+      "title": "sample_48",
+      "department_id": 1852,
+      "level": "sample_48",
+      "min_salary": 1685,
+      "max_salary": 2754
+    },
+    {
+      "position_id": 4241,
+      "title": "sample_49",
+      "department_id": 7384,
+      "level": "sample_49",
+      "min_salary": 4619,
+      "max_salary": 3026
+    }
+  ],
+  "metadata": {
+    "exported_at": "2025-08-03T11:56:13.976953",
+    "session_id": "88ea29bd-92c7-497e-8b2e-cf51c8d52404",
+    "format": "json"
+  }
+}

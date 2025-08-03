@@ -1,0 +1,2720 @@
+{
+  "table_name": "project_assignments",
+  "record_count": 300,
+  "columns": [
+    "assignment_id",
+    "project_id",
+    "employee_id",
+    "role",
+    "allocation_percentage",
+    "start_date",
+    "end_date"
+  ],
+  "data": [
+    {
+      "assignment_id": 6030,
+      "project_id": 1935,
+      "employee_id": 7114,
+      "role": "sample_0",
+      "allocation_percentage": 2041,
+      "start_date": "value_0",
+      "end_date": "value_0"
+    },
+    {
+      "assignment_id": 990,
+      "project_id": 8399,
+      "employee_id": 2324,
+      "role": "sample_1",
+      "allocation_percentage": 9926,
+      "start_date": "value_1",
+      "end_date": "value_1"
+    },
+    {
+      "assignment_id": 4261,
+      "project_id": 1387,
+      "employee_id": 247,
+      "role": "sample_2",
+      "allocation_percentage": 4582,
+      "start_date": "value_2",
+      "end_date": "value_2"
+    },
+    {
+      "assignment_id": 3497,
+      "project_id": 1064,
+      "employee_id": 8328,
+      "role": "sample_3",
+      "allocation_percentage": 8103,
+      "start_date": "value_3",
+      "end_date": "value_3"
+    },
+    {
+      "assignment_id": 655,
+      "project_id": 7949,
+      "employee_id": 5108,
+      "role": "sample_4",
+      "allocation_percentage": 4941,
+      "start_date": "value_4",
+      "end_date": "value_4"
+    },
+    {
+      "assignment_id": 6648,
+      "project_id": 7650,
+      "employee_id": 1897,
+      "role": "sample_5",
+      "allocation_percentage": 6678,
+      "start_date": "value_5",
+      "end_date": "value_5"
+    },
+    {
+      "assignment_id": 9780,
+      "project_id": 8630,
+      "employee_id": 8176,
+      "role": "sample_6",
+      "allocation_percentage": 4558,
+      "start_date": "value_6",
+      "end_date": "value_6"
+    },
+    {
+      "assignment_id": 1397,
+      "project_id": 4039,
+      "employee_id": 6637,
+      "role": "sample_7",
+      "allocation_percentage": 4454,
+      "start_date": "value_7",
+      "end_date": "value_7"
+    },
+    {
+      "assignment_id": 8363,
+      "project_id": 7641,
+      "employee_id": 2221,
+      "role": "sample_8",
+      "allocation_percentage": 1193,
+      "start_date": "value_8",
+      "end_date": "value_8"
+    },
+    {
+      "assignment_id": 6284,
+      "project_id": 9686,
+      "employee_id": 8367,
+      "role": "sample_9",
+      "allocation_percentage": 1979,
+      "start_date": "value_9",
+      "end_date": "value_9"
+    },
+    {
+      "assignment_id": 5118,
+      "project_id": 9903,
+      "employee_id": 4937,
+      "role": "sample_10",
+      "allocation_percentage": 9172,
+      "start_date": "value_10",
+      "end_date": "value_10"
+    },
+    {
+      "assignment_id": 3101,
+      "project_id": 6601,
+      "employee_id": 5455,
+      "role": "sample_11",
+      "allocation_percentage": 3826,
+      "start_date": "value_11",
+      "end_date": "value_11"
+    },
+    {
+      "assignment_id": 3362,
+      "project_id": 8144,
+      "employee_id": 3453,
+      "role": "sample_12",
+      "allocation_percentage": 2020,
+      "start_date": "value_12",
+      "end_date": "value_12"
+    },
+    {
+      "assignment_id": 2364,
+      "project_id": 6776,
+      "employee_id": 2728,
+      "role": "sample_13",
+      "allocation_percentage": 1449,
+      "start_date": "value_13",
+      "end_date": "value_13"
+    },
+    {
+      "assignment_id": 3478,
+      "project_id": 2293,
+      "employee_id": 7255,
+      "role": "sample_14",
+      "allocation_percentage": 3224,
+      "start_date": "value_14",
+      "end_date": "value_14"
+    },
+    {
+      "assignment_id": 2063,
+      "project_id": 8258,
+      "employee_id": 2598,
+      "role": "sample_15",
+      "allocation_percentage": 7740,
+      "start_date": "value_15",
+      "end_date": "value_15"
+    },
+    {
+      "assignment_id": 8182,
+      "project_id": 7854,
+      "employee_id": 6406,
+      "role": "sample_16",
+      "allocation_percentage": 1493,
+      "start_date": "value_16",
+      "end_date": "value_16"
+    },
+    {
+      "assignment_id": 2357,
+      "project_id": 4318,
+      "employee_id": 6641,
+      "role": "sample_17",
+      "allocation_percentage": 5738,
+      "start_date": "value_17",
+      "end_date": "value_17"
+    },
+    {
+      "assignment_id": 1658,
+      "project_id": 8266,
+      "employee_id": 5944,
+      "role": "sample_18",
+      "allocation_percentage": 5595,
+      "start_date": "value_18",
+      "end_date": "value_18"
+    },
+    {
+      "assignment_id": 9319,
+      "project_id": 8159,
+      "employee_id": 1825,
+      "role": "sample_19",
+      "allocation_percentage": 1904,
+      "start_date": "value_19",
+      "end_date": "value_19"
+    },
+    {
+      "assignment_id": 1159,
+      "project_id": 4996,
+      "employee_id": 5889,
+      "role": "sample_20",
+      "allocation_percentage": 5279,
+      "start_date": "value_20",
+      "end_date": "value_20"
+    },
+    {
+      "assignment_id": 4148,
+      "project_id": 3223,
+      "employee_id": 2907,
+      "role": "sample_21",
+      "allocation_percentage": 3061,
+      "start_date": "value_21",
+      "end_date": "value_21"
+    },
+    {
+      "assignment_id": 5022,
+      "project_id": 3973,
+      "employee_id": 2862,
+      "role": "sample_22",
+      "allocation_percentage": 2508,
+      "start_date": "value_22",
+      "end_date": "value_22"
+    },
+    {
+      "assignment_id": 3932,
+      "project_id": 1304,
+      "employee_id": 500,
+      "role": "sample_23",
+      "allocation_percentage": 6483,
+      "start_date": "value_23",
+      "end_date": "value_23"
+    },
+    {
+      "assignment_id": 8015,
+      "project_id": 7170,
+      "employee_id": 2825,
+      "role": "sample_24",
+      "allocation_percentage": 4570,
+      "start_date": "value_24",
+      "end_date": "value_24"
+    },
+    {
+      "assignment_id": 4410,
+      "project_id": 5925,
+      "employee_id": 6306,
+      "role": "sample_25",
+      "allocation_percentage": 9366,
+      "start_date": "value_25",
+      "end_date": "value_25"
+    },
+    {
+      "assignment_id": 5907,
+      "project_id": 3099,
+      "employee_id": 8253,
+      "role": "sample_26",
+      "allocation_percentage": 4391,
+      "start_date": "value_26",
+      "end_date": "value_26"
+    },
+    {
+      "assignment_id": 4222,
+      "project_id": 9307,
+      "employee_id": 20,
+      "role": "sample_27",
+      "allocation_percentage": 3097,
+      "start_date": "value_27",
+      "end_date": "value_27"
+    },
+    {
+      "assignment_id": 5246,
+      "project_id": 331,
+      "employee_id": 5536,
+      "role": "sample_28",
+      "allocation_percentage": 3893,
+      "start_date": "value_28",
+      "end_date": "value_28"
+    },
+    {
+      "assignment_id": 1172,
+      "project_id": 4998,
+      "employee_id": 2823,
+      "role": "sample_29",
+      "allocation_percentage": 4331,
+      "start_date": "value_29",
+      "end_date": "value_29"
+    },
+    {
+      "assignment_id": 2315,
+      "project_id": 5972,
+      "employee_id": 3201,
+      "role": "sample_30",
+      "allocation_percentage": 5620,
+      "start_date": "value_30",
+      "end_date": "value_30"
+    },
+    {
+      "assignment_id": 9757,
+      "project_id": 5911,
+      "employee_id": 4306,
+      "role": "sample_31",
+      "allocation_percentage": 159,
+      "start_date": "value_31",
+      "end_date": "value_31"
+    },
+    {
+      "assignment_id": 4006,
+      "project_id": 5827,
+      "employee_id": 5301,
+      "role": "sample_32",
+      "allocation_percentage": 3214,
+      "start_date": "value_32",
+      "end_date": "value_32"
+    },
+    {
+      "assignment_id": 2949,
+      "project_id": 9814,
+      "employee_id": 9995,
+      "role": "sample_33",
+      "allocation_percentage": 2479,
+      "start_date": "value_33",
+      "end_date": "value_33"
+    },
+    {
+      "assignment_id": 5209,
+      "project_id": 5551,
+      "employee_id": 9491,
+      "role": "sample_34",
+      "allocation_percentage": 4936,
+      "start_date": "value_34",
+      "end_date": "value_34"
+    },
+    {
+      "assignment_id": 3574,
+      "project_id": 9837,
+      "employee_id": 841,
+      "role": "sample_35",
+      "allocation_percentage": 3219,
+      "start_date": "value_35",
+      "end_date": "value_35"
+    },
+    {
+      "assignment_id": 5836,
+      "project_id": 4214,
+      "employee_id": 8272,
+      "role": "sample_36",
+      "allocation_percentage": 2419,
+      "start_date": "value_36",
+      "end_date": "value_36"
+    },
+    {
+      "assignment_id": 2287,
+      "project_id": 9207,
+      "employee_id": 9419,
+      "role": "sample_37",
+      "allocation_percentage": 635,
+      "start_date": "value_37",
+      "end_date": "value_37"
+    },
+    {
+      "assignment_id": 8431,
+      "project_id": 1548,
+      "employee_id": 94,
+      "role": "sample_38",
+      "allocation_percentage": 8012,
+      "start_date": "value_38",
+      "end_date": "value_38"
+    },
+    {
+      "assignment_id": 7278,
+      "project_id": 1052,
+      "employee_id": 397,
+      "role": "sample_39",
+      "allocation_percentage": 878,
+      "start_date": "value_39",
+      "end_date": "value_39"
+    },
+    {
+      "assignment_id": 8926,
+      "project_id": 8554,
+      "employee_id": 5670,
+      "role": "sample_40",
+      "allocation_percentage": 4433,
+      "start_date": "value_40",
+      "end_date": "value_40"
+    },
+    {
+      "assignment_id": 3807,
+      "project_id": 9438,
+      "employee_id": 3035,
+      "role": "sample_41",
+      "allocation_percentage": 3483,
+      "start_date": "value_41",
+      "end_date": "value_41"
+    },
+    {
+      "assignment_id": 256,
+      "project_id": 7607,
+      "employee_id": 4819,
+      "role": "sample_42",
+      "allocation_percentage": 2219,
+      "start_date": "value_42",
+      "end_date": "value_42"
+    },
+    {
+      "assignment_id": 4640,
+      "project_id": 3486,
+      "employee_id": 5532,
+      "role": "sample_43",
+      "allocation_percentage": 5526,
+      "start_date": "value_43",
+      "end_date": "value_43"
+    },
+    {
+      "assignment_id": 5016,
+      "project_id": 9361,
+      "employee_id": 3674,
+      "role": "sample_44",
+      "allocation_percentage": 4220,
+      "start_date": "value_44",
+      "end_date": "value_44"
+    },
+    {
+      "assignment_id": 8847,
+      "project_id": 3921,
+      "employee_id": 9679,
+      "role": "sample_45",
+      "allocation_percentage": 1720,
+      "start_date": "value_45",
+      "end_date": "value_45"
+    },
+    {
+      "assignment_id": 2986,
+      "project_id": 7354,
+      "employee_id": 4560,
+      "role": "sample_46",
+      "allocation_percentage": 808,
+      "start_date": "value_46",
+      "end_date": "value_46"
+    },
+    {
+      "assignment_id": 4726,
+      "project_id": 1727,
+      "employee_id": 5837,
+      "role": "sample_47",
+      "allocation_percentage": 1163,
+      "start_date": "value_47",
+      "end_date": "value_47"
+    },
+    {
+      "assignment_id": 5490,
+      "project_id": 1561,
+      "employee_id": 2464,
+      "role": "sample_48",
+      "allocation_percentage": 2683,
+      "start_date": "value_48",
+      "end_date": "value_48"
+    },
+    {
+      "assignment_id": 9812,
+      "project_id": 2723,
+      "employee_id": 8128,
+      "role": "sample_49",
+      "allocation_percentage": 983,
+      "start_date": "value_49",
+      "end_date": "value_49"
+    },
+    {
+      "assignment_id": 1102,
+      "project_id": 4645,
+      "employee_id": 9572,
+      "role": "sample_50",
+      "allocation_percentage": 1237,
+      "start_date": "value_50",
+      "end_date": "value_50"
+    },
+    {
+      "assignment_id": 3093,
+      "project_id": 5357,
+      "employee_id": 581,
+      "role": "sample_51",
+      "allocation_percentage": 4463,
+      "start_date": "value_51",
+      "end_date": "value_51"
+    },
+    {
+      "assignment_id": 5377,
+      "project_id": 5641,
+      "employee_id": 2659,
+      "role": "sample_52",
+      "allocation_percentage": 4164,
+      "start_date": "value_52",
+      "end_date": "value_52"
+    },
+    {
+      "assignment_id": 122,
+      "project_id": 2143,
+      "employee_id": 6054,
+      "role": "sample_53",
+      "allocation_percentage": 5220,
+      "start_date": "value_53",
+      "end_date": "value_53"
+    },
+    {
+      "assignment_id": 2277,
+      "project_id": 48,
+      "employee_id": 5557,
+      "role": "sample_54",
+      "allocation_percentage": 9498,
+      "start_date": "value_54",
+      "end_date": "value_54"
+    },
+    {
+      "assignment_id": 8020,
+      "project_id": 6301,
+      "employee_id": 5029,
+      "role": "sample_55",
+      "allocation_percentage": 4702,
+      "start_date": "value_55",
+      "end_date": "value_55"
+    },
+    {
+      "assignment_id": 5114,
+      "project_id": 3351,
+      "employee_id": 6179,
+      "role": "sample_56",
+      "allocation_percentage": 8421,
+      "start_date": "value_56",
+      "end_date": "value_56"
+    },
+    {
+      "assignment_id": 7313,
+      "project_id": 693,
+      "employee_id": 1671,
+      "role": "sample_57",
+      "allocation_percentage": 8064,
+      "start_date": "value_57",
+      "end_date": "value_57"
+    },
+    {
+      "assignment_id": 6181,
+      "project_id": 6711,
+      "employee_id": 3659,
+      "role": "sample_58",
+      "allocation_percentage": 6931,
+      "start_date": "value_58",
+      "end_date": "value_58"
+    },
+    {
+      "assignment_id": 8378,
+      "project_id": 3113,
+      "employee_id": 3129,
+      "role": "sample_59",
+      "allocation_percentage": 9810,
+      "start_date": "value_59",
+      "end_date": "value_59"
+    },
+    {
+      "assignment_id": 8001,
+      "project_id": 1371,
+      "employee_id": 2290,
+      "role": "sample_60",
+      "allocation_percentage": 5754,
+      "start_date": "value_60",
+      "end_date": "value_60"
+    },
+    {
+      "assignment_id": 2693,
+      "project_id": 3004,
+      "employee_id": 4118,
+      "role": "sample_61",
+      "allocation_percentage": 3672,
+      "start_date": "value_61",
+      "end_date": "value_61"
+    },
+    {
+      "assignment_id": 1191,
+      "project_id": 9024,
+      "employee_id": 5935,
+      "role": "sample_62",
+      "allocation_percentage": 3259,
+      "start_date": "value_62",
+      "end_date": "value_62"
+    },
+    {
+      "assignment_id": 7530,
+      "project_id": 8497,
+      "employee_id": 753,
+      "role": "sample_63",
+      "allocation_percentage": 1200,
+      "start_date": "value_63",
+      "end_date": "value_63"
+    },
+    {
+      "assignment_id": 2840,
+      "project_id": 1866,
+      "employee_id": 7147,
+      "role": "sample_64",
+      "allocation_percentage": 2037,
+      "start_date": "value_64",
+      "end_date": "value_64"
+    },
+    {
+      "assignment_id": 1219,
+      "project_id": 6310,
+      "employee_id": 2607,
+      "role": "sample_65",
+      "allocation_percentage": 8474,
+      "start_date": "value_65",
+      "end_date": "value_65"
+    },
+    {
+      "assignment_id": 2937,
+      "project_id": 8406,
+      "employee_id": 6686,
+      "role": "sample_66",
+      "allocation_percentage": 6836,
+      "start_date": "value_66",
+      "end_date": "value_66"
+    },
+    {
+      "assignment_id": 7426,
+      "project_id": 5255,
+      "employee_id": 9576,
+      "role": "sample_67",
+      "allocation_percentage": 7361,
+      "start_date": "value_67",
+      "end_date": "value_67"
+    },
+    {
+      "assignment_id": 7666,
+      "project_id": 2115,
+      "employee_id": 7630,
+      "role": "sample_68",
+      "allocation_percentage": 4366,
+      "start_date": "value_68",
+      "end_date": "value_68"
+    },
+    {
+      "assignment_id": 9334,
+      "project_id": 7390,
+      "employee_id": 2445,
+      "role": "sample_69",
+      "allocation_percentage": 2149,
+      "start_date": "value_69",
+      "end_date": "value_69"
+    },
+    {
+      "assignment_id": 7812,
+      "project_id": 1337,
+      "employee_id": 8853,
+      "role": "sample_70",
+      "allocation_percentage": 7987,
+      "start_date": "value_70",
+      "end_date": "value_70"
+    },
+    {
+      "assignment_id": 2881,
+      "project_id": 3310,
+      "employee_id": 2554,
+      "role": "sample_71",
+      "allocation_percentage": 7046,
+      "start_date": "value_71",
+      "end_date": "value_71"
+    },
+    {
+      "assignment_id": 7002,
+      "project_id": 3992,
+      "employee_id": 7478,
+      "role": "sample_72",
+      "allocation_percentage": 4795,
+      "start_date": "value_72",
+      "end_date": "value_72"
+    },
+    {
+      "assignment_id": 1765,
+      "project_id": 9610,
+      "employee_id": 8280,
+      "role": "sample_73",
+      "allocation_percentage": 3904,
+      "start_date": "value_73",
+      "end_date": "value_73"
+    },
+    {
+      "assignment_id": 1306,
+      "project_id": 4584,
+      "employee_id": 318,
+      "role": "sample_74",
+      "allocation_percentage": 2238,
+      "start_date": "value_74",
+      "end_date": "value_74"
+    },
+    {
+      "assignment_id": 8070,
+      "project_id": 7733,
+      "employee_id": 8146,
+      "role": "sample_75",
+      "allocation_percentage": 711,
+      "start_date": "value_75",
+      "end_date": "value_75"
+    },
+    {
+      "assignment_id": 3839,
+      "project_id": 7353,
+      "employee_id": 8145,
+      "role": "sample_76",
+      "allocation_percentage": 738,
+      "start_date": "value_76",
+      "end_date": "value_76"
+    },
+    {
+      "assignment_id": 9402,
+      "project_id": 2162,
+      "employee_id": 7286,
+      "role": "sample_77",
+      "allocation_percentage": 5941,
+      "start_date": "value_77",
+      "end_date": "value_77"
+    },
+    {
+      "assignment_id": 1328,
+      "project_id": 1204,
+      "employee_id": 2847,
+      "role": "sample_78",
+      "allocation_percentage": 3749,
+      "start_date": "value_78",
+      "end_date": "value_78"
+    },
+    {
+      "assignment_id": 3088,
+      "project_id": 5112,
+      "employee_id": 2975,
+      "role": "sample_79",
+      "allocation_percentage": 4028,
+      "start_date": "value_79",
+      "end_date": "value_79"
+    },
+    {
+      "assignment_id": 4659,
+      "project_id": 3009,
+      "employee_id": 4581,
+      "role": "sample_80",
+      "allocation_percentage": 388,
+      "start_date": "value_80",
+      "end_date": "value_80"
+    },
+    {
+      "assignment_id": 6905,
+      "project_id": 5124,
+      "employee_id": 7184,
+      "role": "sample_81",
+      "allocation_percentage": 1497,
+      "start_date": "value_81",
+      "end_date": "value_81"
+    },
+    {
+      "assignment_id": 9047,
+      "project_id": 1191,
+      "employee_id": 6264,
+      "role": "sample_82",
+      "allocation_percentage": 766,
+      "start_date": "value_82",
+      "end_date": "value_82"
+    },
+    {
+      "assignment_id": 454,
+      "project_id": 2744,
+      "employee_id": 2919,
+      "role": "sample_83",
+      "allocation_percentage": 1453,
+      "start_date": "value_83",
+      "end_date": "value_83"
+    },
+    {
+      "assignment_id": 5975,
+      "project_id": 1387,
+      "employee_id": 5890,
+      "role": "sample_84",
+      "allocation_percentage": 1172,
+      "start_date": "value_84",
+      "end_date": "value_84"
+    },
+    {
+      "assignment_id": 5188,
+      "project_id": 5859,
+      "employee_id": 7905,
+      "role": "sample_85",
+      "allocation_percentage": 9123,
+      "start_date": "value_85",
+      "end_date": "value_85"
+    },
+    {
+      "assignment_id": 3213,
+      "project_id": 3494,
+      "employee_id": 1354,
+      "role": "sample_86",
+      "allocation_percentage": 9935,
+      "start_date": "value_86",
+      "end_date": "value_86"
+    },
+    {
+      "assignment_id": 5982,
+      "project_id": 3533,
+      "employee_id": 9045,
+      "role": "sample_87",
+      "allocation_percentage": 4765,
+      "start_date": "value_87",
+      "end_date": "value_87"
+    },
+    {
+      "assignment_id": 8386,
+      "project_id": 9276,
+      "employee_id": 2676,
+      "role": "sample_88",
+      "allocation_percentage": 9601,
+      "start_date": "value_88",
+      "end_date": "value_88"
+    },
+    {
+      "assignment_id": 1250,
+      "project_id": 3930,
+      "employee_id": 6768,
+      "role": "sample_89",
+      "allocation_percentage": 5107,
+      "start_date": "value_89",
+      "end_date": "value_89"
+    },
+    {
+      "assignment_id": 7803,
+      "project_id": 2096,
+      "employee_id": 2163,
+      "role": "sample_90",
+      "allocation_percentage": 9090,
+      "start_date": "value_90",
+      "end_date": "value_90"
+    },
+    {
+      "assignment_id": 9333,
+      "project_id": 1151,
+      "employee_id": 4886,
+      "role": "sample_91",
+      "allocation_percentage": 8863,
+      "start_date": "value_91",
+      "end_date": "value_91"
+    },
+    {
+      "assignment_id": 8469,
+      "project_id": 4047,
+      "employee_id": 8921,
+      "role": "sample_92",
+      "allocation_percentage": 9612,
+      "start_date": "value_92",
+      "end_date": "value_92"
+    },
+    {
+      "assignment_id": 4861,
+      "project_id": 9753,
+      "employee_id": 4425,
+      "role": "sample_93",
+      "allocation_percentage": 3262,
+      "start_date": "value_93",
+      "end_date": "value_93"
+    },
+    {
+      "assignment_id": 7617,
+      "project_id": 3071,
+      "employee_id": 7476,
+      "role": "sample_94",
+      "allocation_percentage": 7828,
+      "start_date": "value_94",
+      "end_date": "value_94"
+    },
+    {
+      "assignment_id": 5086,
+      "project_id": 1149,
+      "employee_id": 8231,
+      "role": "sample_95",
+      "allocation_percentage": 1512,
+      "start_date": "value_95",
+      "end_date": "value_95"
+    },
+    {
+      "assignment_id": 2140,
+      "project_id": 7717,
+      "employee_id": 2649,
+      "role": "sample_96",
+      "allocation_percentage": 472,
+      "start_date": "value_96",
+      "end_date": "value_96"
+    },
+    {
+      "assignment_id": 4214,
+      "project_id": 3326,
+      "employee_id": 6266,
+      "role": "sample_97",
+      "allocation_percentage": 1547,
+      "start_date": "value_97",
+      "end_date": "value_97"
+    },
+    {
+      "assignment_id": 8887,
+      "project_id": 1973,
+      "employee_id": 8514,
+      "role": "sample_98",
+      "allocation_percentage": 853,
+      "start_date": "value_98",
+      "end_date": "value_98"
+    },
+    {
+      "assignment_id": 1790,
+      "project_id": 683,
+      "employee_id": 5237,
+      "role": "sample_99",
+      "allocation_percentage": 3105,
+      "start_date": "value_99",
+      "end_date": "value_99"
+    },
+    {
+      "assignment_id": 2126,
+      "project_id": 5474,
+      "employee_id": 1481,
+      "role": "sample_100",
+      "allocation_percentage": 7742,
+      "start_date": "value_100",
+      "end_date": "value_100"
+    },
+    {
+      "assignment_id": 6723,
+      "project_id": 3888,
+      "employee_id": 5586,
+      "role": "sample_101",
+      "allocation_percentage": 2569,
+      "start_date": "value_101",
+      "end_date": "value_101"
+    },
+    {
+      "assignment_id": 3949,
+      "project_id": 4949,
+      "employee_id": 8897,
+      "role": "sample_102",
+      "allocation_percentage": 3088,
+      "start_date": "value_102",
+      "end_date": "value_102"
+    },
+    {
+      "assignment_id": 6784,
+      "project_id": 2707,
+      "employee_id": 4768,
+      "role": "sample_103",
+      "allocation_percentage": 3301,
+      "start_date": "value_103",
+      "end_date": "value_103"
+    },
+    {
+      "assignment_id": 4915,
+      "project_id": 5711,
+      "employee_id": 6127,
+      "role": "sample_104",
+      "allocation_percentage": 9359,
+      "start_date": "value_104",
+      "end_date": "value_104"
+    },
+    {
+      "assignment_id": 3171,
+      "project_id": 3049,
+      "employee_id": 3391,
+      "role": "sample_105",
+      "allocation_percentage": 2066,
+      "start_date": "value_105",
+      "end_date": "value_105"
+    },
+    {
+      "assignment_id": 5901,
+      "project_id": 690,
+      "employee_id": 1513,
+      "role": "sample_106",
+      "allocation_percentage": 8117,
+      "start_date": "value_106",
+      "end_date": "value_106"
+    },
+    {
+      "assignment_id": 8646,
+      "project_id": 591,
+      "employee_id": 7215,
+      "role": "sample_107",
+      "allocation_percentage": 9580,
+      "start_date": "value_107",
+      "end_date": "value_107"
+    },
+    {
+      "assignment_id": 318,
+      "project_id": 5873,
+      "employee_id": 6639,
+      "role": "sample_108",
+      "allocation_percentage": 5703,
+      "start_date": "value_108",
+      "end_date": "value_108"
+    },
+    {
+      "assignment_id": 2557,
+      "project_id": 5501,
+      "employee_id": 8364,
+      "role": "sample_109",
+      "allocation_percentage": 9026,
+      "start_date": "value_109",
+      "end_date": "value_109"
+    },
+    {
+      "assignment_id": 1776,
+      "project_id": 9041,
+      "employee_id": 7116,
+      "role": "sample_110",
+      "allocation_percentage": 7535,
+      "start_date": "value_110",
+      "end_date": "value_110"
+    },
+    {
+      "assignment_id": 2879,
+      "project_id": 9106,
+      "employee_id": 3951,
+      "role": "sample_111",
+      "allocation_percentage": 8696,
+      "start_date": "value_111",
+      "end_date": "value_111"
+    },
+    {
+      "assignment_id": 3659,
+      "project_id": 1268,
+      "employee_id": 812,
+      "role": "sample_112",
+      "allocation_percentage": 3242,
+      "start_date": "value_112",
+      "end_date": "value_112"
+    },
+    {
+      "assignment_id": 4111,
+      "project_id": 3241,
+      "employee_id": 8817,
+      "role": "sample_113",
+      "allocation_percentage": 9743,
+      "start_date": "value_113",
+      "end_date": "value_113"
+    },
+    {
+      "assignment_id": 6409,
+      "project_id": 9247,
+      "employee_id": 8882,
+      "role": "sample_114",
+      "allocation_percentage": 8463,
+      "start_date": "value_114",
+      "end_date": "value_114"
+    },
+    {
+      "assignment_id": 3701,
+      "project_id": 6571,
+      "employee_id": 34,
+      "role": "sample_115",
+      "allocation_percentage": 5831,
+      "start_date": "value_115",
+      "end_date": "value_115"
+    },
+    {
+      "assignment_id": 1513,
+      "project_id": 7228,
+      "employee_id": 732,
+      "role": "sample_116",
+      "allocation_percentage": 3929,
+      "start_date": "value_116",
+      "end_date": "value_116"
+    },
+    {
+      "assignment_id": 833,
+      "project_id": 5869,
+      "employee_id": 181,
+      "role": "sample_117",
+      "allocation_percentage": 2130,
+      "start_date": "value_117",
+      "end_date": "value_117"
+    },
+    {
+      "assignment_id": 1026,
+      "project_id": 9908,
+      "employee_id": 402,
+      "role": "sample_118",
+      "allocation_percentage": 1440,
+      "start_date": "value_118",
+      "end_date": "value_118"
+    },
+    {
+      "assignment_id": 9701,
+      "project_id": 7567,
+      "employee_id": 8445,
+      "role": "sample_119",
+      "allocation_percentage": 4384,
+      "start_date": "value_119",
+      "end_date": "value_119"
+    },
+    {
+      "assignment_id": 2689,
+      "project_id": 1585,
+      "employee_id": 4503,
+      "role": "sample_120",
+      "allocation_percentage": 1696,
+      "start_date": "value_120",
+      "end_date": "value_120"
+    },
+    {
+      "assignment_id": 3407,
+      "project_id": 2124,
+      "employee_id": 8553,
+      "role": "sample_121",
+      "allocation_percentage": 278,
+      "start_date": "value_121",
+      "end_date": "value_121"
+    },
+    {
+      "assignment_id": 1857,
+      "project_id": 9580,
+      "employee_id": 6397,
+      "role": "sample_122",
+      "allocation_percentage": 1419,
+      "start_date": "value_122",
+      "end_date": "value_122"
+    },
+    {
+      "assignment_id": 9532,
+      "project_id": 8107,
+      "employee_id": 7092,
+      "role": "sample_123",
+      "allocation_percentage": 7333,
+      "start_date": "value_123",
+      "end_date": "value_123"
+    },
+    {
+      "assignment_id": 4611,
+      "project_id": 4881,
+      "employee_id": 3873,
+      "role": "sample_124",
+      "allocation_percentage": 3058,
+      "start_date": "value_124",
+      "end_date": "value_124"
+    },
+    {
+      "assignment_id": 7593,
+      "project_id": 4995,
+      "employee_id": 6691,
+      "role": "sample_125",
+      "allocation_percentage": 5810,
+      "start_date": "value_125",
+      "end_date": "value_125"
+    },
+    {
+      "assignment_id": 554,
+      "project_id": 7966,
+      "employee_id": 715,
+      "role": "sample_126",
+      "allocation_percentage": 633,
+      "start_date": "value_126",
+      "end_date": "value_126"
+    },
+    {
+      "assignment_id": 1754,
+      "project_id": 3887,
+      "employee_id": 9264,
+      "role": "sample_127",
+      "allocation_percentage": 2833,
+      "start_date": "value_127",
+      "end_date": "value_127"
+    },
+    {
+      "assignment_id": 6187,
+      "project_id": 272,
+      "employee_id": 1489,
+      "role": "sample_128",
+      "allocation_percentage": 5952,
+      "start_date": "value_128",
+      "end_date": "value_128"
+    },
+    {
+      "assignment_id": 8655,
+      "project_id": 3790,
+      "employee_id": 670,
+      "role": "sample_129",
+      "allocation_percentage": 2719,
+      "start_date": "value_129",
+      "end_date": "value_129"
+    },
+    {
+      "assignment_id": 2255,
+      "project_id": 8315,
+      "employee_id": 9161,
+      "role": "sample_130",
+      "allocation_percentage": 3710,
+      "start_date": "value_130",
+      "end_date": "value_130"
+    },
+    {
+      "assignment_id": 7952,
+      "project_id": 1067,
+      "employee_id": 3920,
+      "role": "sample_131",
+      "allocation_percentage": 2660,
+      "start_date": "value_131",
+      "end_date": "value_131"
+    },
+    {
+      "assignment_id": 271,
+      "project_id": 8907,
+      "employee_id": 626,
+      "role": "sample_132",
+      "allocation_percentage": 1117,
+      "start_date": "value_132",
+      "end_date": "value_132"
+    },
+    {
+      "assignment_id": 3045,
+      "project_id": 445,
+      "employee_id": 6320,
+      "role": "sample_133",
+      "allocation_percentage": 1231,
+      "start_date": "value_133",
+      "end_date": "value_133"
+    },
+    {
+      "assignment_id": 6814,
+      "project_id": 111,
+      "employee_id": 1310,
+      "role": "sample_134",
+      "allocation_percentage": 9011,
+      "start_date": "value_134",
+      "end_date": "value_134"
+    },
+    {
+      "assignment_id": 3075,
+      "project_id": 6212,
+      "employee_id": 5042,
+      "role": "sample_135",
+      "allocation_percentage": 8345,
+      "start_date": "value_135",
+      "end_date": "value_135"
+    },
+    {
+      "assignment_id": 711,
+      "project_id": 2997,
+      "employee_id": 1758,
+      "role": "sample_136",
+      "allocation_percentage": 5346,
+      "start_date": "value_136",
+      "end_date": "value_136"
+    },
+    {
+      "assignment_id": 4321,
+      "project_id": 9122,
+      "employee_id": 2568,
+      "role": "sample_137",
+      "allocation_percentage": 7074,
+      "start_date": "value_137",
+      "end_date": "value_137"
+    },
+    {
+      "assignment_id": 4334,
+      "project_id": 7480,
+      "employee_id": 8130,
+      "role": "sample_138",
+      "allocation_percentage": 2020,
+      "start_date": "value_138",
+      "end_date": "value_138"
+    },
+    {
+      "assignment_id": 6739,
+      "project_id": 5742,
+      "employee_id": 6895,
+      "role": "sample_139",
+      "allocation_percentage": 9596,
+      "start_date": "value_139",
+      "end_date": "value_139"
+    },
+    {
+      "assignment_id": 5261,
+      "project_id": 8763,
+      "employee_id": 8451,
+      "role": "sample_140",
+      "allocation_percentage": 8011,
+      "start_date": "value_140",
+      "end_date": "value_140"
+    },
+    {
+      "assignment_id": 7825,
+      "project_id": 9698,
+      "employee_id": 752,
+      "role": "sample_141",
+      "allocation_percentage": 9668,
+      "start_date": "value_141",
+      "end_date": "value_141"
+    },
+    {
+      "assignment_id": 1039,
+      "project_id": 5434,
+      "employee_id": 1348,
+      "role": "sample_142",
+      "allocation_percentage": 1159,
+      "start_date": "value_142",
+      "end_date": "value_142"
+    },
+    {
+      "assignment_id": 5904,
+      "project_id": 2127,
+      "employee_id": 4840,
+      "role": "sample_143",
+      "allocation_percentage": 300,
+      "start_date": "value_143",
+      "end_date": "value_143"
+    },
+    {
+      "assignment_id": 4191,
+      "project_id": 4612,
+      "employee_id": 8488,
+      "role": "sample_144",
+      "allocation_percentage": 8034,
+      "start_date": "value_144",
+      "end_date": "value_144"
+    },
+    {
+      "assignment_id": 9149,
+      "project_id": 2042,
+      "employee_id": 6681,
+      "role": "sample_145",
+      "allocation_percentage": 5607,
+      "start_date": "value_145",
+      "end_date": "value_145"
+    },
+    {
+      "assignment_id": 9699,
+      "project_id": 333,
+      "employee_id": 3878,
+      "role": "sample_146",
+      "allocation_percentage": 2812,
+      "start_date": "value_146",
+      "end_date": "value_146"
+    },
+    {
+      "assignment_id": 2390,
+      "project_id": 6167,
+      "employee_id": 5916,
+      "role": "sample_147",
+      "allocation_percentage": 9548,
+      "start_date": "value_147",
+      "end_date": "value_147"
+    },
+    {
+      "assignment_id": 1218,
+      "project_id": 8612,
+      "employee_id": 5956,
+      "role": "sample_148",
+      "allocation_percentage": 9429,
+      "start_date": "value_148",
+      "end_date": "value_148"
+    },
+    {
+      "assignment_id": 614,
+      "project_id": 877,
+      "employee_id": 2146,
+      "role": "sample_149",
+      "allocation_percentage": 3898,
+      "start_date": "value_149",
+      "end_date": "value_149"
+    },
+    {
+      "assignment_id": 3747,
+      "project_id": 686,
+      "employee_id": 6398,
+      "role": "sample_150",
+      "allocation_percentage": 1295,
+      "start_date": "value_150",
+      "end_date": "value_150"
+    },
+    {
+      "assignment_id": 989,
+      "project_id": 3151,
+      "employee_id": 1601,
+      "role": "sample_151",
+      "allocation_percentage": 3457,
+      "start_date": "value_151",
+      "end_date": "value_151"
+    },
+    {
+      "assignment_id": 690,
+      "project_id": 2174,
+      "employee_id": 5334,
+      "role": "sample_152",
+      "allocation_percentage": 9640,
+      "start_date": "value_152",
+      "end_date": "value_152"
+    },
+    {
+      "assignment_id": 5078,
+      "project_id": 373,
+      "employee_id": 6887,
+      "role": "sample_153",
+      "allocation_percentage": 8671,
+      "start_date": "value_153",
+      "end_date": "value_153"
+    },
+    {
+      "assignment_id": 4349,
+      "project_id": 4518,
+      "employee_id": 9983,
+      "role": "sample_154",
+      "allocation_percentage": 9023,
+      "start_date": "value_154",
+      "end_date": "value_154"
+    },
+    {
+      "assignment_id": 1357,
+      "project_id": 3962,
+      "employee_id": 1985,
+      "role": "sample_155",
+      "allocation_percentage": 2367,
+      "start_date": "value_155",
+      "end_date": "value_155"
+    },
+    {
+      "assignment_id": 5195,
+      "project_id": 4655,
+      "employee_id": 3490,
+      "role": "sample_156",
+      "allocation_percentage": 4852,
+      "start_date": "value_156",
+      "end_date": "value_156"
+    },
+    {
+      "assignment_id": 8367,
+      "project_id": 9853,
+      "employee_id": 7363,
+      "role": "sample_157",
+      "allocation_percentage": 1211,
+      "start_date": "value_157",
+      "end_date": "value_157"
+    },
+    {
+      "assignment_id": 2135,
+      "project_id": 9193,
+      "employee_id": 1760,
+      "role": "sample_158",
+      "allocation_percentage": 1530,
+      "start_date": "value_158",
+      "end_date": "value_158"
+    },
+    {
+      "assignment_id": 1206,
+      "project_id": 8439,
+      "employee_id": 4530,
+      "role": "sample_159",
+      "allocation_percentage": 7800,
+      "start_date": "value_159",
+      "end_date": "value_159"
+    },
+    {
+      "assignment_id": 9174,
+      "project_id": 2545,
+      "employee_id": 1235,
+      "role": "sample_160",
+      "allocation_percentage": 2879,
+      "start_date": "value_160",
+      "end_date": "value_160"
+    },
+    {
+      "assignment_id": 3804,
+      "project_id": 83,
+      "employee_id": 8381,
+      "role": "sample_161",
+      "allocation_percentage": 9009,
+      "start_date": "value_161",
+      "end_date": "value_161"
+    },
+    {
+      "assignment_id": 6144,
+      "project_id": 1596,
+      "employee_id": 7337,
+      "role": "sample_162",
+      "allocation_percentage": 6237,
+      "start_date": "value_162",
+      "end_date": "value_162"
+    },
+    {
+      "assignment_id": 9104,
+      "project_id": 1403,
+      "employee_id": 5630,
+      "role": "sample_163",
+      "allocation_percentage": 2680,
+      "start_date": "value_163",
+      "end_date": "value_163"
+    },
+    {
+      "assignment_id": 7442,
+      "project_id": 4157,
+      "employee_id": 7403,
+      "role": "sample_164",
+      "allocation_percentage": 985,
+      "start_date": "value_164",
+      "end_date": "value_164"
+    },
+    {
+      "assignment_id": 473,
+      "project_id": 1896,
+      "employee_id": 3174,
+      "role": "sample_165",
+      "allocation_percentage": 793,
+      "start_date": "value_165",
+      "end_date": "value_165"
+    },
+    {
+      "assignment_id": 9383,
+      "project_id": 9319,
+      "employee_id": 4922,
+      "role": "sample_166",
+      "allocation_percentage": 7377,
+      "start_date": "value_166",
+      "end_date": "value_166"
+    },
+    {
+      "assignment_id": 1833,
+      "project_id": 1354,
+      "employee_id": 2399,
+      "role": "sample_167",
+      "allocation_percentage": 8800,
+      "start_date": "value_167",
+      "end_date": "value_167"
+    },
+    {
+      "assignment_id": 8149,
+      "project_id": 2871,
+      "employee_id": 7428,
+      "role": "sample_168",
+      "allocation_percentage": 118,
+      "start_date": "value_168",
+      "end_date": "value_168"
+    },
+    {
+      "assignment_id": 4145,
+      "project_id": 3579,
+      "employee_id": 2724,
+      "role": "sample_169",
+      "allocation_percentage": 3955,
+      "start_date": "value_169",
+      "end_date": "value_169"
+    },
+    {
+      "assignment_id": 8215,
+      "project_id": 5613,
+      "employee_id": 8816,
+      "role": "sample_170",
+      "allocation_percentage": 3325,
+      "start_date": "value_170",
+      "end_date": "value_170"
+    },
+    {
+      "assignment_id": 5716,
+      "project_id": 9938,
+      "employee_id": 616,
+      "role": "sample_171",
+      "allocation_percentage": 3713,
+      "start_date": "value_171",
+      "end_date": "value_171"
+    },
+    {
+      "assignment_id": 61,
+      "project_id": 8887,
+      "employee_id": 9842,
+      "role": "sample_172",
+      "allocation_percentage": 6284,
+      "start_date": "value_172",
+      "end_date": "value_172"
+    },
+    {
+      "assignment_id": 458,
+      "project_id": 9009,
+      "employee_id": 7033,
+      "role": "sample_173",
+      "allocation_percentage": 9195,
+      "start_date": "value_173",
+      "end_date": "value_173"
+    },
+    {
+      "assignment_id": 4080,
+      "project_id": 7065,
+      "employee_id": 2753,
+      "role": "sample_174",
+      "allocation_percentage": 8101,
+      "start_date": "value_174",
+      "end_date": "value_174"
+    },
+    {
+      "assignment_id": 6116,
+      "project_id": 84,
+      "employee_id": 6726,
+      "role": "sample_175",
+      "allocation_percentage": 2348,
+      "start_date": "value_175",
+      "end_date": "value_175"
+    },
+    {
+      "assignment_id": 8129,
+      "project_id": 8295,
+      "employee_id": 1379,
+      "role": "sample_176",
+      "allocation_percentage": 1922,
+      "start_date": "value_176",
+      "end_date": "value_176"
+    },
+    {
+      "assignment_id": 7347,
+      "project_id": 2480,
+      "employee_id": 7700,
+      "role": "sample_177",
+      "allocation_percentage": 9414,
+      "start_date": "value_177",
+      "end_date": "value_177"
+    },
+    {
+      "assignment_id": 7330,
+      "project_id": 522,
+      "employee_id": 5976,
+      "role": "sample_178",
+      "allocation_percentage": 6091,
+      "start_date": "value_178",
+      "end_date": "value_178"
+    },
+    {
+      "assignment_id": 9330,
+      "project_id": 7351,
+      "employee_id": 7091,
+      "role": "sample_179",
+      "allocation_percentage": 2270,
+      "start_date": "value_179",
+      "end_date": "value_179"
+    },
+    {
+      "assignment_id": 2137,
+      "project_id": 4982,
+      "employee_id": 6551,
+      "role": "sample_180",
+      "allocation_percentage": 9636,
+      "start_date": "value_180",
+      "end_date": "value_180"
+    },
+    {
+      "assignment_id": 9902,
+      "project_id": 1063,
+      "employee_id": 9294,
+      "role": "sample_181",
+      "allocation_percentage": 1860,
+      "start_date": "value_181",
+      "end_date": "value_181"
+    },
+    {
+      "assignment_id": 7243,
+      "project_id": 3627,
+      "employee_id": 3031,
+      "role": "sample_182",
+      "allocation_percentage": 6074,
+      "start_date": "value_182",
+      "end_date": "value_182"
+    },
+    {
+      "assignment_id": 9453,
+      "project_id": 470,
+      "employee_id": 1604,
+      "role": "sample_183",
+      "allocation_percentage": 6170,
+      "start_date": "value_183",
+      "end_date": "value_183"
+    },
+    {
+      "assignment_id": 8313,
+      "project_id": 5131,
+      "employee_id": 3423,
+      "role": "sample_184",
+      "allocation_percentage": 6906,
+      "start_date": "value_184",
+      "end_date": "value_184"
+    },
+    {
+      "assignment_id": 5922,
+      "project_id": 5182,
+      "employee_id": 9460,
+      "role": "sample_185",
+      "allocation_percentage": 605,
+      "start_date": "value_185",
+      "end_date": "value_185"
+    },
+    {
+      "assignment_id": 304,
+      "project_id": 5741,
+      "employee_id": 6165,
+      "role": "sample_186",
+      "allocation_percentage": 8965,
+      "start_date": "value_186",
+      "end_date": "value_186"
+    },
+    {
+      "assignment_id": 7665,
+      "project_id": 9183,
+      "employee_id": 8116,
+      "role": "sample_187",
+      "allocation_percentage": 4052,
+      "start_date": "value_187",
+      "end_date": "value_187"
+    },
+    {
+      "assignment_id": 9607,
+      "project_id": 3244,
+      "employee_id": 8898,
+      "role": "sample_188",
+      "allocation_percentage": 2752,
+      "start_date": "value_188",
+      "end_date": "value_188"
+    },
+    {
+      "assignment_id": 3772,
+      "project_id": 2752,
+      "employee_id": 403,
+      "role": "sample_189",
+      "allocation_percentage": 219,
+      "start_date": "value_189",
+      "end_date": "value_189"
+    },
+    {
+      "assignment_id": 2398,
+      "project_id": 3573,
+      "employee_id": 3605,
+      "role": "sample_190",
+      "allocation_percentage": 4115,
+      "start_date": "value_190",
+      "end_date": "value_190"
+    },
+    {
+      "assignment_id": 5668,
+      "project_id": 7251,
+      "employee_id": 8787,
+      "role": "sample_191",
+      "allocation_percentage": 5818,
+      "start_date": "value_191",
+      "end_date": "value_191"
+    },
+    {
+      "assignment_id": 6003,
+      "project_id": 2411,
+      "employee_id": 9344,
+      "role": "sample_192",
+      "allocation_percentage": 1288,
+      "start_date": "value_192",
+      "end_date": "value_192"
+    },
+    {
+      "assignment_id": 7801,
+      "project_id": 210,
+      "employee_id": 4439,
+      "role": "sample_193",
+      "allocation_percentage": 5459,
+      "start_date": "value_193",
+      "end_date": "value_193"
+    },
+    {
+      "assignment_id": 3139,
+      "project_id": 427,
+      "employee_id": 1257,
+      "role": "sample_194",
+      "allocation_percentage": 1704,
+      "start_date": "value_194",
+      "end_date": "value_194"
+    },
+    {
+      "assignment_id": 6518,
+      "project_id": 1729,
+      "employee_id": 8200,
+      "role": "sample_195",
+      "allocation_percentage": 9847,
+      "start_date": "value_195",
+      "end_date": "value_195"
+    },
+    {
+      "assignment_id": 6762,
+      "project_id": 5824,
+      "employee_id": 6351,
+      "role": "sample_196",
+      "allocation_percentage": 4749,
+      "start_date": "value_196",
+      "end_date": "value_196"
+    },
+    {
+      "assignment_id": 1136,
+      "project_id": 6171,
+      "employee_id": 6540,
+      "role": "sample_197",
+      "allocation_percentage": 7654,
+      "start_date": "value_197",
+      "end_date": "value_197"
+    },
+    {
+      "assignment_id": 6688,
+      "project_id": 4051,
+      "employee_id": 4895,
+      "role": "sample_198",
+      "allocation_percentage": 3614,
+      "start_date": "value_198",
+      "end_date": "value_198"
+    },
+    {
+      "assignment_id": 9821,
+      "project_id": 97,
+      "employee_id": 9745,
+      "role": "sample_199",
+      "allocation_percentage": 8503,
+      "start_date": "value_199",
+      "end_date": "value_199"
+    },
+    {
+      "assignment_id": 4109,
+      "project_id": 9792,
+      "employee_id": 204,
+      "role": "sample_200",
+      "allocation_percentage": 6397,
+      "start_date": "value_200",
+      "end_date": "value_200"
+    },
+    {
+      "assignment_id": 713,
+      "project_id": 5151,
+      "employee_id": 2646,
+      "role": "sample_201",
+      "allocation_percentage": 3757,
+      "start_date": "value_201",
+      "end_date": "value_201"
+    },
+    {
+      "assignment_id": 1493,
+      "project_id": 5803,
+      "employee_id": 2950,
+      "role": "sample_202",
+      "allocation_percentage": 8942,
+      "start_date": "value_202",
+      "end_date": "value_202"
+    },
+    {
+      "assignment_id": 4994,
+      "project_id": 1300,
+      "employee_id": 4145,
+      "role": "sample_203",
+      "allocation_percentage": 3056,
+      "start_date": "value_203",
+      "end_date": "value_203"
+    },
+    {
+      "assignment_id": 6782,
+      "project_id": 7055,
+      "employee_id": 6366,
+      "role": "sample_204",
+      "allocation_percentage": 5736,
+      "start_date": "value_204",
+      "end_date": "value_204"
+    },
+    {
+      "assignment_id": 415,
+      "project_id": 1273,
+      "employee_id": 4415,
+      "role": "sample_205",
+      "allocation_percentage": 908,
+      "start_date": "value_205",
+      "end_date": "value_205"
+    },
+    {
+      "assignment_id": 6454,
+      "project_id": 5041,
+      "employee_id": 8937,
+      "role": "sample_206",
+      "allocation_percentage": 3956,
+      "start_date": "value_206",
+      "end_date": "value_206"
+    },
+    {
+      "assignment_id": 4228,
+      "project_id": 2314,
+      "employee_id": 3248,
+      "role": "sample_207",
+      "allocation_percentage": 532,
+      "start_date": "value_207",
+      "end_date": "value_207"
+    },
+    {
+      "assignment_id": 6058,
+      "project_id": 4022,
+      "employee_id": 9633,
+      "role": "sample_208",
+      "allocation_percentage": 6495,
+      "start_date": "value_208",
+      "end_date": "value_208"
+    },
+    {
+      "assignment_id": 3945,
+      "project_id": 9655,
+      "employee_id": 1254,
+      "role": "sample_209",
+      "allocation_percentage": 2653,
+      "start_date": "value_209",
+      "end_date": "value_209"
+    },
+    {
+      "assignment_id": 5325,
+      "project_id": 3938,
+      "employee_id": 1063,
+      "role": "sample_210",
+      "allocation_percentage": 7417,
+      "start_date": "value_210",
+      "end_date": "value_210"
+    },
+    {
+      "assignment_id": 7106,
+      "project_id": 6543,
+      "employee_id": 130,
+      "role": "sample_211",
+      "allocation_percentage": 1780,
+      "start_date": "value_211",
+      "end_date": "value_211"
+    },
+    {
+      "assignment_id": 5756,
+      "project_id": 2815,
+      "employee_id": 6210,
+      "role": "sample_212",
+      "allocation_percentage": 445,
+      "start_date": "value_212",
+      "end_date": "value_212"
+    },
+    {
+      "assignment_id": 1839,
+      "project_id": 7485,
+      "employee_id": 9127,
+      "role": "sample_213",
+      "allocation_percentage": 1022,
+      "start_date": "value_213",
+      "end_date": "value_213"
+    },
+    {
+      "assignment_id": 6905,
+      "project_id": 6870,
+      "employee_id": 6599,
+      "role": "sample_214",
+      "allocation_percentage": 1084,
+      "start_date": "value_214",
+      "end_date": "value_214"
+    },
+    {
+      "assignment_id": 2618,
+      "project_id": 1195,
+      "employee_id": 2746,
+      "role": "sample_215",
+      "allocation_percentage": 8714,
+      "start_date": "value_215",
+      "end_date": "value_215"
+    },
+    {
+      "assignment_id": 7515,
+      "project_id": 8019,
+      "employee_id": 1320,
+      "role": "sample_216",
+      "allocation_percentage": 2369,
+      "start_date": "value_216",
+      "end_date": "value_216"
+    },
+    {
+      "assignment_id": 874,
+      "project_id": 4755,
+      "employee_id": 1369,
+      "role": "sample_217",
+      "allocation_percentage": 4268,
+      "start_date": "value_217",
+      "end_date": "value_217"
+    },
+    {
+      "assignment_id": 5552,
+      "project_id": 2005,
+      "employee_id": 6841,
+      "role": "sample_218",
+      "allocation_percentage": 9695,
+      "start_date": "value_218",
+      "end_date": "value_218"
+    },
+    {
+      "assignment_id": 5463,
+      "project_id": 3762,
+      "employee_id": 6273,
+      "role": "sample_219",
+      "allocation_percentage": 6371,
+      "start_date": "value_219",
+      "end_date": "value_219"
+    },
+    {
+      "assignment_id": 3961,
+      "project_id": 8423,
+      "employee_id": 7261,
+      "role": "sample_220",
+      "allocation_percentage": 5511,
+      "start_date": "value_220",
+      "end_date": "value_220"
+    },
+    {
+      "assignment_id": 2911,
+      "project_id": 542,
+      "employee_id": 6614,
+      "role": "sample_221",
+      "allocation_percentage": 1997,
+      "start_date": "value_221",
+      "end_date": "value_221"
+    },
+    {
+      "assignment_id": 8416,
+      "project_id": 438,
+      "employee_id": 6388,
+      "role": "sample_222",
+      "allocation_percentage": 9201,
+      "start_date": "value_222",
+      "end_date": "value_222"
+    },
+    {
+      "assignment_id": 9319,
+      "project_id": 3326,
+      "employee_id": 5250,
+      "role": "sample_223",
+      "allocation_percentage": 7255,
+      "start_date": "value_223",
+      "end_date": "value_223"
+    },
+    {
+      "assignment_id": 6085,
+      "project_id": 8326,
+      "employee_id": 2743,
+      "role": "sample_224",
+      "allocation_percentage": 6398,
+      "start_date": "value_224",
+      "end_date": "value_224"
+    },
+    {
+      "assignment_id": 8826,
+      "project_id": 5373,
+      "employee_id": 476,
+      "role": "sample_225",
+      "allocation_percentage": 1450,
+      "start_date": "value_225",
+      "end_date": "value_225"
+    },
+    {
+      "assignment_id": 9936,
+      "project_id": 3521,
+      "employee_id": 2679,
+      "role": "sample_226",
+      "allocation_percentage": 4843,
+      "start_date": "value_226",
+      "end_date": "value_226"
+    },
+    {
+      "assignment_id": 3574,
+      "project_id": 2900,
+      "employee_id": 6855,
+      "role": "sample_227",
+      "allocation_percentage": 7382,
+      "start_date": "value_227",
+      "end_date": "value_227"
+    },
+    {
+      "assignment_id": 5179,
+      "project_id": 1713,
+      "employee_id": 2440,
+      "role": "sample_228",
+      "allocation_percentage": 6843,
+      "start_date": "value_228",
+      "end_date": "value_228"
+    },
+    {
+      "assignment_id": 372,
+      "project_id": 1859,
+      "employee_id": 8153,
+      "role": "sample_229",
+      "allocation_percentage": 9845,
+      "start_date": "value_229",
+      "end_date": "value_229"
+    },
+    {
+      "assignment_id": 3993,
+      "project_id": 1753,
+      "employee_id": 2014,
+      "role": "sample_230",
+      "allocation_percentage": 4450,
+      "start_date": "value_230",
+      "end_date": "value_230"
+    },
+    {
+      "assignment_id": 3432,
+      "project_id": 3700,
+      "employee_id": 7733,
+      "role": "sample_231",
+      "allocation_percentage": 2696,
+      "start_date": "value_231",
+      "end_date": "value_231"
+    },
+    {
+      "assignment_id": 2337,
+      "project_id": 5021,
+      "employee_id": 6453,
+      "role": "sample_232",
+      "allocation_percentage": 6272,
+      "start_date": "value_232",
+      "end_date": "value_232"
+    },
+    {
+      "assignment_id": 181,
+      "project_id": 6339,
+      "employee_id": 2050,
+      "role": "sample_233",
+      "allocation_percentage": 6783,
+      "start_date": "value_233",
+      "end_date": "value_233"
+    },
+    {
+      "assignment_id": 9393,
+      "project_id": 7112,
+      "employee_id": 8123,
+      "role": "sample_234",
+      "allocation_percentage": 2208,
+      "start_date": "value_234",
+      "end_date": "value_234"
+    },
+    {
+      "assignment_id": 9627,
+      "project_id": 7172,
+      "employee_id": 5277,
+      "role": "sample_235",
+      "allocation_percentage": 5122,
+      "start_date": "value_235",
+      "end_date": "value_235"
+    },
+    {
+      "assignment_id": 7951,
+      "project_id": 3699,
+      "employee_id": 5462,
+      "role": "sample_236",
+      "allocation_percentage": 5579,
+      "start_date": "value_236",
+      "end_date": "value_236"
+    },
+    {
+      "assignment_id": 838,
+      "project_id": 6876,
+      "employee_id": 6391,
+      "role": "sample_237",
+      "allocation_percentage": 8766,
+      "start_date": "value_237",
+      "end_date": "value_237"
+    },
+    {
+      "assignment_id": 5556,
+      "project_id": 6009,
+      "employee_id": 3301,
+      "role": "sample_238",
+      "allocation_percentage": 5132,
+      "start_date": "value_238",
+      "end_date": "value_238"
+    },
+    {
+      "assignment_id": 8379,
+      "project_id": 3987,
+      "employee_id": 178,
+      "role": "sample_239",
+      "allocation_percentage": 8735,
+      "start_date": "value_239",
+      "end_date": "value_239"
+    },
+    {
+      "assignment_id": 8231,
+      "project_id": 2904,
+      "employee_id": 1171,
+      "role": "sample_240",
+      "allocation_percentage": 7701,
+      "start_date": "value_240",
+      "end_date": "value_240"
+    },
+    {
+      "assignment_id": 2,
+      "project_id": 4829,
+      "employee_id": 8504,
+      "role": "sample_241",
+      "allocation_percentage": 3709,
+      "start_date": "value_241",
+      "end_date": "value_241"
+    },
+    {
+      "assignment_id": 2377,
+      "project_id": 7808,
+      "employee_id": 9149,
+      "role": "sample_242",
+      "allocation_percentage": 9205,
+      "start_date": "value_242",
+      "end_date": "value_242"
+    },
+    {
+      "assignment_id": 6578,
+      "project_id": 3180,
+      "employee_id": 9255,
+      "role": "sample_243",
+      "allocation_percentage": 5649,
+      "start_date": "value_243",
+      "end_date": "value_243"
+    },
+    {
+      "assignment_id": 502,
+      "project_id": 2645,
+      "employee_id": 4484,
+      "role": "sample_244",
+      "allocation_percentage": 7480,
+      "start_date": "value_244",
+      "end_date": "value_244"
+    },
+    {
+      "assignment_id": 3220,
+      "project_id": 1024,
+      "employee_id": 8312,
+      "role": "sample_245",
+      "allocation_percentage": 6604,
+      "start_date": "value_245",
+      "end_date": "value_245"
+    },
+    {
+      "assignment_id": 7237,
+      "project_id": 8354,
+      "employee_id": 5051,
+      "role": "sample_246",
+      "allocation_percentage": 2904,
+      "start_date": "value_246",
+      "end_date": "value_246"
+    },
+    {
+      "assignment_id": 2073,
+      "project_id": 4675,
+      "employee_id": 3126,
+      "role": "sample_247",
+      "allocation_percentage": 5169,
+      "start_date": "value_247",
+      "end_date": "value_247"
+    },
+    {
+      "assignment_id": 5860,
+      "project_id": 6644,
+      "employee_id": 2526,
+      "role": "sample_248",
+      "allocation_percentage": 2225,
+      "start_date": "value_248",
+      "end_date": "value_248"
+    },
+    {
+      "assignment_id": 8021,
+      "project_id": 5116,
+      "employee_id": 4867,
+      "role": "sample_249",
+      "allocation_percentage": 9200,
+      "start_date": "value_249",
+      "end_date": "value_249"
+    },
+    {
+      "assignment_id": 4623,
+      "project_id": 4003,
+      "employee_id": 3733,
+      "role": "sample_250",
+      "allocation_percentage": 9336,
+      "start_date": "value_250",
+      "end_date": "value_250"
+    },
+    {
+      "assignment_id": 7952,
+      "project_id": 418,
+      "employee_id": 7227,
+      "role": "sample_251",
+      "allocation_percentage": 8278,
+      "start_date": "value_251",
+      "end_date": "value_251"
+    },
+    {
+      "assignment_id": 1359,
+      "project_id": 5211,
+      "employee_id": 9239,
+      "role": "sample_252",
+      "allocation_percentage": 7787,
+      "start_date": "value_252",
+      "end_date": "value_252"
+    },
+    {
+      "assignment_id": 9676,
+      "project_id": 4297,
+      "employee_id": 3696,
+      "role": "sample_253",
+      "allocation_percentage": 6132,
+      "start_date": "value_253",
+      "end_date": "value_253"
+    },
+    {
+      "assignment_id": 6590,
+      "project_id": 1951,
+      "employee_id": 5445,
+      "role": "sample_254",
+      "allocation_percentage": 8915,
+      "start_date": "value_254",
+      "end_date": "value_254"
+    },
+    {
+      "assignment_id": 9118,
+      "project_id": 9869,
+      "employee_id": 7635,
+      "role": "sample_255",
+      "allocation_percentage": 9368,
+      "start_date": "value_255",
+      "end_date": "value_255"
+    },
+    {
+      "assignment_id": 664,
+      "project_id": 1572,
+      "employee_id": 844,
+      "role": "sample_256",
+      "allocation_percentage": 7155,
+      "start_date": "value_256",
+      "end_date": "value_256"
+    },
+    {
+      "assignment_id": 9797,
+      "project_id": 1021,
+      "employee_id": 6912,
+      "role": "sample_257",
+      "allocation_percentage": 5100,
+      "start_date": "value_257",
+      "end_date": "value_257"
+    },
+    {
+      "assignment_id": 545,
+      "project_id": 914,
+      "employee_id": 6182,
+      "role": "sample_258",
+      "allocation_percentage": 9990,
+      "start_date": "value_258",
+      "end_date": "value_258"
+    },
+    {
+      "assignment_id": 5325,
+      "project_id": 5549,
+      "employee_id": 9048,
+      "role": "sample_259",
+      "allocation_percentage": 6978,
+      "start_date": "value_259",
+      "end_date": "value_259"
+    },
+    {
+      "assignment_id": 580,
+      "project_id": 5484,
+      "employee_id": 3067,
+      "role": "sample_260",
+      "allocation_percentage": 2051,
+      "start_date": "value_260",
+      "end_date": "value_260"
+    },
+    {
+      "assignment_id": 1258,
+      "project_id": 2517,
+      "employee_id": 8266,
+      "role": "sample_261",
+      "allocation_percentage": 9141,
+      "start_date": "value_261",
+      "end_date": "value_261"
+    },
+    {
+      "assignment_id": 1826,
+      "project_id": 8702,
+      "employee_id": 1663,
+      "role": "sample_262",
+      "allocation_percentage": 7900,
+      "start_date": "value_262",
+      "end_date": "value_262"
+    },
+    {
+      "assignment_id": 7721,
+      "project_id": 8808,
+      "employee_id": 4134,
+      "role": "sample_263",
+      "allocation_percentage": 9716,
+      "start_date": "value_263",
+      "end_date": "value_263"
+    },
+    {
+      "assignment_id": 2486,
+      "project_id": 2761,
+      "employee_id": 9297,
+      "role": "sample_264",
+      "allocation_percentage": 5068,
+      "start_date": "value_264",
+      "end_date": "value_264"
+    },
+    {
+      "assignment_id": 353,
+      "project_id": 7122,
+      "employee_id": 8851,
+      "role": "sample_265",
+      "allocation_percentage": 3105,
+      "start_date": "value_265",
+      "end_date": "value_265"
+    },
+    {
+      "assignment_id": 5610,
+      "project_id": 8849,
+      "employee_id": 2408,
+      "role": "sample_266",
+      "allocation_percentage": 8791,
+      "start_date": "value_266",
+      "end_date": "value_266"
+    },
+    {
+      "assignment_id": 9950,
+      "project_id": 9396,
+      "employee_id": 3719,
+      "role": "sample_267",
+      "allocation_percentage": 9928,
+      "start_date": "value_267",
+      "end_date": "value_267"
+    },
+    {
+      "assignment_id": 7143,
+      "project_id": 751,
+      "employee_id": 7498,
+      "role": "sample_268",
+      "allocation_percentage": 5101,
+      "start_date": "value_268",
+      "end_date": "value_268"
+    },
+    {
+      "assignment_id": 4465,
+      "project_id": 1286,
+      "employee_id": 8778,
+      "role": "sample_269",
+      "allocation_percentage": 1797,
+      "start_date": "value_269",
+      "end_date": "value_269"
+    },
+    {
+      "assignment_id": 383,
+      "project_id": 6201,
+      "employee_id": 4158,
+      "role": "sample_270",
+      "allocation_percentage": 4739,
+      "start_date": "value_270",
+      "end_date": "value_270"
+    },
+    {
+      "assignment_id": 2779,
+      "project_id": 8230,
+      "employee_id": 795,
+      "role": "sample_271",
+      "allocation_percentage": 2910,
+      "start_date": "value_271",
+      "end_date": "value_271"
+    },
+    {
+      "assignment_id": 3424,
+      "project_id": 1886,
+      "employee_id": 7688,
+      "role": "sample_272",
+      "allocation_percentage": 5872,
+      "start_date": "value_272",
+      "end_date": "value_272"
+    },
+    {
+      "assignment_id": 8761,
+      "project_id": 7430,
+      "employee_id": 3958,
+      "role": "sample_273",
+      "allocation_percentage": 9968,
+      "start_date": "value_273",
+      "end_date": "value_273"
+    },
+    {
+      "assignment_id": 4338,
+      "project_id": 6872,
+      "employee_id": 5829,
+      "role": "sample_274",
+      "allocation_percentage": 9760,
+      "start_date": "value_274",
+      "end_date": "value_274"
+    },
+    {
+      "assignment_id": 1742,
+      "project_id": 9804,
+      "employee_id": 8065,
+      "role": "sample_275",
+      "allocation_percentage": 2132,
+      "start_date": "value_275",
+      "end_date": "value_275"
+    },
+    {
+      "assignment_id": 4805,
+      "project_id": 1586,
+      "employee_id": 6587,
+      "role": "sample_276",
+      "allocation_percentage": 908,
+      "start_date": "value_276",
+      "end_date": "value_276"
+    },
+    {
+      "assignment_id": 8524,
+      "project_id": 3732,
+      "employee_id": 8850,
+      "role": "sample_277",
+      "allocation_percentage": 6571,
+      "start_date": "value_277",
+      "end_date": "value_277"
+    },
+    {
+      "assignment_id": 4404,
+      "project_id": 882,
+      "employee_id": 1508,
+      "role": "sample_278",
+      "allocation_percentage": 8954,
+      "start_date": "value_278",
+      "end_date": "value_278"
+    },
+    {
+      "assignment_id": 5678,
+      "project_id": 8599,
+      "employee_id": 6722,
+      "role": "sample_279",
+      "allocation_percentage": 8551,
+      "start_date": "value_279",
+      "end_date": "value_279"
+    },
+    {
+      "assignment_id": 1941,
+      "project_id": 8502,
+      "employee_id": 8594,
+      "role": "sample_280",
+      "allocation_percentage": 9442,
+      "start_date": "value_280",
+      "end_date": "value_280"
+    },
+    {
+      "assignment_id": 4313,
+      "project_id": 1235,
+      "employee_id": 7526,
+      "role": "sample_281",
+      "allocation_percentage": 141,
+      "start_date": "value_281",
+      "end_date": "value_281"
+    },
+    {
+      "assignment_id": 6019,
+      "project_id": 6375,
+      "employee_id": 2817,
+      "role": "sample_282",
+      "allocation_percentage": 4159,
+      "start_date": "value_282",
+      "end_date": "value_282"
+    },
+    {
+      "assignment_id": 1371,
+      "project_id": 1457,
+      "employee_id": 6064,
+      "role": "sample_283",
+      "allocation_percentage": 8138,
+      "start_date": "value_283",
+      "end_date": "value_283"
+    },
+    {
+      "assignment_id": 9527,
+      "project_id": 4088,
+      "employee_id": 1858,
+      "role": "sample_284",
+      "allocation_percentage": 1207,
+      "start_date": "value_284",
+      "end_date": "value_284"
+    },
+    {
+      "assignment_id": 5791,
+      "project_id": 3618,
+      "employee_id": 1739,
+      "role": "sample_285",
+      "allocation_percentage": 9872,
+      "start_date": "value_285",
+      "end_date": "value_285"
+    },
+    {
+      "assignment_id": 6316,
+      "project_id": 4715,
+      "employee_id": 5587,
+      "role": "sample_286",
+      "allocation_percentage": 2233,
+      "start_date": "value_286",
+      "end_date": "value_286"
+    },
+    {
+      "assignment_id": 7764,
+      "project_id": 736,
+      "employee_id": 1818,
+      "role": "sample_287",
+      "allocation_percentage": 3019,
+      "start_date": "value_287",
+      "end_date": "value_287"
+    },
+    {
+      "assignment_id": 4878,
+      "project_id": 575,
+      "employee_id": 3436,
+      "role": "sample_288",
+      "allocation_percentage": 7269,
+      "start_date": "value_288",
+      "end_date": "value_288"
+    },
+    {
+      "assignment_id": 5956,
+      "project_id": 9507,
+      "employee_id": 2490,
+      "role": "sample_289",
+      "allocation_percentage": 4283,
+      "start_date": "value_289",
+      "end_date": "value_289"
+    },
+    {
+      "assignment_id": 4423,
+      "project_id": 3737,
+      "employee_id": 1313,
+      "role": "sample_290",
+      "allocation_percentage": 7594,
+      "start_date": "value_290",
+      "end_date": "value_290"
+    },
+    {
+      "assignment_id": 8377,
+      "project_id": 2168,
+      "employee_id": 7279,
+      "role": "sample_291",
+      "allocation_percentage": 5936,
+      "start_date": "value_291",
+      "end_date": "value_291"
+    },
+    {
+      "assignment_id": 4992,
+      "project_id": 4814,
+      "employee_id": 169,
+      "role": "sample_292",
+      "allocation_percentage": 9823,
+      "start_date": "value_292",
+      "end_date": "value_292"
+    },
+    {
+      "assignment_id": 1870,
+      "project_id": 8411,
+      "employee_id": 931,
+      "role": "sample_293",
+      "allocation_percentage": 6942,
+      "start_date": "value_293",
+      "end_date": "value_293"
+    },
+    {
+      "assignment_id": 1408,
+      "project_id": 439,
+      "employee_id": 4319,
+      "role": "sample_294",
+      "allocation_percentage": 4268,
+      "start_date": "value_294",
+      "end_date": "value_294"
+    },
+    {
+      "assignment_id": 1847,
+      "project_id": 906,
+      "employee_id": 8375,
+      "role": "sample_295",
+      "allocation_percentage": 2463,
+      "start_date": "value_295",
+      "end_date": "value_295"
+    },
+    {
+      "assignment_id": 9561,
+      "project_id": 4475,
+      "employee_id": 7788,
+      "role": "sample_296",
+      "allocation_percentage": 9707,
+      "start_date": "value_296",
+      "end_date": "value_296"
+    },
+    {
+      "assignment_id": 8436,
+      "project_id": 49,
+      "employee_id": 9801,
+      "role": "sample_297",
+      "allocation_percentage": 6876,
+      "start_date": "value_297",
+      "end_date": "value_297"
+    },
+    {
+      "assignment_id": 9365,
+      "project_id": 2081,
+      "employee_id": 3663,
+      "role": "sample_298",
+      "allocation_percentage": 5234,
+      "start_date": "value_298",
+      "end_date": "value_298"
+    },
+    {
+      "assignment_id": 814,
+      "project_id": 4493,
+      "employee_id": 8485,
+      "role": "sample_299",
+      "allocation_percentage": 2861,
+      "start_date": "value_299",
+      "end_date": "value_299"
+    }
+  ],
+  "metadata": {
+    "exported_at": "2025-08-03T11:56:14.015347",
+    "session_id": "88ea29bd-92c7-497e-8b2e-cf51c8d52404",
+    "format": "json"
+  }
+}

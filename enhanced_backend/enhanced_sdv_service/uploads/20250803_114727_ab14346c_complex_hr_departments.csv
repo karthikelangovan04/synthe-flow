@@ -1,0 +1,21 @@
+department_id,name,budget,location
+1,Engineering,5000000,HQ
+2,Sales,3000000,HQ
+3,Marketing,2000000,HQ
+4,Finance,1500000,HQ
+5,HR,1000000,HQ
+6,Operations,2500000,Branch1
+7,Customer Support,1800000,Branch1
+8,Product Management,2200000,HQ
+9,Quality Assurance,1200000,Branch2
+10,Research & Development,4000000,HQ
+11,Legal,800000,HQ
+12,IT Support,900000,Branch1
+13,Business Development,1600000,HQ
+14,Data Science,2800000,HQ
+15,Design,1400000,HQ
+16,Security,1100000,HQ
+17,Facilities,600000,Branch1
+18,Procurement,700000,Branch2
+19,Compliance,500000,HQ
+20,Training,400000,Branch1

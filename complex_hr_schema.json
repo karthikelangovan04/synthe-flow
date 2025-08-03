@@ -1,0 +1,10 @@
+{
+  "tables": [
+    {
+      "name": "employees",
+      "description": "HR Employees data",
+      "columns": [
+        {
+          "name": "employee_id",
+          "data_type": "int64",
+          "is_nullable": 

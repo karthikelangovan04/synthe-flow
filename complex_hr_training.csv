@@ -1,0 +1,11 @@
+training_id,name,category,duration_hours,cost
+1,Python Fundamentals,Programming,40,500
+2,Advanced JavaScript,Programming,30,400
+3,AWS Cloud Practitioner,Cloud,20,300
+4,Leadership Skills,Management,16,800
+5,Project Management Professional,Management,35,1200
+6,Data Science Fundamentals,Analytics,50,600
+7,Sales Techniques,Business,24,350
+8,Customer Service Excellence,Business,12,200
+9,Financial Analysis,Finance,28,450
+10,Legal Compliance Training,Legal,8,150

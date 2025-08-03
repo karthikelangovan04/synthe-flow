@@ -1,0 +1,137 @@
+{
+  "table_name": "departments",
+  "record_count": 20,
+  "columns": [
+    "department_id",
+    "name",
+    "budget",
+    "location"
+  ],
+  "data": [
+    {
+      "department_id": 8197,
+      "name": "sample_0",
+      "budget": "value_0",
+      "location": "sample_0"
+    },
+    {
+      "department_id": 6508,
+      "name": "sample_1",
+      "budget": "value_1",
+      "location": "sample_1"
+    },
+    {
+      "department_id": 1123,
+      "name": "sample_2",
+      "budget": "value_2",
+      "location": "sample_2"
+    },
+    {
+      "department_id": 6298,
+      "name": "sample_3",
+      "budget": "value_3",
+      "location": "sample_3"
+    },
+    {
+      "department_id": 9326,
+      "name": "sample_4",
+      "budget": "value_4",
+      "location": "sample_4"
+    },
+    {
+      "department_id": 4510,
+      "name": "sample_5",
+      "budget": "value_5",
+      "location": "sample_5"
+    },
+    {
+      "department_id": 8595,
+      "name": "sample_6",
+      "budget": "value_6",
+      "location": "sample_6"
+    },
+    {
+      "department_id": 6506,
+      "name": "sample_7",
+      "budget": "value_7",
+      "location": "sample_7"
+    },
+    {
+      "department_id": 2251,
+      "name": "sample_8",
+      "budget": "value_8",
+      "location": "sample_8"
+    },
+    {
+      "department_id": 6735,
+      "name": "sample_9",
+      "budget": "value_9",
+      "location": "sample_9"
+    },
+    {
+      "department_id": 1051,
+      "name": "sample_10",
+      "budget": "value_10",
+      "location": "sample_10"
+    },
+    {
+      "department_id": 7888,
+      "name": "sample_11",
+      "budget": "value_11",
+      "location": "sample_11"
+    },
+    {
+      "department_id": 9101,
+      "name": "sample_12",
+      "budget": "value_12",
+      "location": "sample_12"
+    },
+    {
+      "department_id": 3684,
+      "name": "sample_13",
+      "budget": "value_13",
+      "location": "sample_13"
+    },
+    {
+      "department_id": 2663,
+      "name": "sample_14",
+      "budget": "value_14",
+      "location": "sample_14"
+    },
+    {
+      "department_id": 8976,
+      "name": "sample_15",
+      "budget": "value_15",
+      "location": "sample_15"
+    },
+    {
+      "department_id": 5753,
+      "name": "sample_16",
+      "budget": "value_16",
+      "location": "sample_16"
+    },
+    {
+      "department_id": 6893,
+      "name": "sample_17",
+      "budget": "value_17",
+      "location": "sample_17"
+    },
+    {
+      "department_id": 9249,
+      "name": "sample_18",
+      "budget": "value_18",
+      "location": "sample_18"
+    },
+    {
+      "department_id": 6518,
+      "name": "sample_19",
+      "budget": "value_19",
+      "location": "sample_19"
+    }
+  ],
+  "metadata": {
+    "exported_at": "2025-08-03T11:56:13.972711",
+    "session_id": "88ea29bd-92c7-497e-8b2e-cf51c8d52404",
+    "format": "json"
+  }
+}

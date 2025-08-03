@@ -1,0 +1,4019 @@
+{
+  "table_name": "salaries",
+  "record_count": 500,
+  "columns": [
+    "salary_id",
+    "employee_id",
+    "base_salary",
+    "bonus",
+    "total_salary",
+    "effective_date"
+  ],
+  "data": [
+    {
+      "salary_id": 8458,
+      "employee_id": 6577,
+      "base_salary": 4158,
+      "bonus": 9625,
+      "total_salary": 9381,
+      "effective_date": "value_0"
+    },
+    {
+      "salary_id": 503,
+      "employee_id": 9552,
+      "base_salary": 4744,
+      "bonus": 3512,
+      "total_salary": 1108,
+      "effective_date": "value_1"
+    },
+    {
+      "salary_id": 6350,
+      "employee_id": 504,
+      "base_salary": 9283,
+      "bonus": 1126,
+      "total_salary": 5475,
+      "effective_date": "value_2"
+    },
+    {
+      "salary_id": 5907,
+      "employee_id": 4724,
+      "base_salary": 3762,
+      "bonus": 6178,
+      "total_salary": 1143,
+      "effective_date": "value_3"
+    },
+    {
+      "salary_id": 4492,
+      "employee_id": 7056,
+      "base_salary": 4784,
+      "bonus": 4970,
+      "total_salary": 908,
+      "effective_date": "value_4"
+    },
+    {
+      "salary_id": 6976,
+      "employee_id": 1119,
+      "base_salary": 1789,
+      "bonus": 9746,
+      "total_salary": 8275,
+      "effective_date": "value_5"
+    },
+    {
+      "salary_id": 1161,
+      "employee_id": 1864,
+      "base_salary": 1325,
+      "bonus": 8577,
+      "total_salary": 8750,
+      "effective_date": "value_6"
+    },
+    {
+      "salary_id": 1059,
+      "employee_id": 8316,
+      "base_salary": 6256,
+      "bonus": 42,
+      "total_salary": 908,
+      "effective_date": "value_7"
+    },
+    {
+      "salary_id": 3992,
+      "employee_id": 8812,
+      "base_salary": 7205,
+      "bonus": 5593,
+      "total_salary": 2380,
+      "effective_date": "value_8"
+    },
+    {
+      "salary_id": 7770,
+      "employee_id": 8389,
+      "base_salary": 860,
+      "bonus": 6966,
+      "total_salary": 7376,
+      "effective_date": "value_9"
+    },
+    {
+      "salary_id": 3773,
+      "employee_id": 6990,
+      "base_salary": 5421,
+      "bonus": 7413,
+      "total_salary": 1930,
+      "effective_date": "value_10"
+    },
+    {
+      "salary_id": 9222,
+      "employee_id": 8640,
+      "base_salary": 3653,
+      "bonus": 5587,
+      "total_salary": 5999,
+      "effective_date": "value_11"
+    },
+    {
+      "salary_id": 2853,
+      "employee_id": 3071,
+      "base_salary": 7618,
+      "bonus": 9924,
+      "total_salary": 3939,
+      "effective_date": "value_12"
+    },
+    {
+      "salary_id": 4205,
+      "employee_id": 1906,
+      "base_salary": 5494,
+      "bonus": 966,
+      "total_salary": 6312,
+      "effective_date": "value_13"
+    },
+    {
+      "salary_id": 8134,
+      "employee_id": 3522,
+      "base_salary": 1769,
+      "bonus": 3666,
+      "total_salary": 2810,
+      "effective_date": "value_14"
+    },
+    {
+      "salary_id": 5887,
+      "employee_id": 7722,
+      "base_salary": 1410,
+      "bonus": 4175,
+      "total_salary": 9430,
+      "effective_date": "value_15"
+    },
+    {
+      "salary_id": 4668,
+      "employee_id": 3651,
+      "base_salary": 4099,
+      "bonus": 4325,
+      "total_salary": 8157,
+      "effective_date": "value_16"
+    },
+    {
+      "salary_id": 7978,
+      "employee_id": 2841,
+      "base_salary": 7703,
+      "bonus": 3410,
+      "total_salary": 4418,
+      "effective_date": "value_17"
+    },
+    {
+      "salary_id": 820,
+      "employee_id": 5625,
+      "base_salary": 2467,
+      "bonus": 5516,
+      "total_salary": 8953,
+      "effective_date": "value_18"
+    },
+    {
+      "salary_id": 2038,
+      "employee_id": 4018,
+      "base_salary": 3149,
+      "bonus": 1860,
+      "total_salary": 1842,
+      "effective_date": "value_19"
+    },
+    {
+      "salary_id": 2987,
+      "employee_id": 379,
+      "base_salary": 3924,
+      "bonus": 6303,
+      "total_salary": 5377,
+      "effective_date": "value_20"
+    },
+    {
+      "salary_id": 9326,
+      "employee_id": 993,
+      "base_salary": 9793,
+      "bonus": 7087,
+      "total_salary": 1344,
+      "effective_date": "value_21"
+    },
+    {
+      "salary_id": 782,
+      "employee_id": 2504,
+      "base_salary": 7598,
+      "bonus": 8409,
+      "total_salary": 557,
+      "effective_date": "value_22"
+    },
+    {
+      "salary_id": 1462,
+      "employee_id": 8196,
+      "base_salary": 4128,
+      "bonus": 758,
+      "total_salary": 4092,
+      "effective_date": "value_23"
+    },
+    {
+      "salary_id": 9400,
+      "employee_id": 9645,
+      "base_salary": 3989,
+      "bonus": 774,
+      "total_salary": 5985,
+      "effective_date": "value_24"
+    },
+    {
+      "salary_id": 7951,
+      "employee_id": 3725,
+      "base_salary": 2870,
+      "bonus": 5242,
+      "total_salary": 4436,
+      "effective_date": "value_25"
+    },
+    {
+      "salary_id": 3477,
+      "employee_id": 3070,
+      "base_salary": 8384,
+      "bonus": 6766,
+      "total_salary": 3190,
+      "effective_date": "value_26"
+    },
+    {
+      "salary_id": 7036,
+      "employee_id": 8877,
+      "base_salary": 142,
+      "bonus": 7490,
+      "total_salary": 6106,
+      "effective_date": "value_27"
+    },
+    {
+      "salary_id": 505,
+      "employee_id": 4197,
+      "base_salary": 292,
+      "bonus": 3186,
+      "total_salary": 634,
+      "effective_date": "value_28"
+    },
+    {
+      "salary_id": 9106,
+      "employee_id": 9343,
+      "base_salary": 6634,
+      "bonus": 554,
+      "total_salary": 4785,
+      "effective_date": "value_29"
+    },
+    {
+      "salary_id": 1035,
+      "employee_id": 4259,
+      "base_salary": 3515,
+      "bonus": 9309,
+      "total_salary": 3615,
+      "effective_date": "value_30"
+    },
+    {
+      "salary_id": 2188,
+      "employee_id": 5127,
+      "base_salary": 3455,
+      "bonus": 9994,
+      "total_salary": 6798,
+      "effective_date": "value_31"
+    },
+    {
+      "salary_id": 5444,
+      "employee_id": 2865,
+      "base_salary": 1778,
+      "bonus": 4784,
+      "total_salary": 2983,
+      "effective_date": "value_32"
+    },
+    {
+      "salary_id": 2431,
+      "employee_id": 2049,
+      "base_salary": 7477,
+      "bonus": 110,
+      "total_salary": 53,
+      "effective_date": "value_33"
+    },
+    {
+      "salary_id": 5939,
+      "employee_id": 978,
+      "base_salary": 8579,
+      "bonus": 1324,
+      "total_salary": 4373,
+      "effective_date": "value_34"
+    },
+    {
+      "salary_id": 2899,
+      "employee_id": 7570,
+      "base_salary": 5208,
+      "bonus": 7193,
+      "total_salary": 7613,
+      "effective_date": "value_35"
+    },
+    {
+      "salary_id": 2381,
+      "employee_id": 923,
+      "base_salary": 7302,
+      "bonus": 707,
+      "total_salary": 3926,
+      "effective_date": "value_36"
+    },
+    {
+      "salary_id": 6479,
+      "employee_id": 3291,
+      "base_salary": 6176,
+      "bonus": 4486,
+      "total_salary": 9267,
+      "effective_date": "value_37"
+    },
+    {
+      "salary_id": 9636,
+      "employee_id": 6405,
+      "base_salary": 3283,
+      "bonus": 2708,
+      "total_salary": 5964,
+      "effective_date": "value_38"
+    },
+    {
+      "salary_id": 5355,
+      "employee_id": 442,
+      "base_salary": 8393,
+      "bonus": 3542,
+      "total_salary": 1737,
+      "effective_date": "value_39"
+    },
+    {
+      "salary_id": 884,
+      "employee_id": 2422,
+      "base_salary": 2310,
+      "bonus": 7259,
+      "total_salary": 7092,
+      "effective_date": "value_40"
+    },
+    {
+      "salary_id": 1055,
+      "employee_id": 1830,
+      "base_salary": 189,
+      "bonus": 3133,
+      "total_salary": 6767,
+      "effective_date": "value_41"
+    },
+    {
+      "salary_id": 4263,
+      "employee_id": 275,
+      "base_salary": 6945,
+      "bonus": 6699,
+      "total_salary": 7897,
+      "effective_date": "value_42"
+    },
+    {
+      "salary_id": 2317,
+      "employee_id": 4619,
+      "base_salary": 4525,
+      "bonus": 6118,
+      "total_salary": 4470,
+      "effective_date": "value_43"
+    },
+    {
+      "salary_id": 5652,
+      "employee_id": 1857,
+      "base_salary": 3700,
+      "bonus": 8333,
+      "total_salary": 6125,
+      "effective_date": "value_44"
+    },
+    {
+      "salary_id": 2613,
+      "employee_id": 3819,
+      "base_salary": 7575,
+      "bonus": 9631,
+      "total_salary": 5378,
+      "effective_date": "value_45"
+    },
+    {
+      "salary_id": 9445,
+      "employee_id": 4362,
+      "base_salary": 3371,
+      "bonus": 6804,
+      "total_salary": 4598,
+      "effective_date": "value_46"
+    },
+    {
+      "salary_id": 400,
+      "employee_id": 8603,
+      "base_salary": 9471,
+      "bonus": 808,
+      "total_salary": 7043,
+      "effective_date": "value_47"
+    },
+    {
+      "salary_id": 8899,
+      "employee_id": 5317,
+      "base_salary": 709,
+      "bonus": 5917,
+      "total_salary": 7914,
+      "effective_date": "value_48"
+    },
+    {
+      "salary_id": 666,
+      "employee_id": 8431,
+      "base_salary": 7842,
+      "bonus": 9043,
+      "total_salary": 1237,
+      "effective_date": "value_49"
+    },
+    {
+      "salary_id": 2373,
+      "employee_id": 1578,
+      "base_salary": 9484,
+      "bonus": 8341,
+      "total_salary": 9678,
+      "effective_date": "value_50"
+    },
+    {
+      "salary_id": 3495,
+      "employee_id": 9522,
+      "base_salary": 6951,
+      "bonus": 2268,
+      "total_salary": 8964,
+      "effective_date": "value_51"
+    },
+    {
+      "salary_id": 3627,
+      "employee_id": 1860,
+      "base_salary": 1432,
+      "bonus": 6176,
+      "total_salary": 4538,
+      "effective_date": "value_52"
+    },
+    {
+      "salary_id": 2542,
+      "employee_id": 7877,
+      "base_salary": 2606,
+      "bonus": 7181,
+      "total_salary": 2207,
+      "effective_date": "value_53"
+    },
+    {
+      "salary_id": 4973,
+      "employee_id": 356,
+      "base_salary": 4221,
+      "bonus": 1036,
+      "total_salary": 2475,
+      "effective_date": "value_54"
+    },
+    {
+      "salary_id": 5092,
+      "employee_id": 8600,
+      "base_salary": 3951,
+      "bonus": 1455,
+      "total_salary": 2366,
+      "effective_date": "value_55"
+    },
+    {
+      "salary_id": 8193,
+      "employee_id": 8808,
+      "base_salary": 7255,
+      "bonus": 2015,
+      "total_salary": 3643,
+      "effective_date": "value_56"
+    },
+    {
+      "salary_id": 2370,
+      "employee_id": 7971,
+      "base_salary": 1737,
+      "bonus": 1003,
+      "total_salary": 3313,
+      "effective_date": "value_57"
+    },
+    {
+      "salary_id": 595,
+      "employee_id": 1644,
+      "base_salary": 8413,
+      "bonus": 1883,
+      "total_salary": 7070,
+      "effective_date": "value_58"
+    },
+    {
+      "salary_id": 1685,
+      "employee_id": 3338,
+      "base_salary": 6653,
+      "bonus": 2005,
+      "total_salary": 2026,
+      "effective_date": "value_59"
+    },
+    {
+      "salary_id": 2484,
+      "employee_id": 9032,
+      "base_salary": 5075,
+      "bonus": 1113,
+      "total_salary": 1413,
+      "effective_date": "value_60"
+    },
+    {
+      "salary_id": 3406,
+      "employee_id": 3860,
+      "base_salary": 8867,
+      "bonus": 2750,
+      "total_salary": 8870,
+      "effective_date": "value_61"
+    },
+    {
+      "salary_id": 6606,
+      "employee_id": 4435,
+      "base_salary": 266,
+      "bonus": 3864,
+      "total_salary": 1040,
+      "effective_date": "value_62"
+    },
+    {
+      "salary_id": 5587,
+      "employee_id": 1822,
+      "base_salary": 9969,
+      "bonus": 6760,
+      "total_salary": 42,
+      "effective_date": "value_63"
+    },
+    {
+      "salary_id": 8682,
+      "employee_id": 961,
+      "base_salary": 4091,
+      "bonus": 2267,
+      "total_salary": 2797,
+      "effective_date": "value_64"
+    },
+    {
+      "salary_id": 3812,
+      "employee_id": 1584,
+      "base_salary": 7305,
+      "bonus": 4564,
+      "total_salary": 1747,
+      "effective_date": "value_65"
+    },
+    {
+      "salary_id": 2834,
+      "employee_id": 1960,
+      "base_salary": 6006,
+      "bonus": 5548,
+      "total_salary": 3946,
+      "effective_date": "value_66"
+    },
+    {
+      "salary_id": 6365,
+      "employee_id": 2965,
+      "base_salary": 7379,
+      "bonus": 6222,
+      "total_salary": 5528,
+      "effective_date": "value_67"
+    },
+    {
+      "salary_id": 8707,
+      "employee_id": 9552,
+      "base_salary": 1237,
+      "bonus": 6807,
+      "total_salary": 6085,
+      "effective_date": "value_68"
+    },
+    {
+      "salary_id": 9619,
+      "employee_id": 3517,
+      "base_salary": 2444,
+      "bonus": 3746,
+      "total_salary": 8808,
+      "effective_date": "value_69"
+    },
+    {
+      "salary_id": 619,
+      "employee_id": 7577,
+      "base_salary": 147,
+      "bonus": 4442,
+      "total_salary": 9259,
+      "effective_date": "value_70"
+    },
+    {
+      "salary_id": 3205,
+      "employee_id": 6549,
+      "base_salary": 9076,
+      "bonus": 6928,
+      "total_salary": 5784,
+      "effective_date": "value_71"
+    },
+    {
+      "salary_id": 4806,
+      "employee_id": 8273,
+      "base_salary": 8814,
+      "bonus": 395,
+      "total_salary": 8740,
+      "effective_date": "value_72"
+    },
+    {
+      "salary_id": 7938,
+      "employee_id": 4188,
+      "base_salary": 3386,
+      "bonus": 9705,
+      "total_salary": 1879,
+      "effective_date": "value_73"
+    },
+    {
+      "salary_id": 8994,
+      "employee_id": 7009,
+      "base_salary": 1118,
+      "bonus": 9462,
+      "total_salary": 8939,
+      "effective_date": "value_74"
+    },
+    {
+      "salary_id": 8044,
+      "employee_id": 4567,
+      "base_salary": 6492,
+      "bonus": 3519,
+      "total_salary": 9897,
+      "effective_date": "value_75"
+    },
+    {
+      "salary_id": 296,
+      "employee_id": 2621,
+      "base_salary": 7317,
+      "bonus": 2397,
+      "total_salary": 7271,
+      "effective_date": "value_76"
+    },
+    {
+      "salary_id": 3915,
+      "employee_id": 4657,
+      "base_salary": 7728,
+      "bonus": 8501,
+      "total_salary": 998,
+      "effective_date": "value_77"
+    },
+    {
+      "salary_id": 8471,
+      "employee_id": 5076,
+      "base_salary": 6439,
+      "bonus": 8006,
+      "total_salary": 7389,
+      "effective_date": "value_78"
+    },
+    {
+      "salary_id": 4668,
+      "employee_id": 5218,
+      "base_salary": 4670,
+      "bonus": 5637,
+      "total_salary": 775,
+      "effective_date": "value_79"
+    },
+    {
+      "salary_id": 6302,
+      "employee_id": 9564,
+      "base_salary": 7535,
+      "bonus": 5716,
+      "total_salary": 3162,
+      "effective_date": "value_80"
+    },
+    {
+      "salary_id": 468,
+      "employee_id": 7357,
+      "base_salary": 3577,
+      "bonus": 8343,
+      "total_salary": 7240,
+      "effective_date": "value_81"
+    },
+    {
+      "salary_id": 3166,
+      "employee_id": 7150,
+      "base_salary": 2282,
+      "bonus": 9547,
+      "total_salary": 7975,
+      "effective_date": "value_82"
+    },
+    {
+      "salary_id": 1954,
+      "employee_id": 9851,
+      "base_salary": 1827,
+      "bonus": 663,
+      "total_salary": 9741,
+      "effective_date": "value_83"
+    },
+    {
+      "salary_id": 3009,
+      "employee_id": 8258,
+      "base_salary": 6986,
+      "bonus": 9876,
+      "total_salary": 1071,
+      "effective_date": "value_84"
+    },
+    {
+      "salary_id": 6054,
+      "employee_id": 7136,
+      "base_salary": 1243,
+      "bonus": 6084,
+      "total_salary": 2031,
+      "effective_date": "value_85"
+    },
+    {
+      "salary_id": 3720,
+      "employee_id": 9938,
+      "base_salary": 6860,
+      "bonus": 1794,
+      "total_salary": 726,
+      "effective_date": "value_86"
+    },
+    {
+      "salary_id": 8057,
+      "employee_id": 1918,
+      "base_salary": 6945,
+      "bonus": 2246,
+      "total_salary": 4089,
+      "effective_date": "value_87"
+    },
+    {
+      "salary_id": 1859,
+      "employee_id": 4504,
+      "base_salary": 5131,
+      "bonus": 2694,
+      "total_salary": 7167,
+      "effective_date": "value_88"
+    },
+    {
+      "salary_id": 3743,
+      "employee_id": 9996,
+      "base_salary": 4989,
+      "bonus": 1083,
+      "total_salary": 1070,
+      "effective_date": "value_89"
+    },
+    {
+      "salary_id": 3623,
+      "employee_id": 1662,
+      "base_salary": 2031,
+      "bonus": 1692,
+      "total_salary": 3540,
+      "effective_date": "value_90"
+    },
+    {
+      "salary_id": 442,
+      "employee_id": 4524,
+      "base_salary": 4422,
+      "bonus": 5809,
+      "total_salary": 7347,
+      "effective_date": "value_91"
+    },
+    {
+      "salary_id": 5565,
+      "employee_id": 6370,
+      "base_salary": 2651,
+      "bonus": 6989,
+      "total_salary": 2058,
+      "effective_date": "value_92"
+    },
+    {
+      "salary_id": 4725,
+      "employee_id": 2631,
+      "base_salary": 1900,
+      "bonus": 5246,
+      "total_salary": 6131,
+      "effective_date": "value_93"
+    },
+    {
+      "salary_id": 140,
+      "employee_id": 3791,
+      "base_salary": 3168,
+      "bonus": 5512,
+      "total_salary": 6526,
+      "effective_date": "value_94"
+    },
+    {
+      "salary_id": 8036,
+      "employee_id": 570,
+      "base_salary": 5539,
+      "bonus": 7266,
+      "total_salary": 9830,
+      "effective_date": "value_95"
+    },
+    {
+      "salary_id": 841,
+      "employee_id": 411,
+      "base_salary": 1542,
+      "bonus": 4503,
+      "total_salary": 1906,
+      "effective_date": "value_96"
+    },
+    {
+      "salary_id": 3600,
+      "employee_id": 7119,
+      "base_salary": 6704,
+      "bonus": 284,
+      "total_salary": 3799,
+      "effective_date": "value_97"
+    },
+    {
+      "salary_id": 312,
+      "employee_id": 740,
+      "base_salary": 9624,
+      "bonus": 4500,
+      "total_salary": 5197,
+      "effective_date": "value_98"
+    },
+    {
+      "salary_id": 5582,
+      "employee_id": 1864,
+      "base_salary": 7112,
+      "bonus": 4601,
+      "total_salary": 8102,
+      "effective_date": "value_99"
+    },
+    {
+      "salary_id": 9489,
+      "employee_id": 1900,
+      "base_salary": 8945,
+      "bonus": 4493,
+      "total_salary": 4177,
+      "effective_date": "value_100"
+    },
+    {
+      "salary_id": 8632,
+      "employee_id": 2474,
+      "base_salary": 292,
+      "bonus": 374,
+      "total_salary": 5698,
+      "effective_date": "value_101"
+    },
+    {
+      "salary_id": 3799,
+      "employee_id": 2896,
+      "base_salary": 7266,
+      "bonus": 7784,
+      "total_salary": 811,
+      "effective_date": "value_102"
+    },
+    {
+      "salary_id": 1491,
+      "employee_id": 6654,
+      "base_salary": 4675,
+      "bonus": 6727,
+      "total_salary": 1445,
+      "effective_date": "value_103"
+    },
+    {
+      "salary_id": 1124,
+      "employee_id": 5076,
+      "base_salary": 2740,
+      "bonus": 1078,
+      "total_salary": 126,
+      "effective_date": "value_104"
+    },
+    {
+      "salary_id": 1823,
+      "employee_id": 1146,
+      "base_salary": 4651,
+      "bonus": 8425,
+      "total_salary": 7875,
+      "effective_date": "value_105"
+    },
+    {
+      "salary_id": 3180,
+      "employee_id": 3253,
+      "base_salary": 8205,
+      "bonus": 1134,
+      "total_salary": 4476,
+      "effective_date": "value_106"
+    },
+    {
+      "salary_id": 7368,
+      "employee_id": 4650,
+      "base_salary": 3672,
+      "bonus": 8582,
+      "total_salary": 2050,
+      "effective_date": "value_107"
+    },
+    {
+      "salary_id": 4938,
+      "employee_id": 6557,
+      "base_salary": 4030,
+      "bonus": 6432,
+      "total_salary": 8162,
+      "effective_date": "value_108"
+    },
+    {
+      "salary_id": 1848,
+      "employee_id": 399,
+      "base_salary": 7251,
+      "bonus": 2070,
+      "total_salary": 2579,
+      "effective_date": "value_109"
+    },
+    {
+      "salary_id": 4823,
+      "employee_id": 4605,
+      "base_salary": 2471,
+      "bonus": 8888,
+      "total_salary": 3307,
+      "effective_date": "value_110"
+    },
+    {
+      "salary_id": 3102,
+      "employee_id": 4939,
+      "base_salary": 5397,
+      "bonus": 3338,
+      "total_salary": 5939,
+      "effective_date": "value_111"
+    },
+    {
+      "salary_id": 6405,
+      "employee_id": 160,
+      "base_salary": 2699,
+      "bonus": 5107,
+      "total_salary": 7791,
+      "effective_date": "value_112"
+    },
+    {
+      "salary_id": 9634,
+      "employee_id": 4736,
+      "base_salary": 8152,
+      "bonus": 1458,
+      "total_salary": 9652,
+      "effective_date": "value_113"
+    },
+    {
+      "salary_id": 6180,
+      "employee_id": 4991,
+      "base_salary": 1088,
+      "bonus": 2819,
+      "total_salary": 7746,
+      "effective_date": "value_114"
+    },
+    {
+      "salary_id": 9836,
+      "employee_id": 8917,
+      "base_salary": 7626,
+      "bonus": 3602,
+      "total_salary": 3317,
+      "effective_date": "value_115"
+    },
+    {
+      "salary_id": 8147,
+      "employee_id": 4100,
+      "base_salary": 5488,
+      "bonus": 9909,
+      "total_salary": 699,
+      "effective_date": "value_116"
+    },
+    {
+      "salary_id": 592,
+      "employee_id": 8010,
+      "base_salary": 6936,
+      "bonus": 1096,
+      "total_salary": 628,
+      "effective_date": "value_117"
+    },
+    {
+      "salary_id": 1476,
+      "employee_id": 8137,
+      "base_salary": 2186,
+      "bonus": 1280,
+      "total_salary": 1418,
+      "effective_date": "value_118"
+    },
+    {
+      "salary_id": 5127,
+      "employee_id": 2743,
+      "base_salary": 6070,
+      "bonus": 3956,
+      "total_salary": 747,
+      "effective_date": "value_119"
+    },
+    {
+      "salary_id": 5521,
+      "employee_id": 6870,
+      "base_salary": 5826,
+      "bonus": 9104,
+      "total_salary": 3469,
+      "effective_date": "value_120"
+    },
+    {
+      "salary_id": 5727,
+      "employee_id": 8311,
+      "base_salary": 3800,
+      "bonus": 3590,
+      "total_salary": 8342,
+      "effective_date": "value_121"
+    },
+    {
+      "salary_id": 1499,
+      "employee_id": 3970,
+      "base_salary": 6976,
+      "bonus": 1162,
+      "total_salary": 465,
+      "effective_date": "value_122"
+    },
+    {
+      "salary_id": 583,
+      "employee_id": 1412,
+      "base_salary": 1138,
+      "bonus": 1245,
+      "total_salary": 6747,
+      "effective_date": "value_123"
+    },
+    {
+      "salary_id": 594,
+      "employee_id": 6974,
+      "base_salary": 6527,
+      "bonus": 12,
+      "total_salary": 9315,
+      "effective_date": "value_124"
+    },
+    {
+      "salary_id": 2939,
+      "employee_id": 6890,
+      "base_salary": 5675,
+      "bonus": 6649,
+      "total_salary": 1172,
+      "effective_date": "value_125"
+    },
+    {
+      "salary_id": 2317,
+      "employee_id": 8138,
+      "base_salary": 2836,
+      "bonus": 1187,
+      "total_salary": 9628,
+      "effective_date": "value_126"
+    },
+    {
+      "salary_id": 9361,
+      "employee_id": 6462,
+      "base_salary": 2247,
+      "bonus": 5820,
+      "total_salary": 7432,
+      "effective_date": "value_127"
+    },
+    {
+      "salary_id": 5668,
+      "employee_id": 417,
+      "base_salary": 9011,
+      "bonus": 708,
+      "total_salary": 5107,
+      "effective_date": "value_128"
+    },
+    {
+      "salary_id": 6315,
+      "employee_id": 589,
+      "base_salary": 3068,
+      "bonus": 123,
+      "total_salary": 5087,
+      "effective_date": "value_129"
+    },
+    {
+      "salary_id": 8037,
+      "employee_id": 8762,
+      "base_salary": 4408,
+      "bonus": 7064,
+      "total_salary": 3594,
+      "effective_date": "value_130"
+    },
+    {
+      "salary_id": 498,
+      "employee_id": 6306,
+      "base_salary": 2430,
+      "bonus": 3247,
+      "total_salary": 731,
+      "effective_date": "value_131"
+    },
+    {
+      "salary_id": 6080,
+      "employee_id": 7919,
+      "base_salary": 584,
+      "bonus": 9188,
+      "total_salary": 7265,
+      "effective_date": "value_132"
+    },
+    {
+      "salary_id": 4823,
+      "employee_id": 5095,
+      "base_salary": 1701,
+      "bonus": 5840,
+      "total_salary": 1068,
+      "effective_date": "value_133"
+    },
+    {
+      "salary_id": 9053,
+      "employee_id": 6294,
+      "base_salary": 3433,
+      "bonus": 7453,
+      "total_salary": 9857,
+      "effective_date": "value_134"
+    },
+    {
+      "salary_id": 9301,
+      "employee_id": 3062,
+      "base_salary": 5673,
+      "bonus": 6485,
+      "total_salary": 6273,
+      "effective_date": "value_135"
+    },
+    {
+      "salary_id": 5000,
+      "employee_id": 3503,
+      "base_salary": 8352,
+      "bonus": 9006,
+      "total_salary": 1813,
+      "effective_date": "value_136"
+    },
+    {
+      "salary_id": 388,
+      "employee_id": 6934,
+      "base_salary": 7582,
+      "bonus": 2974,
+      "total_salary": 2496,
+      "effective_date": "value_137"
+    },
+    {
+      "salary_id": 3311,
+      "employee_id": 7462,
+      "base_salary": 150,
+      "bonus": 8165,
+      "total_salary": 6031,
+      "effective_date": "value_138"
+    },
+    {
+      "salary_id": 5019,
+      "employee_id": 4985,
+      "base_salary": 7697,
+      "bonus": 6093,
+      "total_salary": 4198,
+      "effective_date": "value_139"
+    },
+    {
+      "salary_id": 1737,
+      "employee_id": 7894,
+      "base_salary": 3411,
+      "bonus": 3630,
+      "total_salary": 7151,
+      "effective_date": "value_140"
+    },
+    {
+      "salary_id": 6621,
+      "employee_id": 8719,
+      "base_salary": 2098,
+      "bonus": 2226,
+      "total_salary": 7929,
+      "effective_date": "value_141"
+    },
+    {
+      "salary_id": 6568,
+      "employee_id": 7347,
+      "base_salary": 8293,
+      "bonus": 9131,
+      "total_salary": 845,
+      "effective_date": "value_142"
+    },
+    {
+      "salary_id": 9243,
+      "employee_id": 8858,
+      "base_salary": 8669,
+      "bonus": 2836,
+      "total_salary": 8534,
+      "effective_date": "value_143"
+    },
+    {
+      "salary_id": 7476,
+      "employee_id": 5423,
+      "base_salary": 6825,
+      "bonus": 9434,
+      "total_salary": 979,
+      "effective_date": "value_144"
+    },
+    {
+      "salary_id": 1450,
+      "employee_id": 8971,
+      "base_salary": 2554,
+      "bonus": 7635,
+      "total_salary": 1127,
+      "effective_date": "value_145"
+    },
+    {
+      "salary_id": 8622,
+      "employee_id": 7832,
+      "base_salary": 2929,
+      "bonus": 5077,
+      "total_salary": 8393,
+      "effective_date": "value_146"
+    },
+    {
+      "salary_id": 1459,
+      "employee_id": 1379,
+      "base_salary": 811,
+      "bonus": 212,
+      "total_salary": 3347,
+      "effective_date": "value_147"
+    },
+    {
+      "salary_id": 872,
+      "employee_id": 686,
+      "base_salary": 7806,
+      "bonus": 5855,
+      "total_salary": 7213,
+      "effective_date": "value_148"
+    },
+    {
+      "salary_id": 1739,
+      "employee_id": 7343,
+      "base_salary": 3422,
+      "bonus": 301,
+      "total_salary": 4093,
+      "effective_date": "value_149"
+    },
+    {
+      "salary_id": 3654,
+      "employee_id": 3674,
+      "base_salary": 1911,
+      "bonus": 924,
+      "total_salary": 6647,
+      "effective_date": "value_150"
+    },
+    {
+      "salary_id": 9424,
+      "employee_id": 2208,
+      "base_salary": 2727,
+      "bonus": 3098,
+      "total_salary": 1235,
+      "effective_date": "value_151"
+    },
+    {
+      "salary_id": 4909,
+      "employee_id": 5228,
+      "base_salary": 1251,
+      "bonus": 4216,
+      "total_salary": 9458,
+      "effective_date": "value_152"
+    },
+    {
+      "salary_id": 726,
+      "employee_id": 1162,
+      "base_salary": 1757,
+      "bonus": 7195,
+      "total_salary": 5892,
+      "effective_date": "value_153"
+    },
+    {
+      "salary_id": 8222,
+      "employee_id": 7081,
+      "base_salary": 5749,
+      "bonus": 336,
+      "total_salary": 7874,
+      "effective_date": "value_154"
+    },
+    {
+      "salary_id": 4412,
+      "employee_id": 2867,
+      "base_salary": 7811,
+      "bonus": 1182,
+      "total_salary": 4931,
+      "effective_date": "value_155"
+    },
+    {
+      "salary_id": 7350,
+      "employee_id": 2878,
+      "base_salary": 2917,
+      "bonus": 7686,
+      "total_salary": 9447,
+      "effective_date": "value_156"
+    },
+    {
+      "salary_id": 433,
+      "employee_id": 230,
+      "base_salary": 7910,
+      "bonus": 3250,
+      "total_salary": 4786,
+      "effective_date": "value_157"
+    },
+    {
+      "salary_id": 3535,
+      "employee_id": 3213,
+      "base_salary": 5222,
+      "bonus": 7916,
+      "total_salary": 8340,
+      "effective_date": "value_158"
+    },
+    {
+      "salary_id": 9321,
+      "employee_id": 4958,
+      "base_salary": 3222,
+      "bonus": 3686,
+      "total_salary": 7534,
+      "effective_date": "value_159"
+    },
+    {
+      "salary_id": 1342,
+      "employee_id": 6571,
+      "base_salary": 6813,
+      "bonus": 4879,
+      "total_salary": 6013,
+      "effective_date": "value_160"
+    },
+    {
+      "salary_id": 2810,
+      "employee_id": 2713,
+      "base_salary": 7556,
+      "bonus": 8843,
+      "total_salary": 7230,
+      "effective_date": "value_161"
+    },
+    {
+      "salary_id": 8394,
+      "employee_id": 7601,
+      "base_salary": 8841,
+      "bonus": 1768,
+      "total_salary": 5769,
+      "effective_date": "value_162"
+    },
+    {
+      "salary_id": 6396,
+      "employee_id": 4905,
+      "base_salary": 5696,
+      "bonus": 7108,
+      "total_salary": 8163,
+      "effective_date": "value_163"
+    },
+    {
+      "salary_id": 8308,
+      "employee_id": 1934,
+      "base_salary": 9047,
+      "bonus": 6582,
+      "total_salary": 1477,
+      "effective_date": "value_164"
+    },
+    {
+      "salary_id": 6402,
+      "employee_id": 8421,
+      "base_salary": 2041,
+      "bonus": 6439,
+      "total_salary": 8978,
+      "effective_date": "value_165"
+    },
+    {
+      "salary_id": 3268,
+      "employee_id": 7853,
+      "base_salary": 9082,
+      "bonus": 5505,
+      "total_salary": 3671,
+      "effective_date": "value_166"
+    },
+    {
+      "salary_id": 5132,
+      "employee_id": 8273,
+      "base_salary": 5533,
+      "bonus": 6935,
+      "total_salary": 6773,
+      "effective_date": "value_167"
+    },
+    {
+      "salary_id": 3194,
+      "employee_id": 2161,
+      "base_salary": 6679,
+      "bonus": 7185,
+      "total_salary": 4548,
+      "effective_date": "value_168"
+    },
+    {
+      "salary_id": 7610,
+      "employee_id": 5169,
+      "base_salary": 319,
+      "bonus": 9021,
+      "total_salary": 8687,
+      "effective_date": "value_169"
+    },
+    {
+      "salary_id": 7967,
+      "employee_id": 9617,
+      "base_salary": 9369,
+      "bonus": 3558,
+      "total_salary": 6762,
+      "effective_date": "value_170"
+    },
+    {
+      "salary_id": 5907,
+      "employee_id": 568,
+      "base_salary": 8578,
+      "bonus": 4358,
+      "total_salary": 5014,
+      "effective_date": "value_171"
+    },
+    {
+      "salary_id": 9352,
+      "employee_id": 8227,
+      "base_salary": 3008,
+      "bonus": 2347,
+      "total_salary": 7919,
+      "effective_date": "value_172"
+    },
+    {
+      "salary_id": 7940,
+      "employee_id": 7788,
+      "base_salary": 1048,
+      "bonus": 1894,
+      "total_salary": 2228,
+      "effective_date": "value_173"
+    },
+    {
+      "salary_id": 3985,
+      "employee_id": 2630,
+      "base_salary": 5266,
+      "bonus": 9595,
+      "total_salary": 9217,
+      "effective_date": "value_174"
+    },
+    {
+      "salary_id": 4739,
+      "employee_id": 3698,
+      "base_salary": 4754,
+      "bonus": 9365,
+      "total_salary": 1262,
+      "effective_date": "value_175"
+    },
+    {
+      "salary_id": 9184,
+      "employee_id": 925,
+      "base_salary": 5702,
+      "bonus": 1851,
+      "total_salary": 8481,
+      "effective_date": "value_176"
+    },
+    {
+      "salary_id": 7397,
+      "employee_id": 2551,
+      "base_salary": 3007,
+      "bonus": 1104,
+      "total_salary": 9580,
+      "effective_date": "value_177"
+    },
+    {
+      "salary_id": 1597,
+      "employee_id": 9990,
+      "base_salary": 3647,
+      "bonus": 9633,
+      "total_salary": 5467,
+      "effective_date": "value_178"
+    },
+    {
+      "salary_id": 8472,
+      "employee_id": 3843,
+      "base_salary": 8930,
+      "bonus": 7815,
+      "total_salary": 6067,
+      "effective_date": "value_179"
+    },
+    {
+      "salary_id": 7748,
+      "employee_id": 8119,
+      "base_salary": 4969,
+      "bonus": 6042,
+      "total_salary": 6820,
+      "effective_date": "value_180"
+    },
+    {
+      "salary_id": 4688,
+      "employee_id": 3114,
+      "base_salary": 5124,
+      "bonus": 1494,
+      "total_salary": 4666,
+      "effective_date": "value_181"
+    },
+    {
+      "salary_id": 676,
+      "employee_id": 8138,
+      "base_salary": 6147,
+      "bonus": 6617,
+      "total_salary": 3051,
+      "effective_date": "value_182"
+    },
+    {
+      "salary_id": 5825,
+      "employee_id": 6425,
+      "base_salary": 4007,
+      "bonus": 7500,
+      "total_salary": 6958,
+      "effective_date": "value_183"
+    },
+    {
+      "salary_id": 8336,
+      "employee_id": 9652,
+      "base_salary": 3271,
+      "bonus": 1546,
+      "total_salary": 411,
+      "effective_date": "value_184"
+    },
+    {
+      "salary_id": 4875,
+      "employee_id": 6506,
+      "base_salary": 6793,
+      "bonus": 5163,
+      "total_salary": 6920,
+      "effective_date": "value_185"
+    },
+    {
+      "salary_id": 5900,
+      "employee_id": 1863,
+      "base_salary": 8623,
+      "bonus": 2517,
+      "total_salary": 1839,
+      "effective_date": "value_186"
+    },
+    {
+      "salary_id": 174,
+      "employee_id": 8143,
+      "base_salary": 6958,
+      "bonus": 6627,
+      "total_salary": 9467,
+      "effective_date": "value_187"
+    },
+    {
+      "salary_id": 1790,
+      "employee_id": 874,
+      "base_salary": 2906,
+      "bonus": 9355,
+      "total_salary": 3634,
+      "effective_date": "value_188"
+    },
+    {
+      "salary_id": 5973,
+      "employee_id": 9809,
+      "base_salary": 8481,
+      "bonus": 576,
+      "total_salary": 8489,
+      "effective_date": "value_189"
+    },
+    {
+      "salary_id": 4738,
+      "employee_id": 5570,
+      "base_salary": 660,
+      "bonus": 6962,
+      "total_salary": 9537,
+      "effective_date": "value_190"
+    },
+    {
+      "salary_id": 5144,
+      "employee_id": 2905,
+      "base_salary": 3710,
+      "bonus": 517,
+      "total_salary": 1699,
+      "effective_date": "value_191"
+    },
+    {
+      "salary_id": 2249,
+      "employee_id": 7472,
+      "base_salary": 7490,
+      "bonus": 7510,
+      "total_salary": 2397,
+      "effective_date": "value_192"
+    },
+    {
+      "salary_id": 8677,
+      "employee_id": 3660,
+      "base_salary": 7625,
+      "bonus": 8720,
+      "total_salary": 8701,
+      "effective_date": "value_193"
+    },
+    {
+      "salary_id": 5155,
+      "employee_id": 3759,
+      "base_salary": 9998,
+      "bonus": 5397,
+      "total_salary": 6210,
+      "effective_date": "value_194"
+    },
+    {
+      "salary_id": 5905,
+      "employee_id": 9693,
+      "base_salary": 5111,
+      "bonus": 5211,
+      "total_salary": 5108,
+      "effective_date": "value_195"
+    },
+    {
+      "salary_id": 7915,
+      "employee_id": 6593,
+      "base_salary": 4964,
+      "bonus": 1337,
+      "total_salary": 4044,
+      "effective_date": "value_196"
+    },
+    {
+      "salary_id": 1621,
+      "employee_id": 8324,
+      "base_salary": 789,
+      "bonus": 764,
+      "total_salary": 7715,
+      "effective_date": "value_197"
+    },
+    {
+      "salary_id": 9608,
+      "employee_id": 1597,
+      "base_salary": 2578,
+      "bonus": 4545,
+      "total_salary": 4890,
+      "effective_date": "value_198"
+    },
+    {
+      "salary_id": 6746,
+      "employee_id": 6865,
+      "base_salary": 4048,
+      "bonus": 5963,
+      "total_salary": 7647,
+      "effective_date": "value_199"
+    },
+    {
+      "salary_id": 6296,
+      "employee_id": 4124,
+      "base_salary": 8703,
+      "bonus": 8489,
+      "total_salary": 780,
+      "effective_date": "value_200"
+    },
+    {
+      "salary_id": 2231,
+      "employee_id": 4099,
+      "base_salary": 2192,
+      "bonus": 6899,
+      "total_salary": 8334,
+      "effective_date": "value_201"
+    },
+    {
+      "salary_id": 6486,
+      "employee_id": 2706,
+      "base_salary": 531,
+      "bonus": 1719,
+      "total_salary": 1259,
+      "effective_date": "value_202"
+    },
+    {
+      "salary_id": 7826,
+      "employee_id": 3083,
+      "base_salary": 1135,
+      "bonus": 9467,
+      "total_salary": 7243,
+      "effective_date": "value_203"
+    },
+    {
+      "salary_id": 3495,
+      "employee_id": 4102,
+      "base_salary": 6615,
+      "bonus": 5340,
+      "total_salary": 1300,
+      "effective_date": "value_204"
+    },
+    {
+      "salary_id": 7290,
+      "employee_id": 8199,
+      "base_salary": 8436,
+      "bonus": 7785,
+      "total_salary": 8707,
+      "effective_date": "value_205"
+    },
+    {
+      "salary_id": 6108,
+      "employee_id": 9073,
+      "base_salary": 8788,
+      "bonus": 9175,
+      "total_salary": 7603,
+      "effective_date": "value_206"
+    },
+    {
+      "salary_id": 6569,
+      "employee_id": 8368,
+      "base_salary": 9795,
+      "bonus": 5366,
+      "total_salary": 7561,
+      "effective_date": "value_207"
+    },
+    {
+      "salary_id": 9059,
+      "employee_id": 285,
+      "base_salary": 2118,
+      "bonus": 4655,
+      "total_salary": 978,
+      "effective_date": "value_208"
+    },
+    {
+      "salary_id": 7059,
+      "employee_id": 7159,
+      "base_salary": 1196,
+      "bonus": 6634,
+      "total_salary": 9439,
+      "effective_date": "value_209"
+    },
+    {
+      "salary_id": 7605,
+      "employee_id": 7956,
+      "base_salary": 7832,
+      "bonus": 7739,
+      "total_salary": 8920,
+      "effective_date": "value_210"
+    },
+    {
+      "salary_id": 2320,
+      "employee_id": 37,
+      "base_salary": 9483,
+      "bonus": 5239,
+      "total_salary": 9199,
+      "effective_date": "value_211"
+    },
+    {
+      "salary_id": 1141,
+      "employee_id": 3367,
+      "base_salary": 1157,
+      "bonus": 7002,
+      "total_salary": 718,
+      "effective_date": "value_212"
+    },
+    {
+      "salary_id": 294,
+      "employee_id": 9234,
+      "base_salary": 3503,
+      "bonus": 9927,
+      "total_salary": 8187,
+      "effective_date": "value_213"
+    },
+    {
+      "salary_id": 128,
+      "employee_id": 7271,
+      "base_salary": 9906,
+      "bonus": 2374,
+      "total_salary": 4805,
+      "effective_date": "value_214"
+    },
+    {
+      "salary_id": 7194,
+      "employee_id": 2637,
+      "base_salary": 935,
+      "bonus": 7497,
+      "total_salary": 9192,
+      "effective_date": "value_215"
+    },
+    {
+      "salary_id": 322,
+      "employee_id": 8153,
+      "base_salary": 8416,
+      "bonus": 3926,
+      "total_salary": 9704,
+      "effective_date": "value_216"
+    },
+    {
+      "salary_id": 5973,
+      "employee_id": 2510,
+      "base_salary": 5673,
+      "bonus": 1219,
+      "total_salary": 1864,
+      "effective_date": "value_217"
+    },
+    {
+      "salary_id": 5643,
+      "employee_id": 8842,
+      "base_salary": 6470,
+      "bonus": 9608,
+      "total_salary": 1729,
+      "effective_date": "value_218"
+    },
+    {
+      "salary_id": 923,
+      "employee_id": 1714,
+      "base_salary": 7469,
+      "bonus": 3597,
+      "total_salary": 1524,
+      "effective_date": "value_219"
+    },
+    {
+      "salary_id": 780,
+      "employee_id": 8787,
+      "base_salary": 1926,
+      "bonus": 6132,
+      "total_salary": 2986,
+      "effective_date": "value_220"
+    },
+    {
+      "salary_id": 1716,
+      "employee_id": 3489,
+      "base_salary": 4827,
+      "bonus": 115,
+      "total_salary": 8419,
+      "effective_date": "value_221"
+    },
+    {
+      "salary_id": 214,
+      "employee_id": 5642,
+      "base_salary": 5984,
+      "bonus": 1422,
+      "total_salary": 2430,
+      "effective_date": "value_222"
+    },
+    {
+      "salary_id": 4768,
+      "employee_id": 7607,
+      "base_salary": 4069,
+      "bonus": 7205,
+      "total_salary": 3094,
+      "effective_date": "value_223"
+    },
+    {
+      "salary_id": 7904,
+      "employee_id": 7867,
+      "base_salary": 522,
+      "bonus": 5309,
+      "total_salary": 4168,
+      "effective_date": "value_224"
+    },
+    {
+      "salary_id": 2817,
+      "employee_id": 2886,
+      "base_salary": 9959,
+      "bonus": 4539,
+      "total_salary": 5951,
+      "effective_date": "value_225"
+    },
+    {
+      "salary_id": 3438,
+      "employee_id": 2705,
+      "base_salary": 7248,
+      "bonus": 1339,
+      "total_salary": 4042,
+      "effective_date": "value_226"
+    },
+    {
+      "salary_id": 5497,
+      "employee_id": 2073,
+      "base_salary": 9727,
+      "bonus": 8695,
+      "total_salary": 1420,
+      "effective_date": "value_227"
+    },
+    {
+      "salary_id": 4564,
+      "employee_id": 7274,
+      "base_salary": 3204,
+      "bonus": 3121,
+      "total_salary": 785,
+      "effective_date": "value_228"
+    },
+    {
+      "salary_id": 48,
+      "employee_id": 4490,
+      "base_salary": 1535,
+      "bonus": 6169,
+      "total_salary": 2263,
+      "effective_date": "value_229"
+    },
+    {
+      "salary_id": 2883,
+      "employee_id": 5492,
+      "base_salary": 6970,
+      "bonus": 2107,
+      "total_salary": 5114,
+      "effective_date": "value_230"
+    },
+    {
+      "salary_id": 9898,
+      "employee_id": 8152,
+      "base_salary": 6112,
+      "bonus": 6872,
+      "total_salary": 6172,
+      "effective_date": "value_231"
+    },
+    {
+      "salary_id": 9390,
+      "employee_id": 7951,
+      "base_salary": 203,
+      "bonus": 1572,
+      "total_salary": 3691,
+      "effective_date": "value_232"
+    },
+    {
+      "salary_id": 1659,
+      "employee_id": 6451,
+      "base_salary": 3188,
+      "bonus": 6130,
+      "total_salary": 7371,
+      "effective_date": "value_233"
+    },
+    {
+      "salary_id": 916,
+      "employee_id": 5602,
+      "base_salary": 7544,
+      "bonus": 436,
+      "total_salary": 4938,
+      "effective_date": "value_234"
+    },
+    {
+      "salary_id": 5758,
+      "employee_id": 7874,
+      "base_salary": 1054,
+      "bonus": 3923,
+      "total_salary": 23,
+      "effective_date": "value_235"
+    },
+    {
+      "salary_id": 9379,
+      "employee_id": 9181,
+      "base_salary": 4818,
+      "bonus": 7494,
+      "total_salary": 2303,
+      "effective_date": "value_236"
+    },
+    {
+      "salary_id": 3933,
+      "employee_id": 7055,
+      "base_salary": 5022,
+      "bonus": 3243,
+      "total_salary": 5251,
+      "effective_date": "value_237"
+    },
+    {
+      "salary_id": 216,
+      "employee_id": 7106,
+      "base_salary": 1523,
+      "bonus": 4398,
+      "total_salary": 4179,
+      "effective_date": "value_238"
+    },
+    {
+      "salary_id": 713,
+      "employee_id": 8086,
+      "base_salary": 2312,
+      "bonus": 1585,
+      "total_salary": 3875,
+      "effective_date": "value_239"
+    },
+    {
+      "salary_id": 1957,
+      "employee_id": 4662,
+      "base_salary": 6088,
+      "bonus": 2823,
+      "total_salary": 4661,
+      "effective_date": "value_240"
+    },
+    {
+      "salary_id": 5198,
+      "employee_id": 2647,
+      "base_salary": 4199,
+      "bonus": 7084,
+      "total_salary": 6970,
+      "effective_date": "value_241"
+    },
+    {
+      "salary_id": 5698,
+      "employee_id": 9562,
+      "base_salary": 3103,
+      "bonus": 7175,
+      "total_salary": 1904,
+      "effective_date": "value_242"
+    },
+    {
+      "salary_id": 2474,
+      "employee_id": 830,
+      "base_salary": 2048,
+      "bonus": 1769,
+      "total_salary": 6517,
+      "effective_date": "value_243"
+    },
+    {
+      "salary_id": 1997,
+      "employee_id": 2496,
+      "base_salary": 7062,
+      "bonus": 6206,
+      "total_salary": 1602,
+      "effective_date": "value_244"
+    },
+    {
+      "salary_id": 88,
+      "employee_id": 5230,
+      "base_salary": 843,
+      "bonus": 3153,
+      "total_salary": 1930,
+      "effective_date": "value_245"
+    },
+    {
+      "salary_id": 4762,
+      "employee_id": 3514,
+      "base_salary": 3300,
+      "bonus": 5047,
+      "total_salary": 1139,
+      "effective_date": "value_246"
+    },
+    {
+      "salary_id": 1904,
+      "employee_id": 5348,
+      "base_salary": 1825,
+      "bonus": 7422,
+      "total_salary": 1640,
+      "effective_date": "value_247"
+    },
+    {
+      "salary_id": 4339,
+      "employee_id": 8902,
+      "base_salary": 3987,
+      "bonus": 849,
+      "total_salary": 2985,
+      "effective_date": "value_248"
+    },
+    {
+      "salary_id": 9183,
+      "employee_id": 9019,
+      "base_salary": 9519,
+      "bonus": 3517,
+      "total_salary": 5696,
+      "effective_date": "value_249"
+    },
+    {
+      "salary_id": 9876,
+      "employee_id": 3111,
+      "base_salary": 1221,
+      "bonus": 7485,
+      "total_salary": 2962,
+      "effective_date": "value_250"
+    },
+    {
+      "salary_id": 5544,
+      "employee_id": 2899,
+      "base_salary": 4473,
+      "bonus": 2162,
+      "total_salary": 5326,
+      "effective_date": "value_251"
+    },
+    {
+      "salary_id": 1584,
+      "employee_id": 9888,
+      "base_salary": 1796,
+      "bonus": 2012,
+      "total_salary": 7126,
+      "effective_date": "value_252"
+    },
+    {
+      "salary_id": 3201,
+      "employee_id": 8421,
+      "base_salary": 7651,
+      "bonus": 4233,
+      "total_salary": 1428,
+      "effective_date": "value_253"
+    },
+    {
+      "salary_id": 8664,
+      "employee_id": 387,
+      "base_salary": 6803,
+      "bonus": 9535,
+      "total_salary": 9677,
+      "effective_date": "value_254"
+    },
+    {
+      "salary_id": 7788,
+      "employee_id": 2944,
+      "base_salary": 7093,
+      "bonus": 2003,
+      "total_salary": 1084,
+      "effective_date": "value_255"
+    },
+    {
+      "salary_id": 3952,
+      "employee_id": 4606,
+      "base_salary": 5056,
+      "bonus": 5117,
+      "total_salary": 3043,
+      "effective_date": "value_256"
+    },
+    {
+      "salary_id": 3237,
+      "employee_id": 5494,
+      "base_salary": 306,
+      "bonus": 9685,
+      "total_salary": 2141,
+      "effective_date": "value_257"
+    },
+    {
+      "salary_id": 8575,
+      "employee_id": 9908,
+      "base_salary": 4950,
+      "bonus": 1970,
+      "total_salary": 5116,
+      "effective_date": "value_258"
+    },
+    {
+      "salary_id": 7744,
+      "employee_id": 6404,
+      "base_salary": 8134,
+      "bonus": 2328,
+      "total_salary": 2546,
+      "effective_date": "value_259"
+    },
+    {
+      "salary_id": 1967,
+      "employee_id": 1277,
+      "base_salary": 7271,
+      "bonus": 4714,
+      "total_salary": 3810,
+      "effective_date": "value_260"
+    },
+    {
+      "salary_id": 2554,
+      "employee_id": 733,
+      "base_salary": 7649,
+      "bonus": 797,
+      "total_salary": 7964,
+      "effective_date": "value_261"
+    },
+    {
+      "salary_id": 5386,
+      "employee_id": 8147,
+      "base_salary": 1487,
+      "bonus": 4512,
+      "total_salary": 4938,
+      "effective_date": "value_262"
+    },
+    {
+      "salary_id": 2376,
+      "employee_id": 8015,
+      "base_salary": 8441,
+      "bonus": 1158,
+      "total_salary": 6218,
+      "effective_date": "value_263"
+    },
+    {
+      "salary_id": 5661,
+      "employee_id": 4963,
+      "base_salary": 9471,
+      "bonus": 563,
+      "total_salary": 1136,
+      "effective_date": "value_264"
+    },
+    {
+      "salary_id": 2811,
+      "employee_id": 3022,
+      "base_salary": 2901,
+      "bonus": 9957,
+      "total_salary": 4731,
+      "effective_date": "value_265"
+    },
+    {
+      "salary_id": 6124,
+      "employee_id": 179,
+      "base_salary": 11,
+      "bonus": 7819,
+      "total_salary": 1342,
+      "effective_date": "value_266"
+    },
+    {
+      "salary_id": 4066,
+      "employee_id": 2946,
+      "base_salary": 843,
+      "bonus": 3702,
+      "total_salary": 485,
+      "effective_date": "value_267"
+    },
+    {
+      "salary_id": 1480,
+      "employee_id": 1099,
+      "base_salary": 7891,
+      "bonus": 4705,
+      "total_salary": 5408,
+      "effective_date": "value_268"
+    },
+    {
+      "salary_id": 8414,
+      "employee_id": 3785,
+      "base_salary": 2495,
+      "bonus": 6115,
+      "total_salary": 3516,
+      "effective_date": "value_269"
+    },
+    {
+      "salary_id": 5842,
+      "employee_id": 6599,
+      "base_salary": 238,
+      "bonus": 3628,
+      "total_salary": 1835,
+      "effective_date": "value_270"
+    },
+    {
+      "salary_id": 4680,
+      "employee_id": 9245,
+      "base_salary": 1606,
+      "bonus": 9389,
+      "total_salary": 9247,
+      "effective_date": "value_271"
+    },
+    {
+      "salary_id": 8966,
+      "employee_id": 7076,
+      "base_salary": 3056,
+      "bonus": 5263,
+      "total_salary": 7788,
+      "effective_date": "value_272"
+    },
+    {
+      "salary_id": 7794,
+      "employee_id": 935,
+      "base_salary": 5417,
+      "bonus": 5188,
+      "total_salary": 5897,
+      "effective_date": "value_273"
+    },
+    {
+      "salary_id": 1595,
+      "employee_id": 3555,
+      "base_salary": 7324,
+      "bonus": 7513,
+      "total_salary": 8064,
+      "effective_date": "value_274"
+    },
+    {
+      "salary_id": 3613,
+      "employee_id": 5525,
+      "base_salary": 1900,
+      "bonus": 9530,
+      "total_salary": 2276,
+      "effective_date": "value_275"
+    },
+    {
+      "salary_id": 8955,
+      "employee_id": 9559,
+      "base_salary": 1248,
+      "bonus": 6437,
+      "total_salary": 6178,
+      "effective_date": "value_276"
+    },
+    {
+      "salary_id": 7559,
+      "employee_id": 4396,
+      "base_salary": 3586,
+      "bonus": 5333,
+      "total_salary": 5460,
+      "effective_date": "value_277"
+    },
+    {
+      "salary_id": 4654,
+      "employee_id": 4784,
+      "base_salary": 8906,
+      "bonus": 1406,
+      "total_salary": 1307,
+      "effective_date": "value_278"
+    },
+    {
+      "salary_id": 8128,
+      "employee_id": 273,
+      "base_salary": 6722,
+      "bonus": 8039,
+      "total_salary": 7578,
+      "effective_date": "value_279"
+    },
+    {
+      "salary_id": 9419,
+      "employee_id": 3823,
+      "base_salary": 8867,
+      "bonus": 318,
+      "total_salary": 9027,
+      "effective_date": "value_280"
+    },
+    {
+      "salary_id": 5171,
+      "employee_id": 7060,
+      "base_salary": 1052,
+      "bonus": 1170,
+      "total_salary": 8127,
+      "effective_date": "value_281"
+    },
+    {
+      "salary_id": 6597,
+      "employee_id": 9566,
+      "base_salary": 2977,
+      "bonus": 7284,
+      "total_salary": 7202,
+      "effective_date": "value_282"
+    },
+    {
+      "salary_id": 6177,
+      "employee_id": 4898,
+      "base_salary": 2805,
+      "bonus": 3155,
+      "total_salary": 1642,
+      "effective_date": "value_283"
+    },
+    {
+      "salary_id": 2057,
+      "employee_id": 6687,
+      "base_salary": 1716,
+      "bonus": 5199,
+      "total_salary": 6388,
+      "effective_date": "value_284"
+    },
+    {
+      "salary_id": 3657,
+      "employee_id": 9897,
+      "base_salary": 6091,
+      "bonus": 5469,
+      "total_salary": 6739,
+      "effective_date": "value_285"
+    },
+    {
+      "salary_id": 1544,
+      "employee_id": 4639,
+      "base_salary": 595,
+      "bonus": 2673,
+      "total_salary": 2537,
+      "effective_date": "value_286"
+    },
+    {
+      "salary_id": 2649,
+      "employee_id": 6116,
+      "base_salary": 3234,
+      "bonus": 1996,
+      "total_salary": 9379,
+      "effective_date": "value_287"
+    },
+    {
+      "salary_id": 4979,
+      "employee_id": 348,
+      "base_salary": 3558,
+      "bonus": 5294,
+      "total_salary": 577,
+      "effective_date": "value_288"
+    },
+    {
+      "salary_id": 5109,
+      "employee_id": 4255,
+      "base_salary": 683,
+      "bonus": 6007,
+      "total_salary": 6960,
+      "effective_date": "value_289"
+    },
+    {
+      "salary_id": 7263,
+      "employee_id": 154,
+      "base_salary": 7994,
+      "bonus": 8089,
+      "total_salary": 5407,
+      "effective_date": "value_290"
+    },
+    {
+      "salary_id": 9559,
+      "employee_id": 8168,
+      "base_salary": 3072,
+      "bonus": 4585,
+      "total_salary": 2999,
+      "effective_date": "value_291"
+    },
+    {
+      "salary_id": 5733,
+      "employee_id": 7586,
+      "base_salary": 8924,
+      "bonus": 4045,
+      "total_salary": 9986,
+      "effective_date": "value_292"
+    },
+    {
+      "salary_id": 3587,
+      "employee_id": 2490,
+      "base_salary": 2308,
+      "bonus": 4202,
+      "total_salary": 9043,
+      "effective_date": "value_293"
+    },
+    {
+      "salary_id": 8116,
+      "employee_id": 2871,
+      "base_salary": 914,
+      "bonus": 1861,
+      "total_salary": 2650,
+      "effective_date": "value_294"
+    },
+    {
+      "salary_id": 6076,
+      "employee_id": 8455,
+      "base_salary": 7635,
+      "bonus": 3195,
+      "total_salary": 9771,
+      "effective_date": "value_295"
+    },
+    {
+      "salary_id": 5843,
+      "employee_id": 3216,
+      "base_salary": 4210,
+      "bonus": 6488,
+      "total_salary": 6283,
+      "effective_date": "value_296"
+    },
+    {
+      "salary_id": 1683,
+      "employee_id": 2534,
+      "base_salary": 400,
+      "bonus": 5535,
+      "total_salary": 7115,
+      "effective_date": "value_297"
+    },
+    {
+      "salary_id": 2096,
+      "employee_id": 919,
+      "base_salary": 3677,
+      "bonus": 5153,
+      "total_salary": 6670,
+      "effective_date": "value_298"
+    },
+    {
+      "salary_id": 9839,
+      "employee_id": 4303,
+      "base_salary": 8474,
+      "bonus": 6048,
+      "total_salary": 777,
+      "effective_date": "value_299"
+    },
+    {
+      "salary_id": 7861,
+      "employee_id": 9246,
+      "base_salary": 8568,
+      "bonus": 6653,
+      "total_salary": 3843,
+      "effective_date": "value_300"
+    },
+    {
+      "salary_id": 1745,
+      "employee_id": 962,
+      "base_salary": 7673,
+      "bonus": 5887,
+      "total_salary": 5026,
+      "effective_date": "value_301"
+    },
+    {
+      "salary_id": 779,
+      "employee_id": 2106,
+      "base_salary": 3842,
+      "bonus": 8459,
+      "total_salary": 5601,
+      "effective_date": "value_302"
+    },
+    {
+      "salary_id": 1684,
+      "employee_id": 8967,
+      "base_salary": 9323,
+      "bonus": 5884,
+      "total_salary": 7647,
+      "effective_date": "value_303"
+    },
+    {
+      "salary_id": 7916,
+      "employee_id": 1283,
+      "base_salary": 2101,
+      "bonus": 2307,
+      "total_salary": 3889,
+      "effective_date": "value_304"
+    },
+    {
+      "salary_id": 5629,
+      "employee_id": 8988,
+      "base_salary": 3529,
+      "bonus": 9097,
+      "total_salary": 1273,
+      "effective_date": "value_305"
+    },
+    {
+      "salary_id": 9861,
+      "employee_id": 193,
+      "base_salary": 8301,
+      "bonus": 6209,
+      "total_salary": 6864,
+      "effective_date": "value_306"
+    },
+    {
+      "salary_id": 6464,
+      "employee_id": 5064,
+      "base_salary": 9735,
+      "bonus": 9103,
+      "total_salary": 2275,
+      "effective_date": "value_307"
+    },
+    {
+      "salary_id": 6714,
+      "employee_id": 7934,
+      "base_salary": 8646,
+      "bonus": 5585,
+      "total_salary": 8196,
+      "effective_date": "value_308"
+    },
+    {
+      "salary_id": 8664,
+      "employee_id": 3496,
+      "base_salary": 940,
+      "bonus": 3201,
+      "total_salary": 4133,
+      "effective_date": "value_309"
+    },
+    {
+      "salary_id": 8026,
+      "employee_id": 7631,
+      "base_salary": 6122,
+      "bonus": 5406,
+      "total_salary": 4290,
+      "effective_date": "value_310"
+    },
+    {
+      "salary_id": 5889,
+      "employee_id": 6898,
+      "base_salary": 2247,
+      "bonus": 2717,
+      "total_salary": 8158,
+      "effective_date": "value_311"
+    },
+    {
+      "salary_id": 7615,
+      "employee_id": 9307,
+      "base_salary": 9656,
+      "bonus": 5608,
+      "total_salary": 4928,
+      "effective_date": "value_312"
+    },
+    {
+      "salary_id": 4809,
+      "employee_id": 8539,
+      "base_salary": 1272,
+      "bonus": 8135,
+      "total_salary": 920,
+      "effective_date": "value_313"
+    },
+    {
+      "salary_id": 319,
+      "employee_id": 886,
+      "base_salary": 9152,
+      "bonus": 5299,
+      "total_salary": 4491,
+      "effective_date": "value_314"
+    },
+    {
+      "salary_id": 1333,
+      "employee_id": 5976,
+      "base_salary": 1498,
+      "bonus": 6308,
+      "total_salary": 5989,
+      "effective_date": "value_315"
+    },
+    {
+      "salary_id": 2388,
+      "employee_id": 6907,
+      "base_salary": 7779,
+      "bonus": 7758,
+      "total_salary": 120,
+      "effective_date": "value_316"
+    },
+    {
+      "salary_id": 4712,
+      "employee_id": 9709,
+      "base_salary": 5235,
+      "bonus": 4892,
+      "total_salary": 9418,
+      "effective_date": "value_317"
+    },
+    {
+      "salary_id": 1348,
+      "employee_id": 8887,
+      "base_salary": 5914,
+      "bonus": 4358,
+      "total_salary": 6586,
+      "effective_date": "value_318"
+    },
+    {
+      "salary_id": 4008,
+      "employee_id": 6390,
+      "base_salary": 2705,
+      "bonus": 7079,
+      "total_salary": 3364,
+      "effective_date": "value_319"
+    },
+    {
+      "salary_id": 6665,
+      "employee_id": 8960,
+      "base_salary": 1430,
+      "bonus": 4268,
+      "total_salary": 3110,
+      "effective_date": "value_320"
+    },
+    {
+      "salary_id": 1462,
+      "employee_id": 7233,
+      "base_salary": 510,
+      "bonus": 6779,
+      "total_salary": 9755,
+      "effective_date": "value_321"
+    },
+    {
+      "salary_id": 4174,
+      "employee_id": 7828,
+      "base_salary": 2396,
+      "bonus": 279,
+      "total_salary": 3020,
+      "effective_date": "value_322"
+    },
+    {
+      "salary_id": 933,
+      "employee_id": 7937,
+      "base_salary": 9186,
+      "bonus": 8500,
+      "total_salary": 1250,
+      "effective_date": "value_323"
+    },
+    {
+      "salary_id": 2046,
+      "employee_id": 4366,
+      "base_salary": 5345,
+      "bonus": 9260,
+      "total_salary": 6738,
+      "effective_date": "value_324"
+    },
+    {
+      "salary_id": 8212,
+      "employee_id": 4670,
+      "base_salary": 720,
+      "bonus": 1316,
+      "total_salary": 8435,
+      "effective_date": "value_325"
+    },
+    {
+      "salary_id": 2455,
+      "employee_id": 1577,
+      "base_salary": 6358,
+      "bonus": 3905,
+      "total_salary": 7576,
+      "effective_date": "value_326"
+    },
+    {
+      "salary_id": 4227,
+      "employee_id": 211,
+      "base_salary": 5104,
+      "bonus": 9801,
+      "total_salary": 6924,
+      "effective_date": "value_327"
+    },
+    {
+      "salary_id": 4976,
+      "employee_id": 2174,
+      "base_salary": 7679,
+      "bonus": 2077,
+      "total_salary": 2927,
+      "effective_date": "value_328"
+    },
+    {
+      "salary_id": 3272,
+      "employee_id": 155,
+      "base_salary": 8501,
+      "bonus": 7052,
+      "total_salary": 4524,
+      "effective_date": "value_329"
+    },
+    {
+      "salary_id": 5133,
+      "employee_id": 9934,
+      "base_salary": 5755,
+      "bonus": 9719,
+      "total_salary": 6595,
+      "effective_date": "value_330"
+    },
+    {
+      "salary_id": 4994,
+      "employee_id": 723,
+      "base_salary": 1448,
+      "bonus": 3956,
+      "total_salary": 1138,
+      "effective_date": "value_331"
+    },
+    {
+      "salary_id": 2408,
+      "employee_id": 5837,
+      "base_salary": 2728,
+      "bonus": 33,
+      "total_salary": 7814,
+      "effective_date": "value_332"
+    },
+    {
+      "salary_id": 1527,
+      "employee_id": 9536,
+      "base_salary": 852,
+      "bonus": 2397,
+      "total_salary": 5112,
+      "effective_date": "value_333"
+    },
+    {
+      "salary_id": 9555,
+      "employee_id": 8733,
+      "base_salary": 6380,
+      "bonus": 2854,
+      "total_salary": 9493,
+      "effective_date": "value_334"
+    },
+    {
+      "salary_id": 8925,
+      "employee_id": 7125,
+      "base_salary": 2427,
+      "bonus": 8343,
+      "total_salary": 5329,
+      "effective_date": "value_335"
+    },
+    {
+      "salary_id": 5512,
+      "employee_id": 2782,
+      "base_salary": 1707,
+      "bonus": 4511,
+      "total_salary": 8535,
+      "effective_date": "value_336"
+    },
+    {
+      "salary_id": 2038,
+      "employee_id": 2440,
+      "base_salary": 6898,
+      "bonus": 5292,
+      "total_salary": 9188,
+      "effective_date": "value_337"
+    },
+    {
+      "salary_id": 2315,
+      "employee_id": 87,
+      "base_salary": 9975,
+      "bonus": 8513,
+      "total_salary": 2064,
+      "effective_date": "value_338"
+    },
+    {
+      "salary_id": 9304,
+      "employee_id": 3519,
+      "base_salary": 4245,
+      "bonus": 8321,
+      "total_salary": 9265,
+      "effective_date": "value_339"
+    },
+    {
+      "salary_id": 4551,
+      "employee_id": 3415,
+      "base_salary": 8016,
+      "bonus": 3360,
+      "total_salary": 155,
+      "effective_date": "value_340"
+    },
+    {
+      "salary_id": 6339,
+      "employee_id": 8338,
+      "base_salary": 8793,
+      "bonus": 4827,
+      "total_salary": 9237,
+      "effective_date": "value_341"
+    },
+    {
+      "salary_id": 6539,
+      "employee_id": 9500,
+      "base_salary": 4323,
+      "bonus": 6733,
+      "total_salary": 7828,
+      "effective_date": "value_342"
+    },
+    {
+      "salary_id": 5513,
+      "employee_id": 7387,
+      "base_salary": 8706,
+      "bonus": 8475,
+      "total_salary": 9395,
+      "effective_date": "value_343"
+    },
+    {
+      "salary_id": 2391,
+      "employee_id": 6490,
+      "base_salary": 7440,
+      "bonus": 4950,
+      "total_salary": 2876,
+      "effective_date": "value_344"
+    },
+    {
+      "salary_id": 5282,
+      "employee_id": 3168,
+      "base_salary": 9313,
+      "bonus": 3944,
+      "total_salary": 9396,
+      "effective_date": "value_345"
+    },
+    {
+      "salary_id": 5953,
+      "employee_id": 7447,
+      "base_salary": 807,
+      "bonus": 213,
+      "total_salary": 7926,
+      "effective_date": "value_346"
+    },
+    {
+      "salary_id": 9351,
+      "employee_id": 6088,
+      "base_salary": 6331,
+      "bonus": 4576,
+      "total_salary": 6453,
+      "effective_date": "value_347"
+    },
+    {
+      "salary_id": 3074,
+      "employee_id": 9121,
+      "base_salary": 9415,
+      "bonus": 6089,
+      "total_salary": 3712,
+      "effective_date": "value_348"
+    },
+    {
+      "salary_id": 2263,
+      "employee_id": 6395,
+      "base_salary": 2821,
+      "bonus": 4155,
+      "total_salary": 6985,
+      "effective_date": "value_349"
+    },
+    {
+      "salary_id": 9155,
+      "employee_id": 8577,
+      "base_salary": 311,
+      "bonus": 2453,
+      "total_salary": 9405,
+      "effective_date": "value_350"
+    },
+    {
+      "salary_id": 235,
+      "employee_id": 941,
+      "base_salary": 988,
+      "bonus": 3615,
+      "total_salary": 6826,
+      "effective_date": "value_351"
+    },
+    {
+      "salary_id": 9666,
+      "employee_id": 7857,
+      "base_salary": 6700,
+      "bonus": 7793,
+      "total_salary": 9709,
+      "effective_date": "value_352"
+    },
+    {
+      "salary_id": 5438,
+      "employee_id": 4541,
+      "base_salary": 6574,
+      "bonus": 9609,
+      "total_salary": 3244,
+      "effective_date": "value_353"
+    },
+    {
+      "salary_id": 5304,
+      "employee_id": 7404,
+      "base_salary": 1600,
+      "bonus": 7850,
+      "total_salary": 3376,
+      "effective_date": "value_354"
+    },
+    {
+      "salary_id": 1264,
+      "employee_id": 6821,
+      "base_salary": 2697,
+      "bonus": 7870,
+      "total_salary": 2991,
+      "effective_date": "value_355"
+    },
+    {
+      "salary_id": 7305,
+      "employee_id": 8414,
+      "base_salary": 6238,
+      "bonus": 2019,
+      "total_salary": 6338,
+      "effective_date": "value_356"
+    },
+    {
+      "salary_id": 9538,
+      "employee_id": 8337,
+      "base_salary": 3785,
+      "bonus": 4070,
+      "total_salary": 2749,
+      "effective_date": "value_357"
+    },
+    {
+      "salary_id": 6929,
+      "employee_id": 2013,
+      "base_salary": 9836,
+      "bonus": 9672,
+      "total_salary": 837,
+      "effective_date": "value_358"
+    },
+    {
+      "salary_id": 7373,
+      "employee_id": 7017,
+      "base_salary": 6526,
+      "bonus": 9248,
+      "total_salary": 1311,
+      "effective_date": "value_359"
+    },
+    {
+      "salary_id": 708,
+      "employee_id": 7199,
+      "base_salary": 271,
+      "bonus": 4285,
+      "total_salary": 9933,
+      "effective_date": "value_360"
+    },
+    {
+      "salary_id": 7519,
+      "employee_id": 3392,
+      "base_salary": 3162,
+      "bonus": 9195,
+      "total_salary": 4759,
+      "effective_date": "value_361"
+    },
+    {
+      "salary_id": 2126,
+      "employee_id": 6318,
+      "base_salary": 473,
+      "bonus": 8468,
+      "total_salary": 6429,
+      "effective_date": "value_362"
+    },
+    {
+      "salary_id": 3702,
+      "employee_id": 3586,
+      "base_salary": 2537,
+      "bonus": 6606,
+      "total_salary": 4506,
+      "effective_date": "value_363"
+    },
+    {
+      "salary_id": 2677,
+      "employee_id": 8303,
+      "base_salary": 8518,
+      "bonus": 6003,
+      "total_salary": 7125,
+      "effective_date": "value_364"
+    },
+    {
+      "salary_id": 6546,
+      "employee_id": 2992,
+      "base_salary": 1249,
+      "bonus": 5863,
+      "total_salary": 2630,
+      "effective_date": "value_365"
+    },
+    {
+      "salary_id": 2064,
+      "employee_id": 4279,
+      "base_salary": 6635,
+      "bonus": 3819,
+      "total_salary": 3987,
+      "effective_date": "value_366"
+    },
+    {
+      "salary_id": 3274,
+      "employee_id": 6285,
+      "base_salary": 5777,
+      "bonus": 9663,
+      "total_salary": 6949,
+      "effective_date": "value_367"
+    },
+    {
+      "salary_id": 2431,
+      "employee_id": 5015,
+      "base_salary": 1825,
+      "bonus": 8876,
+      "total_salary": 8882,
+      "effective_date": "value_368"
+    },
+    {
+      "salary_id": 1590,
+      "employee_id": 5904,
+      "base_salary": 9124,
+      "bonus": 3772,
+      "total_salary": 6568,
+      "effective_date": "value_369"
+    },
+    {
+      "salary_id": 4451,
+      "employee_id": 8498,
+      "base_salary": 4207,
+      "bonus": 9473,
+      "total_salary": 3262,
+      "effective_date": "value_370"
+    },
+    {
+      "salary_id": 9489,
+      "employee_id": 7791,
+      "base_salary": 7418,
+      "bonus": 5147,
+      "total_salary": 8812,
+      "effective_date": "value_371"
+    },
+    {
+      "salary_id": 2630,
+      "employee_id": 9775,
+      "base_salary": 669,
+      "bonus": 533,
+      "total_salary": 2547,
+      "effective_date": "value_372"
+    },
+    {
+      "salary_id": 3852,
+      "employee_id": 9743,
+      "base_salary": 3929,
+      "bonus": 5708,
+      "total_salary": 5324,
+      "effective_date": "value_373"
+    },
+    {
+      "salary_id": 2366,
+      "employee_id": 9948,
+      "base_salary": 3054,
+      "bonus": 5701,
+      "total_salary": 9319,
+      "effective_date": "value_374"
+    },
+    {
+      "salary_id": 1696,
+      "employee_id": 6698,
+      "base_salary": 9239,
+      "bonus": 377,
+      "total_salary": 7037,
+      "effective_date": "value_375"
+    },
+    {
+      "salary_id": 2838,
+      "employee_id": 2524,
+      "base_salary": 3259,
+      "bonus": 5015,
+      "total_salary": 7143,
+      "effective_date": "value_376"
+    },
+    {
+      "salary_id": 5382,
+      "employee_id": 5365,
+      "base_salary": 2222,
+      "bonus": 8711,
+      "total_salary": 8514,
+      "effective_date": "value_377"
+    },
+    {
+      "salary_id": 4364,
+      "employee_id": 3685,
+      "base_salary": 6244,
+      "bonus": 1572,
+      "total_salary": 7915,
+      "effective_date": "value_378"
+    },
+    {
+      "salary_id": 1410,
+      "employee_id": 7675,
+      "base_salary": 3960,
+      "bonus": 4812,
+      "total_salary": 150,
+      "effective_date": "value_379"
+    },
+    {
+      "salary_id": 3875,
+      "employee_id": 9642,
+      "base_salary": 7808,
+      "bonus": 8587,
+      "total_salary": 8628,
+      "effective_date": "value_380"
+    },
+    {
+      "salary_id": 657,
+      "employee_id": 2341,
+      "base_salary": 356,
+      "bonus": 7232,
+      "total_salary": 5978,
+      "effective_date": "value_381"
+    },
+    {
+      "salary_id": 218,
+      "employee_id": 6918,
+      "base_salary": 5018,
+      "bonus": 8352,
+      "total_salary": 2315,
+      "effective_date": "value_382"
+    },
+    {
+      "salary_id": 8231,
+      "employee_id": 6411,
+      "base_salary": 5568,
+      "bonus": 1451,
+      "total_salary": 3176,
+      "effective_date": "value_383"
+    },
+    {
+      "salary_id": 9180,
+      "employee_id": 5332,
+      "base_salary": 3646,
+      "bonus": 5001,
+      "total_salary": 3704,
+      "effective_date": "value_384"
+    },
+    {
+      "salary_id": 909,
+      "employee_id": 9868,
+      "base_salary": 4316,
+      "bonus": 1967,
+      "total_salary": 4519,
+      "effective_date": "value_385"
+    },
+    {
+      "salary_id": 5313,
+      "employee_id": 4634,
+      "base_salary": 6487,
+      "bonus": 4265,
+      "total_salary": 9694,
+      "effective_date": "value_386"
+    },
+    {
+      "salary_id": 5654,
+      "employee_id": 9172,
+      "base_salary": 469,
+      "bonus": 5793,
+      "total_salary": 8233,
+      "effective_date": "value_387"
+    },
+    {
+      "salary_id": 9388,
+      "employee_id": 8134,
+      "base_salary": 2114,
+      "bonus": 713,
+      "total_salary": 9105,
+      "effective_date": "value_388"
+    },
+    {
+      "salary_id": 5047,
+      "employee_id": 6430,
+      "base_salary": 2679,
+      "bonus": 4815,
+      "total_salary": 2103,
+      "effective_date": "value_389"
+    },
+    {
+      "salary_id": 2130,
+      "employee_id": 4157,
+      "base_salary": 6752,
+      "bonus": 2678,
+      "total_salary": 1959,
+      "effective_date": "value_390"
+    },
+    {
+      "salary_id": 9,
+      "employee_id": 4343,
+      "base_salary": 4861,
+      "bonus": 8589,
+      "total_salary": 5793,
+      "effective_date": "value_391"
+    },
+    {
+      "salary_id": 3080,
+      "employee_id": 9427,
+      "base_salary": 999,
+      "bonus": 9389,
+      "total_salary": 4893,
+      "effective_date": "value_392"
+    },
+    {
+      "salary_id": 8522,
+      "employee_id": 8403,
+      "base_salary": 7021,
+      "bonus": 2817,
+      "total_salary": 8431,
+      "effective_date": "value_393"
+    },
+    {
+      "salary_id": 5266,
+      "employee_id": 6849,
+      "base_salary": 3787,
+      "bonus": 5108,
+      "total_salary": 6637,
+      "effective_date": "value_394"
+    },
+    {
+      "salary_id": 890,
+      "employee_id": 7377,
+      "base_salary": 8289,
+      "bonus": 6639,
+      "total_salary": 1286,
+      "effective_date": "value_395"
+    },
+    {
+      "salary_id": 2914,
+      "employee_id": 9894,
+      "base_salary": 2234,
+      "bonus": 1339,
+      "total_salary": 5442,
+      "effective_date": "value_396"
+    },
+    {
+      "salary_id": 6912,
+      "employee_id": 7736,
+      "base_salary": 5508,
+      "bonus": 7266,
+      "total_salary": 8188,
+      "effective_date": "value_397"
+    },
+    {
+      "salary_id": 7283,
+      "employee_id": 2710,
+      "base_salary": 9761,
+      "bonus": 3274,
+      "total_salary": 4017,
+      "effective_date": "value_398"
+    },
+    {
+      "salary_id": 8774,
+      "employee_id": 7660,
+      "base_salary": 9596,
+      "bonus": 1409,
+      "total_salary": 8981,
+      "effective_date": "value_399"
+    },
+    {
+      "salary_id": 9827,
+      "employee_id": 292,
+      "base_salary": 9519,
+      "bonus": 6247,
+      "total_salary": 9972,
+      "effective_date": "value_400"
+    },
+    {
+      "salary_id": 1561,
+      "employee_id": 9373,
+      "base_salary": 226,
+      "bonus": 5333,
+      "total_salary": 6735,
+      "effective_date": "value_401"
+    },
+    {
+      "salary_id": 972,
+      "employee_id": 7251,
+      "base_salary": 1746,
+      "bonus": 5361,
+      "total_salary": 1698,
+      "effective_date": "value_402"
+    },
+    {
+      "salary_id": 5431,
+      "employee_id": 7042,
+      "base_salary": 5925,
+      "bonus": 6584,
+      "total_salary": 5837,
+      "effective_date": "value_403"
+    },
+    {
+      "salary_id": 2459,
+      "employee_id": 6900,
+      "base_salary": 1423,
+      "bonus": 4747,
+      "total_salary": 5911,
+      "effective_date": "value_404"
+    },
+    {
+      "salary_id": 9213,
+      "employee_id": 5746,
+      "base_salary": 4374,
+      "bonus": 6080,
+      "total_salary": 8126,
+      "effective_date": "value_405"
+    },
+    {
+      "salary_id": 2718,
+      "employee_id": 605,
+      "base_salary": 4915,
+      "bonus": 7156,
+      "total_salary": 6107,
+      "effective_date": "value_406"
+    },
+    {
+      "salary_id": 1307,
+      "employee_id": 6932,
+      "base_salary": 1002,
+      "bonus": 2709,
+      "total_salary": 4633,
+      "effective_date": "value_407"
+    },
+    {
+      "salary_id": 8,
+      "employee_id": 6609,
+      "base_salary": 5168,
+      "bonus": 7015,
+      "total_salary": 755,
+      "effective_date": "value_408"
+    },
+    {
+      "salary_id": 47,
+      "employee_id": 5586,
+      "base_salary": 4599,
+      "bonus": 3366,
+      "total_salary": 3043,
+      "effective_date": "value_409"
+    },
+    {
+      "salary_id": 7234,
+      "employee_id": 6340,
+      "base_salary": 7452,
+      "bonus": 4063,
+      "total_salary": 5025,
+      "effective_date": "value_410"
+    },
+    {
+      "salary_id": 1272,
+      "employee_id": 9459,
+      "base_salary": 4025,
+      "bonus": 3710,
+      "total_salary": 6384,
+      "effective_date": "value_411"
+    },
+    {
+      "salary_id": 679,
+      "employee_id": 9834,
+      "base_salary": 6969,
+      "bonus": 578,
+      "total_salary": 9460,
+      "effective_date": "value_412"
+    },
+    {
+      "salary_id": 1297,
+      "employee_id": 6500,
+      "base_salary": 9491,
+      "bonus": 9511,
+      "total_salary": 5556,
+      "effective_date": "value_413"
+    },
+    {
+      "salary_id": 6756,
+      "employee_id": 570,
+      "base_salary": 2525,
+      "bonus": 1148,
+      "total_salary": 5481,
+      "effective_date": "value_414"
+    },
+    {
+      "salary_id": 5902,
+      "employee_id": 6976,
+      "base_salary": 3821,
+      "bonus": 5154,
+      "total_salary": 6722,
+      "effective_date": "value_415"
+    },
+    {
+      "salary_id": 5662,
+      "employee_id": 5777,
+      "base_salary": 4763,
+      "bonus": 6117,
+      "total_salary": 3504,
+      "effective_date": "value_416"
+    },
+    {
+      "salary_id": 6748,
+      "employee_id": 363,
+      "base_salary": 3406,
+      "bonus": 7020,
+      "total_salary": 581,
+      "effective_date": "value_417"
+    },
+    {
+      "salary_id": 5158,
+      "employee_id": 7866,
+      "base_salary": 4199,
+      "bonus": 3535,
+      "total_salary": 6533,
+      "effective_date": "value_418"
+    },
+    {
+      "salary_id": 6264,
+      "employee_id": 9689,
+      "base_salary": 9998,
+      "bonus": 2163,
+      "total_salary": 7583,
+      "effective_date": "value_419"
+    },
+    {
+      "salary_id": 9553,
+      "employee_id": 6789,
+      "base_salary": 8196,
+      "bonus": 5648,
+      "total_salary": 3388,
+      "effective_date": "value_420"
+    },
+    {
+      "salary_id": 9874,
+      "employee_id": 8620,
+      "base_salary": 5591,
+      "bonus": 6091,
+      "total_salary": 1631,
+      "effective_date": "value_421"
+    },
+    {
+      "salary_id": 4076,
+      "employee_id": 3100,
+      "base_salary": 2865,
+      "bonus": 5826,
+      "total_salary": 5544,
+      "effective_date": "value_422"
+    },
+    {
+      "salary_id": 1300,
+      "employee_id": 5326,
+      "base_salary": 2774,
+      "bonus": 9767,
+      "total_salary": 3742,
+      "effective_date": "value_423"
+    },
+    {
+      "salary_id": 82,
+      "employee_id": 9880,
+      "base_salary": 5010,
+      "bonus": 9376,
+      "total_salary": 9130,
+      "effective_date": "value_424"
+    },
+    {
+      "salary_id": 5754,
+      "employee_id": 3412,
+      "base_salary": 8069,
+      "bonus": 4654,
+      "total_salary": 3155,
+      "effective_date": "value_425"
+    },
+    {
+      "salary_id": 6562,
+      "employee_id": 8094,
+      "base_salary": 1331,
+      "bonus": 5277,
+      "total_salary": 4287,
+      "effective_date": "value_426"
+    },
+    {
+      "salary_id": 2408,
+      "employee_id": 1968,
+      "base_salary": 6135,
+      "bonus": 3438,
+      "total_salary": 351,
+      "effective_date": "value_427"
+    },
+    {
+      "salary_id": 6251,
+      "employee_id": 9534,
+      "base_salary": 4367,
+      "bonus": 4002,
+      "total_salary": 9103,
+      "effective_date": "value_428"
+    },
+    {
+      "salary_id": 362,
+      "employee_id": 9380,
+      "base_salary": 8371,
+      "bonus": 8373,
+      "total_salary": 7187,
+      "effective_date": "value_429"
+    },
+    {
+      "salary_id": 3318,
+      "employee_id": 3414,
+      "base_salary": 8818,
+      "bonus": 4853,
+      "total_salary": 3202,
+      "effective_date": "value_430"
+    },
+    {
+      "salary_id": 8141,
+      "employee_id": 2551,
+      "base_salary": 4606,
+      "bonus": 920,
+      "total_salary": 2579,
+      "effective_date": "value_431"
+    },
+    {
+      "salary_id": 6833,
+      "employee_id": 2557,
+      "base_salary": 5228,
+      "bonus": 3292,
+      "total_salary": 2247,
+      "effective_date": "value_432"
+    },
+    {
+      "salary_id": 5605,
+      "employee_id": 2384,
+      "base_salary": 9743,
+      "bonus": 15,
+      "total_salary": 4821,
+      "effective_date": "value_433"
+    },
+    {
+      "salary_id": 510,
+      "employee_id": 8224,
+      "base_salary": 8881,
+      "bonus": 4394,
+      "total_salary": 7986,
+      "effective_date": "value_434"
+    },
+    {
+      "salary_id": 7422,
+      "employee_id": 8341,
+      "base_salary": 7055,
+      "bonus": 7630,
+      "total_salary": 7114,
+      "effective_date": "value_435"
+    },
+    {
+      "salary_id": 2529,
+      "employee_id": 8061,
+      "base_salary": 2549,
+      "bonus": 8375,
+      "total_salary": 7366,
+      "effective_date": "value_436"
+    },
+    {
+      "salary_id": 1153,
+      "employee_id": 712,
+      "base_salary": 4504,
+      "bonus": 8905,
+      "total_salary": 2965,
+      "effective_date": "value_437"
+    },
+    {
+      "salary_id": 4052,
+      "employee_id": 3189,
+      "base_salary": 1418,
+      "bonus": 7695,
+      "total_salary": 3939,
+      "effective_date": "value_438"
+    },
+    {
+      "salary_id": 1828,
+      "employee_id": 9123,
+      "base_salary": 1084,
+      "bonus": 8107,
+      "total_salary": 748,
+      "effective_date": "value_439"
+    },
+    {
+      "salary_id": 4589,
+      "employee_id": 1659,
+      "base_salary": 2859,
+      "bonus": 4946,
+      "total_salary": 1875,
+      "effective_date": "value_440"
+    },
+    {
+      "salary_id": 5280,
+      "employee_id": 6523,
+      "base_salary": 4059,
+      "bonus": 3038,
+      "total_salary": 6301,
+      "effective_date": "value_441"
+    },
+    {
+      "salary_id": 5705,
+      "employee_id": 7836,
+      "base_salary": 1612,
+      "bonus": 6105,
+      "total_salary": 6863,
+      "effective_date": "value_442"
+    },
+    {
+      "salary_id": 419,
+      "employee_id": 2285,
+      "base_salary": 4811,
+      "bonus": 7429,
+      "total_salary": 9694,
+      "effective_date": "value_443"
+    },
+    {
+      "salary_id": 6711,
+      "employee_id": 1143,
+      "base_salary": 4345,
+      "bonus": 3055,
+      "total_salary": 1453,
+      "effective_date": "value_444"
+    },
+    {
+      "salary_id": 6777,
+      "employee_id": 1067,
+      "base_salary": 8795,
+      "bonus": 1749,
+      "total_salary": 2670,
+      "effective_date": "value_445"
+    },
+    {
+      "salary_id": 1258,
+      "employee_id": 186,
+      "base_salary": 632,
+      "bonus": 2343,
+      "total_salary": 5688,
+      "effective_date": "value_446"
+    },
+    {
+      "salary_id": 3640,
+      "employee_id": 922,
+      "base_salary": 7786,
+      "bonus": 4227,
+      "total_salary": 5631,
+      "effective_date": "value_447"
+    },
+    {
+      "salary_id": 8547,
+      "employee_id": 8710,
+      "base_salary": 9656,
+      "bonus": 3463,
+      "total_salary": 6770,
+      "effective_date": "value_448"
+    },
+    {
+      "salary_id": 5335,
+      "employee_id": 3819,
+      "base_salary": 5094,
+      "bonus": 1905,
+      "total_salary": 2987,
+      "effective_date": "value_449"
+    },
+    {
+      "salary_id": 162,
+      "employee_id": 7580,
+      "base_salary": 2406,
+      "bonus": 398,
+      "total_salary": 153,
+      "effective_date": "value_450"
+    },
+    {
+      "salary_id": 4459,
+      "employee_id": 7598,
+      "base_salary": 4707,
+      "bonus": 7984,
+      "total_salary": 2365,
+      "effective_date": "value_451"
+    },
+    {
+      "salary_id": 9602,
+      "employee_id": 7521,
+      "base_salary": 9063,
+      "bonus": 2383,
+      "total_salary": 454,
+      "effective_date": "value_452"
+    },
+    {
+      "salary_id": 3212,
+      "employee_id": 8853,
+      "base_salary": 3197,
+      "bonus": 1390,
+      "total_salary": 7502,
+      "effective_date": "value_453"
+    },
+    {
+      "salary_id": 1743,
+      "employee_id": 1157,
+      "base_salary": 2075,
+      "bonus": 2266,
+      "total_salary": 7949,
+      "effective_date": "value_454"
+    },
+    {
+      "salary_id": 5048,
+      "employee_id": 8500,
+      "base_salary": 435,
+      "bonus": 4445,
+      "total_salary": 946,
+      "effective_date": "value_455"
+    },
+    {
+      "salary_id": 2973,
+      "employee_id": 1594,
+      "base_salary": 5517,
+      "bonus": 3772,
+      "total_salary": 5544,
+      "effective_date": "value_456"
+    },
+    {
+      "salary_id": 6271,
+      "employee_id": 5017,
+      "base_salary": 633,
+      "bonus": 6699,
+      "total_salary": 6337,
+      "effective_date": "value_457"
+    },
+    {
+      "salary_id": 9480,
+      "employee_id": 6141,
+      "base_salary": 2664,
+      "bonus": 6967,
+      "total_salary": 3695,
+      "effective_date": "value_458"
+    },
+    {
+      "salary_id": 6036,
+      "employee_id": 6026,
+      "base_salary": 8748,
+      "bonus": 3556,
+      "total_salary": 3586,
+      "effective_date": "value_459"
+    },
+    {
+      "salary_id": 3641,
+      "employee_id": 4929,
+      "base_salary": 948,
+      "bonus": 1153,
+      "total_salary": 4906,
+      "effective_date": "value_460"
+    },
+    {
+      "salary_id": 3297,
+      "employee_id": 1241,
+      "base_salary": 8161,
+      "bonus": 5141,
+      "total_salary": 7576,
+      "effective_date": "value_461"
+    },
+    {
+      "salary_id": 3931,
+      "employee_id": 1324,
+      "base_salary": 9737,
+      "bonus": 4131,
+      "total_salary": 5989,
+      "effective_date": "value_462"
+    },
+    {
+      "salary_id": 4729,
+      "employee_id": 8195,
+      "base_salary": 8670,
+      "bonus": 8306,
+      "total_salary": 4456,
+      "effective_date": "value_463"
+    },
+    {
+      "salary_id": 252,
+      "employee_id": 7127,
+      "base_salary": 5159,
+      "bonus": 7066,
+      "total_salary": 7459,
+      "effective_date": "value_464"
+    },
+    {
+      "salary_id": 5552,
+      "employee_id": 3547,
+      "base_salary": 8984,
+      "bonus": 8803,
+      "total_salary": 3516,
+      "effective_date": "value_465"
+    },
+    {
+      "salary_id": 6833,
+      "employee_id": 1288,
+      "base_salary": 5515,
+      "bonus": 7749,
+      "total_salary": 5654,
+      "effective_date": "value_466"
+    },
+    {
+      "salary_id": 7133,
+      "employee_id": 9193,
+      "base_salary": 7836,
+      "bonus": 705,
+      "total_salary": 3445,
+      "effective_date": "value_467"
+    },
+    {
+      "salary_id": 8657,
+      "employee_id": 6361,
+      "base_salary": 9226,
+      "bonus": 7524,
+      "total_salary": 1994,
+      "effective_date": "value_468"
+    },
+    {
+      "salary_id": 6210,
+      "employee_id": 3678,
+      "base_salary": 3763,
+      "bonus": 2498,
+      "total_salary": 100,
+      "effective_date": "value_469"
+    },
+    {
+      "salary_id": 2455,
+      "employee_id": 2012,
+      "base_salary": 4573,
+      "bonus": 9680,
+      "total_salary": 395,
+      "effective_date": "value_470"
+    },
+    {
+      "salary_id": 284,
+      "employee_id": 4309,
+      "base_salary": 3815,
+      "bonus": 9232,
+      "total_salary": 8151,
+      "effective_date": "value_471"
+    },
+    {
+      "salary_id": 2120,
+      "employee_id": 9090,
+      "base_salary": 716,
+      "bonus": 5385,
+      "total_salary": 7493,
+      "effective_date": "value_472"
+    },
+    {
+      "salary_id": 7741,
+      "employee_id": 1023,
+      "base_salary": 2819,
+      "bonus": 862,
+      "total_salary": 642,
+      "effective_date": "value_473"
+    },
+    {
+      "salary_id": 3865,
+      "employee_id": 2935,
+      "base_salary": 3101,
+      "bonus": 3942,
+      "total_salary": 7640,
+      "effective_date": "value_474"
+    },
+    {
+      "salary_id": 5353,
+      "employee_id": 1816,
+      "base_salary": 5909,
+      "bonus": 6252,
+      "total_salary": 6847,
+      "effective_date": "value_475"
+    },
+    {
+      "salary_id": 7177,
+      "employee_id": 6281,
+      "base_salary": 8328,
+      "bonus": 9744,
+      "total_salary": 1612,
+      "effective_date": "value_476"
+    },
+    {
+      "salary_id": 4842,
+      "employee_id": 872,
+      "base_salary": 277,
+      "bonus": 5082,
+      "total_salary": 5656,
+      "effective_date": "value_477"
+    },
+    {
+      "salary_id": 9934,
+      "employee_id": 5265,
+      "base_salary": 6346,
+      "bonus": 4855,
+      "total_salary": 6105,
+      "effective_date": "value_478"
+    },
+    {
+      "salary_id": 7188,
+      "employee_id": 6276,
+      "base_salary": 8831,
+      "bonus": 4224,
+      "total_salary": 6386,
+      "effective_date": "value_479"
+    },
+    {
+      "salary_id": 9451,
+      "employee_id": 4014,
+      "base_salary": 3329,
+      "bonus": 3513,
+      "total_salary": 1922,
+      "effective_date": "value_480"
+    },
+    {
+      "salary_id": 7281,
+      "employee_id": 126,
+      "base_salary": 4250,
+      "bonus": 2085,
+      "total_salary": 8362,
+      "effective_date": "value_481"
+    },
+    {
+      "salary_id": 7505,
+      "employee_id": 5880,
+      "base_salary": 89,
+      "bonus": 1289,
+      "total_salary": 1775,
+      "effective_date": "value_482"
+    },
+    {
+      "salary_id": 6653,
+      "employee_id": 3986,
+      "base_salary": 5619,
+      "bonus": 4163,
+      "total_salary": 5029,
+      "effective_date": "value_483"
+    },
+    {
+      "salary_id": 8898,
+      "employee_id": 7200,
+      "base_salary": 8967,
+      "bonus": 8561,
+      "total_salary": 8440,
+      "effective_date": "value_484"
+    },
+    {
+      "salary_id": 6667,
+      "employee_id": 2210,
+      "base_salary": 7519,
+      "bonus": 844,
+      "total_salary": 1536,
+      "effective_date": "value_485"
+    },
+    {
+      "salary_id": 2621,
+      "employee_id": 882,
+      "base_salary": 8115,
+      "bonus": 1548,
+      "total_salary": 9082,
+      "effective_date": "value_486"
+    },
+    {
+      "salary_id": 1929,
+      "employee_id": 5536,
+      "base_salary": 1363,
+      "bonus": 2631,
+      "total_salary": 2152,
+      "effective_date": "value_487"
+    },
+    {
+      "salary_id": 7950,
+      "employee_id": 1311,
+      "base_salary": 6124,
+      "bonus": 7453,
+      "total_salary": 5261,
+      "effective_date": "value_488"
+    },
+    {
+      "salary_id": 7235,
+      "employee_id": 1342,
+      "base_salary": 5361,
+      "bonus": 9099,
+      "total_salary": 4403,
+      "effective_date": "value_489"
+    },
+    {
+      "salary_id": 8995,
+      "employee_id": 7330,
+      "base_salary": 2059,
+      "bonus": 7516,
+      "total_salary": 8481,
+      "effective_date": "value_490"
+    },
+    {
+      "salary_id": 7181,
+      "employee_id": 9368,
+      "base_salary": 6111,
+      "bonus": 6424,
+      "total_salary": 4621,
+      "effective_date": "value_491"
+    },
+    {
+      "salary_id": 2810,
+      "employee_id": 6054,
+      "base_salary": 1436,
+      "bonus": 846,
+      "total_salary": 4950,
+      "effective_date": "value_492"
+    },
+    {
+      "salary_id": 4187,
+      "employee_id": 6477,
+      "base_salary": 2610,
+      "bonus": 850,
+      "total_salary": 5696,
+      "effective_date": "value_493"
+    },
+    {
+      "salary_id": 1226,
+      "employee_id": 4597,
+      "base_salary": 582,
+      "bonus": 1819,
+      "total_salary": 2871,
+      "effective_date": "value_494"
+    },
+    {
+      "salary_id": 1232,
+      "employee_id": 825,
+      "base_salary": 37,
+      "bonus": 3096,
+      "total_salary": 8979,
+      "effective_date": "value_495"
+    },
+    {
+      "salary_id": 2188,
+      "employee_id": 9736,
+      "base_salary": 1366,
+      "bonus": 8330,
+      "total_salary": 3860,
+      "effective_date": "value_496"
+    },
+    {
+      "salary_id": 9790,
+      "employee_id": 4080,
+      "base_salary": 122,
+      "bonus": 7988,
+      "total_salary": 6044,
+      "effective_date": "value_497"
+    },
+    {
+      "salary_id": 3560,
+      "employee_id": 9359,
+      "base_salary": 3750,
+      "bonus": 6579,
+      "total_salary": 4551,
+      "effective_date": "value_498"
+    },
+    {
+      "salary_id": 1875,
+      "employee_id": 4922,
+      "base_salary": 4178,
+      "bonus": 6631,
+      "total_salary": 304,
+      "effective_date": "value_499"
+    }
+  ],
+  "metadata": {
+    "exported_at": "2025-08-03T11:56:13.985895",
+    "session_id": "88ea29bd-92c7-497e-8b2e-cf51c8d52404",
+    "format": "json"
+  }
+}

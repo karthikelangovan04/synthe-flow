@@ -1,0 +1,51 @@
+project_id,name,description,type,status,start_date,end_date,budget,department_id,manager_id
+1,Project A1,Description for project 1,Marketing,On Hold,2023-06-22,2024-05-26,244398,11,162
+2,Project B2,Description for project 2,Marketing,Completed,2023-05-03,2023-12-03,370239,2,500
+3,Project C3,Description for project 3,Development,Planning,2023-07-02,2024-01-17,289557,13,372
+4,Project D4,Description for project 4,Process Improvement,Planning,2023-03-13,2023-04-25,328202,9,487
+5,Project E5,Description for project 5,Infrastructure,Completed,2023-12-25,2024-05-30,374194,16,264
+6,Project F6,Description for project 6,Development,On Hold,2023-07-31,2023-12-04,58719,12,448
+7,Project G7,Description for project 7,Marketing,Active,2023-01-24,2023-08-08,368118,16,205
+8,Project H8,Description for project 8,Infrastructure,Completed,2023-11-10,2024-01-20,299625,4,376
+9,Project I9,Description for project 9,Process Improvement,Active,2023-07-17,2024-01-13,423262,5,446
+10,Project J10,Description for project 10,Process Improvement,Planning,2023-09-24,2024-08-11,117036,16,408
+11,Project K11,Description for project 11,Process Improvement,Completed,2023-02-14,2023-08-17,138108,15,489
+12,Project L12,Description for project 12,Process Improvement,Active,2023-03-01,2023-12-02,177588,7,88
+13,Project M13,Description for project 13,Development,Completed,2023-12-04,2024-02-17,425267,1,83
+14,Project N14,Description for project 14,Infrastructure,Active,2023-06-17,2024-01-29,427054,9,341
+15,Project O15,Description for project 15,Research,Cancelled,2023-09-01,2023-12-03,382161,16,47
+16,Project P16,Description for project 16,Research,Cancelled,2023-12-21,2024-07-08,451781,20,34
+17,Project Q17,Description for project 17,Marketing,Completed,2023-11-26,2024-06-18,392842,18,495
+18,Project R18,Description for project 18,Research,On Hold,2023-08-12,2024-01-08,110654,10,45
+19,Project S19,Description for project 19,Infrastructure,Cancelled,2023-02-27,2023-05-13,148648,4,294
+20,Project T20,Description for project 20,Infrastructure,Completed,2023-07-08,2023-10-11,352470,1,160
+21,Project U21,Description for project 21,Process Improvement,Active,2023-02-01,2023-12-30,494134,13,217
+22,Project V22,Description for project 22,Research,Cancelled,2023-06-13,2024-01-15,397992,20,303
+23,Project W23,Description for project 23,Marketing,Planning,2023-04-24,2023-07-17,332220,15,162
+24,Project X24,Description for project 24,Research,Completed,2023-03-16,2023-09-13,406505,15,76
+25,Project Y25,Description for project 25,Research,Planning,2023-11-04,2024-04-27,363985,11,159
+26,Project Z26,Description for project 26,Infrastructure,Cancelled,2023-09-15,2023-12-17,300757,7,254
+27,Project A27,Description for project 27,Development,On Hold,2023-05-30,2024-01-07,130059,7,435
+28,Project B28,Description for project 28,Research,Completed,2023-04-26,2023-06-21,431364,13,154
+29,Project C29,Description for project 29,Development,Cancelled,2023-12-04,2024-03-24,255670,11,217
+30,Project D30,Description for project 30,Infrastructure,Completed,2023-12-14,2024-09-11,255029,3,271
+31,Project E31,Description for project 31,Research,Cancelled,2023-05-25,2023-11-15,256450,4,68
+32,Project F32,Description for project 32,Development,On Hold,2023-06-15,2024-05-07,289878,6,296
+33,Project G33,Description for project 33,Marketing,On Hold,2023-03-12,2023-11-23,125928,7,112
+34,Project H34,Description for project 34,Development,On Hold,2023-04-11,2024-04-08,430610,19,53
+35,Project I35,Description for project 35,Marketing,Completed,2023-12-14,2024-03-28,406224,6,475
+36,Project J36,Description for project 36,Infrastructure,Completed,2023-01-29,2023-04-18,144179,2,61
+37,Project K37,Description for project 37,Infrastructure,Cancelled,2023-09-21,2024-09-17,277447,5,322
+38,Project L38,Description for project 38,Development,Planning,2023-07-26,2023-12-28,176277,13,251
+39,Project M39,Description for project 39,Research,Completed,2023-06-04,2024-05-04,456768,3,399
+40,Project N40,Description for project 40,Marketing,On Hold,2023-08-26,2024-08-22,381524,15,189
+41,Project O41,Description for project 41,Development,Planning,2023-01-06,2023-04-07,113990,16,329
+42,Project P42,Description for project 42,Research,Planning,2023-12-09,2024-09-24,357678,19,294
+43,Project Q43,Description for project 43,Development,Cancelled,2023-09-03,2024-02-20,144946,13,248
+44,Project R44,Description for project 44,Infrastructure,Cancelled,2023-11-27,2024-08-05,115659,4,167
+45,Project S45,Description for project 45,Research,Completed,2023-02-02,2023-12-04,476176,1,202
+46,Project T46,Description for project 46,Process Improvement,Completed,2023-10-12,2024-08-11,83518,17,429
+47,Project U47,Description for project 47,Development,Active,2023-10-27,2024-08-27,395286,4,93
+48,Project V48,Description for project 48,Development,Cancelled,2023-11-03,2024-03-04,284478,11,63
+49,Project W49,Description for project 49,Process Improvement,Active,2023-01-21,2023-04-26,392171,6,45
+50,Project X50,Description for project 50,Development,Planning,2023-10-15,2024-03-24,115387,17,153

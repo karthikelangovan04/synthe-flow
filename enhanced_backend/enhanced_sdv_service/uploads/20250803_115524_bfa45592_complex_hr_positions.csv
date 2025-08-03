@@ -1,0 +1,48 @@
+position_id,title,department_id,level,category,min_salary,max_salary
+1,Junior Software Engineer,1,Junior,Engineering,65000,88000
+2,Junior Data Engineer,1,Junior,Engineering,70000,96000
+3,Junior DevOps Engineer,1,Junior,Engineering,75000,104000
+4,Junior QA Engineer,1,Junior,Engineering,80000,112000
+5,Mid Software Engineer,1,Mid,Engineering,85000,120000
+6,Mid Data Engineer,1,Mid,Engineering,90000,128000
+7,Mid DevOps Engineer,1,Mid,Engineering,95000,136000
+8,Mid QA Engineer,1,Mid,Engineering,100000,144000
+9,Senior Software Engineer,1,Senior,Engineering,105000,152000
+10,Senior Data Engineer,1,Senior,Engineering,110000,160000
+11,Senior DevOps Engineer,1,Senior,Engineering,115000,168000
+12,Senior QA Engineer,1,Senior,Engineering,120000,176000
+13,Lead Software Engineer,1,Lead,Engineering,125000,184000
+14,Lead Data Engineer,1,Lead,Engineering,130000,192000
+15,Lead DevOps Engineer,1,Lead,Engineering,135000,200000
+16,Lead QA Engineer,1,Lead,Engineering,140000,208000
+17,Principal Software Engineer,1,Principal,Engineering,145000,216000
+18,Principal Data Engineer,1,Principal,Engineering,150000,224000
+19,Principal DevOps Engineer,1,Principal,Engineering,155000,232000
+20,Principal QA Engineer,1,Principal,Engineering,160000,240000
+21,Junior Sales Representative,2,Junior,Sales,113000,175000
+22,Junior Account Manager,2,Junior,Sales,116000,180000
+23,Junior Sales Manager,2,Junior,Sales,119000,185000
+24,Senior Sales Representative,2,Senior,Sales,122000,190000
+25,Senior Account Manager,2,Senior,Sales,125000,195000
+26,Senior Sales Manager,2,Senior,Sales,128000,200000
+27,Lead Sales Representative,2,Lead,Sales,131000,205000
+28,Lead Account Manager,2,Lead,Sales,134000,210000
+29,Lead Sales Manager,2,Lead,Sales,137000,215000
+30,Marketing Manager,3,Senior,Marketing,105000,185000
+31,Financial Analyst,4,Mid,Finance,107000,189000
+32,HR Specialist,5,Mid,HR,109000,193000
+33,Operations Manager,6,Senior,Operations,111000,197000
+34,Customer Success Manager,7,Mid,Support,113000,201000
+35,Product Manager,8,Senior,Product,115000,205000
+36,QA Lead,9,Lead,Quality,117000,209000
+37,Research Scientist,10,Senior,Research,119000,213000
+38,Legal Counsel,11,Senior,Legal,121000,217000
+39,IT Support Specialist,12,Mid,IT,123000,221000
+40,Business Development Manager,13,Senior,Business,125000,225000
+41,Data Scientist,14,Senior,Data,127000,229000
+42,UX Designer,15,Mid,Design,129000,233000
+43,Security Engineer,16,Senior,Security,131000,237000
+44,Facilities Coordinator,17,Junior,Facilities,133000,241000
+45,Procurement Specialist,18,Mid,Procurement,135000,245000
+46,Compliance Officer,19,Senior,Compliance,137000,249000
+47,Training Coordinator,20,Mid,Training,139000,253000
