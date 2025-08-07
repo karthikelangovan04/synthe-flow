@@ -88,15 +88,9 @@ export default function SchemaDesigner() {
       const tableIds = projectTables.map(t => t.id);
       
       // Then get relationships for these tables
-      const { data, error } = await supabase
+      const { data: relationshipsData, error } = await supabase
         .from('relationships')
-        .select(`
-          *,
-          source_table:table_metadata!relationships_source_table_id_fkey(name),
-          source_column:column_metadata!relationships_source_column_id_fkey(name),
-          target_table:table_metadata!relationships_target_table_id_fkey(name),
-          target_column:column_metadata!relationships_target_column_id_fkey(name)
-        `)
+        .select('*')
         .in('source_table_id', tableIds)
         .in('target_table_id', tableIds);
       
@@ -104,6 +98,53 @@ export default function SchemaDesigner() {
         console.error('Error fetching relationships:', error);
         throw error;
       }
+
+      if (!relationshipsData || relationshipsData.length === 0) {
+        return [];
+      }
+
+      // Then get the table and column names for each relationship
+      const enrichedRelationships = await Promise.all(
+        relationshipsData.map(async (rel) => {
+          // Get source table name
+          const { data: sourceTable } = await supabase
+            .from('table_metadata')
+            .select('name')
+            .eq('id', rel.source_table_id)
+            .single();
+
+          // Get source column name
+          const { data: sourceColumn } = await supabase
+            .from('column_metadata')
+            .select('name')
+            .eq('id', rel.source_column_id)
+            .single();
+
+          // Get target table name
+          const { data: targetTable } = await supabase
+            .from('table_metadata')
+            .select('name')
+            .eq('id', rel.target_table_id)
+            .single();
+
+          // Get target column name
+          const { data: targetColumn } = await supabase
+            .from('column_metadata')
+            .select('name')
+            .eq('id', rel.target_column_id)
+            .single();
+
+          return {
+            ...rel,
+            source_table: { name: sourceTable?.name || '' },
+            source_column: { name: sourceColumn?.name || '' },
+            target_table: { name: targetTable?.name || '' },
+            target_column: { name: targetColumn?.name || '' },
+          };
+        })
+      );
+
+      const data = enrichedRelationships;
       
       console.log('=== DEBUG: Relationships Query ===');
       console.log('Project ID:', selectedProjectId);

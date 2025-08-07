@@ -973,26 +973,28 @@ export function SyntheticDataPanel({
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {connectorsData?.connectors?.map((connector: ConnectorInfo) => (
-                    <div
-                      key={connector.type}
-                      className="border rounded-lg p-4 hover:border-primary/50 transition-colors cursor-pointer"
-                      onClick={() => {
-                        setSelectedConnector(connector);
-                        setConnectorConfig({});
-                        setShowConnectorDialog(true);
-                      }}
-                    >
-                      <div className="flex items-center gap-3">
-                        {React.createElement(getConnectorIcon(connector.icon), { className: "h-5 w-5" })}
-                        <div className="flex-1">
-                          <h4 className="font-medium text-sm">{connector.name}</h4>
-                          <p className="text-xs text-muted-foreground">{connector.description}</p>
+                <div className="max-h-96 overflow-y-auto">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-1">
+                    {connectorsData?.connectors?.map((connector: ConnectorInfo) => (
+                      <div
+                        key={connector.type}
+                        className="border rounded-lg p-4 hover:border-primary/50 transition-colors cursor-pointer bg-card"
+                        onClick={() => {
+                          setSelectedConnector(connector);
+                          setConnectorConfig({});
+                          setShowConnectorDialog(true);
+                        }}
+                      >
+                        <div className="flex items-center gap-3">
+                          {React.createElement(getConnectorIcon(connector.icon), { className: "h-5 w-5" })}
+                          <div className="flex-1 min-w-0">
+                            <h4 className="font-medium text-sm truncate">{connector.name}</h4>
+                            <p className="text-xs text-muted-foreground line-clamp-2">{connector.description}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </CardContent>
             </Card>
