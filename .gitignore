@@ -123,3 +123,19 @@ build/
 .env.production.local
 env.development
 env.production
+
+# Upload directories
+backend/sdv_service/uploads/
+backend/uploads/
+
+# Generated files and archives
+*.zip
+enterprise_synthetic_data_platform.zip
+
+# Test and demo files
+test_env.html
+*.ipynb
+
+# Temporary files
+requirements_updated.txt
+Enhanced_Sdv_Requiements
