@@ -87,7 +87,8 @@ test_json_with_relationships = {
 
 def test_backend_with_frontend_json():
     """Test that the backend can handle the JSON format that the frontend will send"""
-    base_url = "http://localhost:8002"
+    import os
+    base_url = os.getenv("VITE_API_BASE_URL", "http://localhost:8002")
     
     print("🧪 Testing Backend with Frontend JSON Format")
     print("=" * 60)

@@ -529,4 +529,11 @@ async def get_enhanced_capabilities():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8003) 
+    import os
+    
+    # Get environment variables with defaults
+    host = os.getenv("ENHANCED_BACKEND_HOST", "0.0.0.0")
+    port = int(os.getenv("ENHANCED_BACKEND_PORT", "8003"))
+    
+    print(f"Starting Enhanced SDV Backend on {host}:{port}")
+    uvicorn.run(app, host=host, port=port) 

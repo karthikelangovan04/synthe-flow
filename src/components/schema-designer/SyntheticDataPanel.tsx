@@ -33,6 +33,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
 import React from 'react'; // Added missing import for React
+import { config as appConfig } from '../../lib/config'; // Import configuration utility
 
 interface TableData {
   id: string;
@@ -130,13 +131,47 @@ export function SyntheticDataPanel({
   const [showConnectorDialog, setShowConnectorDialog] = useState(false);
   const [selectedConnector, setSelectedConnector] = useState<ConnectorInfo | null>(null);
   const [connectorConfig, setConnectorConfig] = useState<Record<string, any>>({});
+  const [activeTab, setActiveTab] = useState<string>('sources');
+  const [fileContents, setFileContents] = useState<Record<string, any>>({});
+  
+  // Set default tab to results if there's already generated data
+  React.useEffect(() => {
+    if (syntheticData && Object.keys(syntheticData).length > 0) {
+      setActiveTab('results');
+    }
+  }, [syntheticData]);
+  
+  // Fetch file contents when files are uploaded
+  const fetchFileContents = async (filename: string) => {
+    try {
+      const response = await fetch(appConfig.endpoints.uploadFile(filename));
+      if (response.ok) {
+        const data = await response.json();
+        setFileContents(prev => ({
+          ...prev,
+          [filename]: data
+        }));
+      }
+    } catch (error) {
+      console.error(`Failed to fetch content for ${filename}:`, error);
+    }
+  };
+  
+  // Fetch contents for all uploaded files
+  React.useEffect(() => {
+    const filesToFetch = uploadedFiles.filter(file => !fileContents[file.filename]);
+    filesToFetch.forEach(file => {
+      fetchFileContents(file.filename);
+    });
+  }, [uploadedFiles]);
+  
   const { toast } = useToast();
 
   // Fetch available connectors
   const { data: connectorsData } = useQuery({
     queryKey: ['connectors'],
     queryFn: async () => {
-      const response = await fetch('http://localhost:8002/api/connectors/available');
+      const response = await fetch(appConfig.endpoints.connectors);
       if (!response.ok) throw new Error('Failed to fetch connectors');
       return response.json();
     },
@@ -185,7 +220,7 @@ export function SyntheticDataPanel({
       const formData = new FormData();
       formData.append('file', file);
 
-      const response = await fetch('http://localhost:8002/api/upload/file', {
+      const response = await fetch(appConfig.endpoints.uploadFile(), {
         method: 'POST',
         body: formData,
       });
@@ -306,7 +341,7 @@ export function SyntheticDataPanel({
   // Test connector connection
   const testConnectorMutation = useMutation({
     mutationFn: async (connectorConfig: DataSourceConfig) => {
-      const response = await fetch('http://localhost:8002/api/connectors/test', {
+      const response = await fetch(appConfig.endpoints.testConnector, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(connectorConfig),
@@ -444,7 +479,7 @@ export function SyntheticDataPanel({
       console.log('Data sources length:', currentConfig.data_sources.length);
       console.log('Sending schema data to backend:', JSON.stringify(schemaData, null, 2));
       
-      const response = await fetch('http://localhost:8002/api/sdv/generate', {
+      const response = await fetch(appConfig.endpoints.generateSyntheticData, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(schemaData),
@@ -483,6 +518,7 @@ export function SyntheticDataPanel({
       setSyntheticData(data.synthetic_data);
       setQualityMetrics(data.quality_metrics);
       setGenerationStatus('completed');
+      setActiveTab('results'); // Automatically switch to results tab
       toast({
         title: 'Success',
         description: 'Synthetic data generated successfully',
@@ -554,6 +590,42 @@ export function SyntheticDataPanel({
       ...prev,
       data_sources: prev.data_sources.filter(ds => ds.type !== 'local')
     }));
+  };
+
+  // Function to get sample input data from uploaded files
+  const getSampleInputData = () => {
+    const sampleData: Record<string, any[]> = {};
+    
+    // Check if we have any uploaded files
+    if (uploadedFiles.length === 0) {
+      return sampleData; // Return empty object for "no input data" scenario
+    }
+    
+    // Get sample data from uploaded files using actual file contents
+    // Use the data sources configuration to get the correct table name mapping
+    config.data_sources.forEach(dataSource => {
+      if (dataSource.type === 'local' && dataSource.config?.file_name && dataSource.config?.table_name) {
+        const filename = dataSource.config.file_name;
+        const tableName = dataSource.config.table_name;
+        
+        console.log(`=== File Content Mapping Debug ===`);
+        console.log(`Looking for file: ${filename}`);
+        console.log(`Mapping to table: ${tableName}`);
+        console.log(`Available file contents:`, Object.keys(fileContents));
+        console.log(`File content exists:`, !!fileContents[filename]);
+        
+        if (fileContents[filename]) {
+          const fileContent = fileContents[filename];
+          if (fileContent.content && Array.isArray(fileContent.content)) {
+            sampleData[tableName] = fileContent.content;
+            console.log(`✅ Mapped ${filename} to ${tableName} with ${fileContent.content.length} rows`);
+          }
+        }
+      }
+    });
+    
+    console.log(`Final sample data:`, sampleData);
+    return sampleData;
   };
 
   const handleExportData = (format: 'csv' | 'json' | 'sql') => {
@@ -818,18 +890,30 @@ export function SyntheticDataPanel({
             Generate synthetic data using SDV with multiple data sources
           </p>
         </div>
-        <Button
-          onClick={handleGenerateData}
-          disabled={generationStatus === 'generating' || tables.length === 0}
-          className="flex items-center gap-2"
-        >
-          <Play className="h-4 w-4" />
-          Generate Data
-        </Button>
+        <div className="flex items-center gap-2">
+          {generationStatus === 'completed' && syntheticData && (
+            <Button
+              variant="outline"
+              onClick={() => setActiveTab('results')}
+              className="flex items-center gap-2"
+            >
+              <CheckCircle className="h-4 w-4" />
+              View Results
+            </Button>
+          )}
+          <Button
+            onClick={handleGenerateData}
+            disabled={generationStatus === 'generating' || tables.length === 0}
+            className="flex items-center gap-2"
+          >
+            <Play className="h-4 w-4" />
+            Generate Data
+          </Button>
+        </div>
       </div>
 
       <div className="flex-1 overflow-auto p-4">
-        <Tabs defaultValue="sources" className="h-full">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="h-full">
           <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="sources">Data Sources</TabsTrigger>
             <TabsTrigger value="config">Configuration</TabsTrigger>
@@ -1167,6 +1251,26 @@ export function SyntheticDataPanel({
           </TabsContent>
 
           <TabsContent value="results" className="space-y-4">
+            {generationStatus === 'idle' && (
+              <Card>
+                <CardContent className="p-6">
+                  <div className="text-center space-y-4">
+                    <CloudSnow className="h-12 w-12 text-muted-foreground mx-auto" />
+                    <div>
+                      <h3 className="text-lg font-semibold">Ready to Generate Synthetic Data</h3>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Configure your data sources and settings, then click "Generate Data" to create synthetic datasets.
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
+                      <Database className="h-3 w-3" />
+                      <span>Upload data files in the Data Sources tab</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
             {generationStatus === 'generating' && (
               <Card>
                 <CardContent className="p-6">
@@ -1196,6 +1300,99 @@ export function SyntheticDataPanel({
                           <Badge variant="outline">{Array.isArray(rows) ? rows.length : 0} rows</Badge>
                         </div>
                       ))}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Data View: Input and Output Data */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-sm flex items-center gap-2">
+                      <FileText className="h-4 w-4" />
+                      Data View: Input and Output
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      {Object.entries(syntheticData).map(([tableName, outputRows]: [string, any]) => {
+                        const sampleInputData = getSampleInputData()[tableName] || [];
+                        const sampleOutputData = Array.isArray(outputRows) ? outputRows.slice(0, 3) : [];
+                        const hasInputData = uploadedFiles.length > 0 && sampleInputData.length > 0;
+                        
+                        return (
+                          <div key={tableName} className="border rounded-lg p-4">
+                            <h4 className="font-semibold text-sm mb-3 text-blue-600">{tableName} Table</h4>
+                            
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                              {/* Input Data Sample */}
+                              <div className="space-y-2">
+                                <div className="flex items-center gap-2">
+                                  <Database className="h-4 w-4 text-green-600" />
+                                  <span className="text-sm font-medium text-green-600">Input Data Sample</span>
+                                  <Badge variant="outline" className="text-xs">
+                                    {hasInputData ? sampleInputData.length : 0} rows
+                                  </Badge>
+                                </div>
+                                <div className="bg-green-50 border border-green-200 rounded p-3 max-h-48 overflow-y-auto">
+                                  {hasInputData ? (
+                                    <pre className="text-xs text-green-800 whitespace-pre-wrap">
+                                      {JSON.stringify(sampleInputData, null, 2)}
+                                    </pre>
+                                  ) : (
+                                    <div className="text-xs text-green-700 text-center py-4">
+                                      <div className="flex items-center justify-center gap-2 mb-2">
+                                        <Upload className="h-4 w-4" />
+                                        <span className="font-medium">No Input Data Uploaded</span>
+                                      </div>
+                                      <p className="text-green-600">
+                                        Data was generated using schema definition only.
+                                        Upload files in the Data Sources tab to see input vs output comparison.
+                                      </p>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                              
+                              {/* Output Data Sample */}
+                              <div className="space-y-2">
+                                <div className="flex items-center gap-2">
+                                  <CloudSnow className="h-4 w-4 text-blue-600" />
+                                  <span className="text-sm font-medium text-blue-600">Synthetic Data Sample</span>
+                                  <Badge variant="outline" className="text-xs">{sampleOutputData.length} rows</Badge>
+                                </div>
+                                <div className="bg-blue-50 border border-blue-200 rounded p-3 max-h-48 overflow-y-auto">
+                                  <pre className="text-xs text-blue-800 whitespace-pre-wrap">
+                                    {JSON.stringify(sampleOutputData, null, 2)}
+                                  </pre>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            {/* Data Transformation Summary */}
+                            <div className="mt-3 p-2 bg-gray-50 rounded text-xs text-gray-600">
+                              <div className="flex items-center gap-2">
+                                <TestTube className="h-3 w-3" />
+                                <span className="font-medium">Transformation Summary:</span>
+                              </div>
+                              <div className="mt-1 space-y-1">
+                                <div>• Input: {hasInputData ? sampleInputData.length : 0} sample rows → Output: {Array.isArray(outputRows) ? outputRows.length : 0} total synthetic rows</div>
+                                <div>• Displaying: 3 sample rows from {Array.isArray(outputRows) ? outputRows.length : 0} total generated rows</div>
+                                {hasInputData ? (
+                                  <>
+                                    <div>• Data structure preserved with enhanced privacy</div>
+                                    <div>• Statistical distributions maintained</div>
+                                  </>
+                                ) : (
+                                  <>
+                                    <div>• Generated from schema definition and relationships</div>
+                                    <div>• Synthetic data created without input samples</div>
+                                  </>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </CardContent>
                 </Card>

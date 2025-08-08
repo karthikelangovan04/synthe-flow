@@ -195,7 +195,8 @@ def display_table_data(table_name, data, max_records=10):
 
 def test_single_table_sample():
     """Test single table generation with 10 records"""
-    base_url = "http://localhost:8002"
+    import os
+    base_url = os.getenv("VITE_API_BASE_URL", "http://localhost:8002")
     
     print("🧪 Testing Single Table Sample Data (10 records)")
     print("=" * 60)
@@ -231,7 +232,8 @@ def test_single_table_sample():
 
 def test_multi_table_sample():
     """Test multi-table generation with relationships - 10 records each"""
-    base_url = "http://localhost:8002"
+    import os
+    base_url = os.getenv("VITE_API_BASE_URL", "http://localhost:8002")
     
     print("\n🧪 Testing Multi-Table Sample Data with Relationships (10 records each)")
     print("=" * 80)

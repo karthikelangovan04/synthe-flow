@@ -29,17 +29,31 @@ except ImportError as e:
     print("Please ensure SDV is installed in the venv")
 
 # Import data source connectors
-from .connectors import (
-    DatabaseConnector,
-    PostgresConnector,
-    SnowflakeConnector,
-    OracleConnector,
-    S3Connector,
-    GCSConnector,
-    AzureBlobConnector,
-    APIConnector,
-    DataCatalogConnector
-)
+try:
+    from .connectors import (
+        DatabaseConnector,
+        PostgresConnector,
+        SnowflakeConnector,
+        OracleConnector,
+        S3Connector,
+        GCSConnector,
+        AzureBlobConnector,
+        APIConnector,
+        DataCatalogConnector
+    )
+except ImportError:
+    # Fallback for direct execution
+    from connectors import (
+        DatabaseConnector,
+        PostgresConnector,
+        SnowflakeConnector,
+        OracleConnector,
+        S3Connector,
+        GCSConnector,
+        AzureBlobConnector,
+        APIConnector,
+        DataCatalogConnector
+    )
 
 app = FastAPI(title="Enhanced SDV Synthetic Data Service", version="2.0.0")
 
@@ -605,6 +619,69 @@ async def upload_file(file: UploadFile = File(...)):
         print(f"Error uploading file: {e}")
         raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
 
+@app.get("/api/upload/file/{filename}/content")
+async def get_file_content(filename: str, max_rows: int = 3):
+    """Get file content for display (first few rows)"""
+    try:
+        file_path = UPLOAD_DIR / filename
+        
+        if not file_path.exists():
+            raise HTTPException(status_code=404, detail=f"File {filename} not found")
+        
+        file_extension = Path(filename).suffix.lower()
+        
+        if file_extension == '.csv':
+            # Read CSV file
+            df = pd.read_csv(file_path, nrows=max_rows)
+            return {
+                "filename": filename,
+                "content": df.to_dict('records'),
+                "total_rows": len(pd.read_csv(file_path)),
+                "columns": df.columns.tolist()
+            }
+        elif file_extension in ['.xlsx', '.xls']:
+            # Read Excel file
+            df = pd.read_excel(file_path, nrows=max_rows)
+            return {
+                "filename": filename,
+                "content": df.to_dict('records'),
+                "total_rows": len(pd.read_excel(file_path)),
+                "columns": df.columns.tolist()
+            }
+        elif file_extension == '.json':
+            # Read JSON file
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+            
+            # Handle different JSON structures
+            if isinstance(data, list):
+                content = data[:max_rows]
+                total_rows = len(data)
+            elif isinstance(data, dict):
+                # If it's a dict with data in a key, try to extract
+                if 'data' in data and isinstance(data['data'], list):
+                    content = data['data'][:max_rows]
+                    total_rows = len(data['data'])
+                else:
+                    content = [data]
+                    total_rows = 1
+            else:
+                content = [data]
+                total_rows = 1
+            
+            return {
+                "filename": filename,
+                "content": content,
+                "total_rows": total_rows,
+                "columns": list(content[0].keys()) if content and isinstance(content[0], dict) else []
+            }
+        else:
+            raise HTTPException(status_code=400, detail=f"File type {file_extension} not supported for content display")
+        
+    except Exception as e:
+        print(f"Error reading file content: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to read file content: {str(e)}")
+
 @app.post("/api/connectors/test")
 async def test_connector(connector_config: DataSourceConfig):
     """Test a data source connector"""
@@ -781,4 +858,11 @@ async def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8002) 
+    import os
+    
+    # Get environment variables with defaults
+    host = os.getenv("BACKEND_HOST", "0.0.0.0")
+    port = int(os.getenv("BACKEND_PORT", "8002"))
+    
+    print(f"Starting SDV Backend on {host}:{port}")
+    uvicorn.run(app, host=host, port=port) 

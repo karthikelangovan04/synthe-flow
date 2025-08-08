@@ -88,7 +88,8 @@ test_data = {
 
 def test_backend():
     """Test the SDV backend API"""
-    base_url = "http://localhost:8002"
+    import os
+    base_url = os.getenv("VITE_API_BASE_URL", "http://localhost:8002")
     
     print("🧪 Testing SDV Backend API")
     print("=" * 50)

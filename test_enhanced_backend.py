@@ -17,7 +17,8 @@ def test_enhanced_backend():
     print("=" * 60)
     
     # Base URL for enhanced backend
-    base_url = "http://localhost:8003"
+    import os
+    base_url = os.getenv("VITE_ENHANCED_API_BASE_URL", "http://localhost:8003")
     
     # Test 1: Health Check
     print("\n1️⃣ Testing Health Check...")

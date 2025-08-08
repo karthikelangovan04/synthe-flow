@@ -170,7 +170,8 @@ test_data_single_table = {
 
 def test_backend_with_relationships():
     """Test the SDV backend API with proper relationships"""
-    base_url = "http://localhost:8002"
+    import os
+    base_url = os.getenv("VITE_API_BASE_URL", "http://localhost:8002")
     
     print("🧪 Testing SDV Backend API with Relationships")
     print("=" * 60)
@@ -313,7 +314,8 @@ def test_backend_with_relationships():
 
 def test_relationship_validation():
     """Test relationship validation with invalid relationships"""
-    base_url = "http://localhost:8002"
+    import os
+    base_url = os.getenv("VITE_API_BASE_URL", "http://localhost:8002")
     
     print("\n5. Testing invalid relationship validation...")
     
