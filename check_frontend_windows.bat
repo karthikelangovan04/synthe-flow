@@ -1,0 +1,1 @@
+scripts/check_frontend_windows.bat

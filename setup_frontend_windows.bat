@@ -1,0 +1,1 @@
+scripts/setup_frontend_windows.bat

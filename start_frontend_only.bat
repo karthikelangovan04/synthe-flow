@@ -1,0 +1,1 @@
+scripts/start_frontend_only.bat
