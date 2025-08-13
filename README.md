@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+SyntheticGen - AI-Powered Synthetic Data Generation
+A comprehensive web application for generating high-quality synthetic data using AI, built with modern web technologies and an intuitive user interface.
 
-## Project info
+🚀 Features
+Core Pages & Functionality
+Landing Page - Modern hero section showcasing SyntheticGen's capabilities with feature highlights and use cases
+Getting Started - Step-by-step guide with code examples and quick start instructions
+Schema Generator - Interactive tool for creating, validating, and testing JSON schemas with real-time data generation
+API Reference - Complete documentation of the Python API with detailed examples and parameter descriptions
+Examples - Real-world schema templates for various industries including HR, E-commerce, Finance, and Healthcare
 
-**URL**: https://lovable.dev/projects/bbfb4b50-bf31-4863-98f1-6bdbb6fab4a3
+Key Features
+Multiple Data Domains - Support for various data types including personal, financial, e-commerce, and healthcare data
+JSON Schema Based - Industry-standard JSON Schema format for data validation and generation
+High Quality Output - AI-powered generation ensuring realistic and coherent synthetic data
+Interactive Schema Editor - Real-time schema validation and data preview
+Export Capabilities - Download generated data in multiple formats
+Responsive Design - Modern UI that works seamlessly across desktop and mobile devices
 
-## How can I edit this code?
+Design & User Experience
+Modern Purple Theme - Elegant gradient-based design with dark/light mode support
+Intuitive Navigation - Collapsible sidebar with easy access to all features
+Interactive Components - Real-time feedback and smooth animations
+Accessibility - Built with accessibility best practices using Radix UI components
 
-There are several ways of editing your application.
+🛠️ Technology Stack
+Frontend
+React 18 - Modern React with hooks and functional components
+TypeScript - Type-safe development with excellent developer experience
+Vite - Fast build tool and development server
+Tailwind CSS - Utility-first CSS framework with custom design system
+shadcn/ui - High-quality, accessible UI components built on Radix UI
 
-**Use Lovable**
+Key Libraries
+React Router - Client-side routing for single-page application
+React Hook Form - Performant forms with easy validation
+Lucide React - Beautiful, customizable icons
+Recharts - Responsive chart library for data visualization
+Sonner - Modern toast notifications
+Backend & Infrastructure
+Dual Backend Architecture
+SyntheticGen features two sophisticated backend implementations for different use cases:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bbfb4b50-bf31-4863-98f1-6bdbb6fab4a3) and start prompting.
+1. SDV Framework Backend (/backend)
+Open Source SDV Integration - Built on the proven Synthetic Data Vault framework
+Multi-table Relationships - HMASynthesizer for complex relational data generation
+FastAPI Service - High-performance Python REST API with async capabilities
+Relationship Management - Drag-and-drop interface for defining table relationships
+Quality Metrics - Comprehensive validation and quality assessment
+Multiple Export Formats - CSV, JSON, SQL export capabilities
+Azure Deployment Ready - Production-ready deployment configuration
 
-Changes made via Lovable will be committed automatically to this repo.
+2. Enhanced Custom Backend (/enhanced_backend)
+Neural Network Architecture - Custom-built from scratch without SDV dependencies
+Conditional VAE - Conditional Variational Autoencoders for high-quality data generation
+Graph Neural Networks - Advanced relationship modeling for complex data structures
+Privacy-Preserving - Built-in differential privacy and anonymization techniques
+Enterprise Export Engine - Support for JSON, CSV, Excel, SQL, Parquet, XML formats
+Parallel Processing - Optimized for large-scale data generation with multi-threading
+Quality Validation - Comprehensive data validation and integrity checking
+Performance Optimization - Advanced caching and memory management
 
-**Use your preferred IDE**
+Frontend Integration Platform
+Supabase - Complete backend-as-a-service platform providing:
+Database - PostgreSQL database for data persistence
+Authentication - User management and authentication system
+Real-time - Live data synchronization and subscriptions
+File Storage - Secure file upload and management
+Edge Functions - Serverless functions for custom logic
+API Integration - RESTful and GraphQL APIs for external services
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🏃‍♂️ Quick Start
+Prerequisites
+Node.js (v18 or higher)
+npm or yarn package manager
+Installation
+Clone the repository
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+Install dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+npm install
+Start development server
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
+Open your browser Navigate to http://localhost:5173 to see the application
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bbfb4b50-bf31-4863-98f1-6bdbb6fab4a3) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Building for Production
+npm run build
+npm run preview
