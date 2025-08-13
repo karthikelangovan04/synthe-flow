@@ -139,3 +139,14 @@ test_env.html
 # Temporary files
 requirements_updated.txt
 Enhanced_Sdv_Requiements
+
+# Enhanced Backend Generated Files
+enhanced_backend/enhanced_sdv_service/exports/
+enhanced_backend/enhanced_sdv_service/uploads/
+relational_integrity_report_*.txt
+
+# Test files
+test_integrity_fixes.py
+upload_to_enhanced_backend.py
+verify_enhanced_results.py
+check_relational_integrity.py

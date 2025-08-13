@@ -74,8 +74,21 @@ class EnterpriseConnector:
                     print(f"Unsupported file format: {file_path}")
                     continue
                 
-                # Use filename as table name
+                # Use filename as table name, but map common names
                 table_name = Path(file_path).stem
+                
+                # Map common CSV names to table names
+                if 'users' in table_name.lower():
+                    table_name = 'users'
+                elif 'posts' in table_name.lower():
+                    table_name = 'posts'
+                elif 'employees' in table_name.lower():
+                    table_name = 'employees'
+                elif 'departments' in table_name.lower():
+                    table_name = 'departments'
+                elif 'projects' in table_name.lower():
+                    table_name = 'projects'
+                
                 data_dict[table_name] = df
                 
                 print(f"Loaded {len(df)} rows from {file_path}")

@@ -4,7 +4,7 @@
 source venv/bin/activate
 
 # Install requirements if needed
-pip install -r requirements.txt
+#pip install -r requirements.txt
 
 # Start the Enhanced SDV service
 cd enhanced_sdv_service

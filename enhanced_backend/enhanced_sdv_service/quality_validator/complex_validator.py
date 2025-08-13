@@ -346,11 +346,111 @@ class ComplexDataValidator:
             valid_references = len(source_values & target_values)
             integrity_score = valid_references / len(source_values)
             
+            # Log detailed integrity issues
+            if integrity_score < 1.0:
+                orphaned_values = source_values - target_values
+                print(f"⚠️  Referential integrity issue: {len(orphaned_values)} orphaned values in {source_col}")
+                print(f"   Orphaned values: {list(orphaned_values)[:5]}...")
+            
             return integrity_score
             
         except Exception as e:
             print(f"Error validating relationship: {e}")
             return 0.0
+    
+    def fix_referential_integrity(self, synthetic_data: Dict[str, pd.DataFrame], 
+                                relationships: List[Dict[str, Any]]) -> Dict[str, pd.DataFrame]:
+        """Fix referential integrity issues in synthetic data"""
+        print("🔧 Fixing referential integrity issues...")
+        
+        fixed_data = {table: df.copy() for table, df in synthetic_data.items()}
+        
+        for rel in relationships:
+            source_table = rel['source_table']
+            target_table = rel['target_table']
+            source_col = rel['source_column']
+            target_col = rel['target_column']
+            
+            if source_table in fixed_data and target_table in fixed_data:
+                fixed_data = self._fix_single_relationship(
+                    fixed_data, source_table, target_table, source_col, target_col
+                )
+        
+        return fixed_data
+    
+    def _fix_single_relationship(self, data: Dict[str, pd.DataFrame], 
+                               source_table: str, target_table: str,
+                               source_col: str, target_col: str) -> Dict[str, pd.DataFrame]:
+        """Fix referential integrity for a single relationship"""
+        try:
+            source_df = data[source_table]
+            target_df = data[target_table]
+            
+            if source_col not in source_df.columns or target_col not in target_df.columns:
+                return data
+            
+            # Get valid target values
+            valid_target_values = set(target_df[target_col].dropna())
+            
+            if len(valid_target_values) == 0:
+                print(f"⚠️  No valid target values in {target_table}.{target_col}")
+                return data
+            
+            # Find orphaned foreign keys
+            source_values = source_df[source_col].dropna()
+            orphaned_mask = ~source_values.isin(valid_target_values)
+            orphaned_count = orphaned_mask.sum()
+            
+            if orphaned_count > 0:
+                print(f"🔧 Fixing {orphaned_count} orphaned foreign keys in {source_table}.{source_col}")
+                
+                # Replace orphaned values with valid ones
+                valid_values_list = list(valid_target_values)
+                orphaned_indices = source_values[orphaned_mask].index
+                
+                for idx in orphaned_indices:
+                    # Choose a random valid value
+                    new_value = np.random.choice(valid_values_list)
+                    data[source_table].loc[idx, source_col] = new_value
+                
+                print(f"✅ Fixed {orphaned_count} orphaned foreign keys")
+            
+            return data
+            
+        except Exception as e:
+            print(f"Error fixing relationship {source_table}.{source_col} -> {target_table}.{target_col}: {e}")
+            return data
+    
+    def validate_and_fix_primary_keys(self, synthetic_data: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
+        """Validate and fix primary key uniqueness issues"""
+        print("🔑 Validating and fixing primary keys...")
+        
+        fixed_data = {table: df.copy() for table, df in synthetic_data.items()}
+        
+        for table_name, df in fixed_data.items():
+            # Try to identify primary key column
+            pk_candidates = [col for col in df.columns if 'id' in col.lower() and col.endswith('_id')]
+            
+            for pk_col in pk_candidates:
+                if pk_col in df.columns:
+                    # Check for duplicates
+                    duplicates = df[pk_col].duplicated()
+                    duplicate_count = duplicates.sum()
+                    
+                    if duplicate_count > 0:
+                        print(f"🔧 Fixing {duplicate_count} duplicate primary keys in {table_name}.{pk_col}")
+                        
+                        # Generate new unique values for duplicates
+                        max_id = df[pk_col].max()
+                        duplicate_indices = df[duplicates].index
+                        
+                        for i, idx in enumerate(duplicate_indices):
+                            new_id = max_id + i + 1
+                            fixed_data[table_name].loc[idx, pk_col] = new_id
+                        
+                        print(f"✅ Fixed {duplicate_count} duplicate primary keys")
+        
+        return fixed_data
     
     def _assess_privacy(self, synthetic_data: Dict[str, pd.DataFrame], 
                        original_data: Dict[str, pd.DataFrame]) -> Dict[str, Any]:

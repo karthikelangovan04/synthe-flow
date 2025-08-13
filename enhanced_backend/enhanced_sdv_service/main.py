@@ -30,6 +30,7 @@ import networkx as nx
 
 # Import enhanced modules
 from ai_engine.llm_enhancer import LLMEnhancer
+from ai_engine.neural_generator import NeuralDataGenerator, MultiTableNeuralGenerator
 from quality_validator.complex_validator import ComplexDataValidator
 from export_engine.enterprise_exporter import EnterpriseExporter
 from connectors.enterprise_connectors import EnterpriseConnector
@@ -170,7 +171,7 @@ class EnhancedSDVEngine:
             for table_name, df in synthetic_data.items():
                 synthetic_data_response[table_name] = df.to_dict('records')
             
-            # Step 6: Validate relationships and quality
+            # Step 6: Fix referential integrity issues
             # Convert ComplexRelationshipSchema to dict format for quality validator
             relationships_dict = []
             for rel in request.relationships:
@@ -184,6 +185,13 @@ class EnhancedSDVEngine:
                     'cascade_delete': rel.cascade_delete
                 })
             
+            # Fix primary key duplicates
+            synthetic_data = self.quality_validator.validate_and_fix_primary_keys(synthetic_data)
+            
+            # Fix foreign key referential integrity
+            synthetic_data = self.quality_validator.fix_referential_integrity(synthetic_data, relationships_dict)
+            
+            # Step 7: Validate relationships and quality
             quality_metrics = self.quality_validator.validate_complex_data(
                 synthetic_data, data_dict, relationships_dict, request.quality_settings
             )
@@ -270,6 +278,8 @@ class EnhancedSDVEngine:
             else:
                 data_dict.update(result)
         
+        # Map uploaded files to table names based on schema
+        logger.info(f"Loaded data: {list(data_dict.keys())}")
         return data_dict
     
     def _build_enhanced_metadata(self, request: EnhancedGenerationRequest) -> Dict[str, Any]:
@@ -285,7 +295,7 @@ class EnhancedSDVEngine:
         for table in request.tables:
             metadata['tables'][table.name] = {
                 'name': table.name,
-                'columns': [col.dict() for col in table.columns],
+                'columns': [col.model_dump() for col in table.columns],
                 'primary_key': self._get_primary_key(table.columns),
                 'domain': table.domain,
                 'estimated_volume': table.estimated_volume
@@ -372,13 +382,16 @@ class EnhancedSDVEngine:
         for table in request.tables:
             if table.name in data_dict and len(data_dict[table.name]) > 0:
                 # Use existing data to train neural generator
+                print(f"Training neural generator for table: {table.name} with {len(data_dict[table.name])} samples")
                 neural_generator = NeuralDataGenerator()
                 schema_info = {col.name: {'data_type': col.data_type} for col in table.columns}
                 neural_generator.fit(data_dict[table.name], schema_info)
                 
                 num_samples = int(len(data_dict[table.name]) * request.scale)
+                print(f"Generating {num_samples} synthetic samples for table: {table.name}")
                 synthetic_data[table.name] = neural_generator.generate(num_samples)
             else:
+                print(f"No data found for table: {table.name}, creating synthetic data from scratch")
                 # Create synthetic data from scratch
                 synthetic_data[table.name] = self._create_synthetic_table_data(table, request.scale)
         
