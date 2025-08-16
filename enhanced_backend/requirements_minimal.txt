@@ -1,0 +1,25 @@
+# Minimal requirements for Enhanced SDV Backend
+# Core dependencies only - install these first
+fastapi
+uvicorn[standard]
+pandas
+numpy
+torch
+scikit-learn
+networkx
+python-multipart
+aiofiles
+pydantic
+python-dotenv
+
+# Essential statistical libraries
+scipy
+openpyxl
+
+# Optional - install these after core dependencies work
+# matplotlib
+# seaborn
+# plotly
+# cryptography
+# great-expectations
+# pandera 
